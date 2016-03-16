@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - @BrunoQin" uuid="22106a8f-3449-4c6e-a443-0356d6a716b1">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>OpenReuse.*</schema-pattern>
+      <default-schemas>OpenReuse.*</default-schemas>
+    </data-source>
+  </component>
+</project>
