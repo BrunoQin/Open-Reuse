@@ -1,0 +1,5 @@
+rootProject.name = 'open-reuse'
+include 'open-reuse-client-api'
+include 'open-reuse-client-window'
+include 'open-reuse-server'
+
