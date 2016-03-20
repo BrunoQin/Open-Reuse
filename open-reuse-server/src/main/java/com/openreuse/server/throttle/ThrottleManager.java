@@ -46,6 +46,9 @@ public class ThrottleManager {
             while(runFlag.get()){
                 try{
                     DelayedNotify expiredNotify = queue.poll(1000,TimeUnit.MILLISECONDS);
+                    if(expiredNotify == null){
+                        Thread.currentThread().sleep(Constants.MILLIS_PER_SECOND);
+                    }
                     long clientID = expiredNotify.getClientId();
                     RegistryManager.getInstance().countDownLogin(clientID);
                 }catch (Throwable e){
@@ -56,10 +59,12 @@ public class ThrottleManager {
     }
 
     public void startWorker(){
-        for(Thread workerThread: workerThreads){
-            workerThread = new Thread(
-                    new ThrottleWorker(delayQueue, runFlag));
-            workerThread.start();
+
+        for(int i=0;i<workerThreads.length;i++){
+//            workerThread = new Thread(
+//                    new ThrottleWorker(delayQueue, runFlag));
+//            workerThread.start();
+
         }
     }
 

@@ -43,7 +43,7 @@ public class RegistryManager {
         assert Validators.validateClientID(clientID);
         if(loginCountMap.containsKey(clientID)){
             Integer currentCount = loginCountMap.get(clientID);
-            if(currentCount >= 3) return false;
+            if(currentCount > 3) return false;
             else return true;
         }else{
             /** Do nothing here **/
