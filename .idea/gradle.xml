@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/open-reuse-client-api" />
             <option value="$PROJECT_DIR$/open-reuse-client-window" />
+            <option value="$PROJECT_DIR$/open-reuse-common" />
             <option value="$PROJECT_DIR$/open-reuse-server" />
           </set>
         </option>
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/open-reuse-client-api" />
             <option value="$PROJECT_DIR$/open-reuse-client-window" />
+            <option value="$PROJECT_DIR$/open-reuse-common" />
             <option value="$PROJECT_DIR$/open-reuse-server" />
           </set>
         </option>

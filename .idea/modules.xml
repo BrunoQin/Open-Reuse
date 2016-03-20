@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/open-reuse.iml" filepath="$PROJECT_DIR$/open-reuse.iml" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" filepath="$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-client-window/open-reuse-client-window.iml" filepath="$PROJECT_DIR$/open-reuse-client-window/open-reuse-client-window.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" filepath="$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" filepath="$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" />
     </modules>
   </component>
