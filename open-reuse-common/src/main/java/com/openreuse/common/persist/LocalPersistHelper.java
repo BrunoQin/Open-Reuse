@@ -27,6 +27,7 @@ public class LocalPersistHelper {
         }
     }
 
+
     /** Map a json-style file to a map **/
     public synchronized static Map loadLocalToMap(File file){
         try{

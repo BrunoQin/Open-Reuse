@@ -10,6 +10,7 @@ public class Constants {
     public final static long INVALID_MESSAGE_ID = ~0;
     public final static long INVALID_DELAY_VALUE = 0;
     public final static int THROTTLE_WORK_NUMBER = 2;
+    public final static int SERVER_PORT = 30000;
 
     /** Time Def Constants **/
     public final static long MILLIS_PER_SECOND = 1000;
