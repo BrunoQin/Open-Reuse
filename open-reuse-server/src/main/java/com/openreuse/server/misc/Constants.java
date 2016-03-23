@@ -16,4 +16,6 @@ public class Constants {
     public final static long MILLIS_PER_MINUTE = MILLIS_PER_SECOND * 60;
     public final static long MILLIS_PER_HOUR = MILLIS_PER_MINUTE * 60;
     public final static long MILLIS_PER_DAY = MILLIS_PER_HOUR * 24;
+    public final static long NANOS_PER_MILLI = 1000 * 1000;
+
 }

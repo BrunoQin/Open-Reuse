@@ -40,15 +40,33 @@ public class SimpleValidateTest {
     @Test
     public void testRegistryExpire(){
         DelayedNotify notify = new DelayedNotify(MOCK_CLIENT_ID, 500);
-        mockNotify.setClientId(MOCK_CLIENT_ID);
+//        mockNotify.setClientId(MOCK_CLIENT_ID);
 //        mockNotify.setMilliDelay(500);
-        ThrottleManager.getInstance().notity(mockNotify);
+//        RegistryManager.getInstance()
+
+        RegistryManager.getInstance().registerLogin(MOCK_CLIENT_ID);
+        RegistryManager.getInstance().registerLogin(MOCK_CLIENT_ID);
+        RegistryManager.getInstance().registerLogin(MOCK_CLIENT_ID);
+        RegistryManager.getInstance().registerLogin(MOCK_CLIENT_ID);
+        RegistryManager.getInstance().registerLogin(MOCK_CLIENT_ID);
+        RegistryManager.getInstance().registerLogin(MOCK_CLIENT_ID);
+
+        ThrottleManager.getInstance().notity(notify);
+        ThrottleManager.getInstance().notity(notify);
+        
+
+        try{
+            Thread.currentThread().sleep(5000);
+        }catch (InterruptedException ie){
+            ie.printStackTrace();
+        }
+
         assert RegistryManager.getInstance().checkLogin(MOCK_CLIENT_ID);
     }
 
     @After
     public void afterTests(){
-//        ThrottleManager.getInstance().stopWorker();
+        ThrottleManager.getInstance().stopWorker();
     }
 
 

@@ -11,7 +11,7 @@ public class Validators {
 
     public static boolean validateNotify(DelayedNotify notify){
         if(notify.getClientId() == Constants.INVALID_CLIENT_ID) return false;
-        if(notify.getMilliDelay() == Constants.INVALID_DELAY_VALUE) return false;
+        if(notify.getNanoDelay() == Constants.INVALID_DELAY_VALUE) return false;
         return true;
     }
 

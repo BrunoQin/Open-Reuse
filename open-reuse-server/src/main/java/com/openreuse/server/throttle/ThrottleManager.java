@@ -30,7 +30,7 @@ public class ThrottleManager {
 
     public void notity(DelayedNotify notify){
         assert Validators.validateNotify(notify);
-        delayQueue.offer(notify, notify.getMilliDelay(), TimeUnit.MILLISECONDS);
+        delayQueue.offer(notify, notify.getNanoDelay(), TimeUnit.NANOSECONDS);
     }
 
 
@@ -48,6 +48,7 @@ public class ThrottleManager {
                     DelayedNotify expiredNotify = queue.poll(1000,TimeUnit.MILLISECONDS);
                     if(expiredNotify == null){
                         Thread.currentThread().sleep(Constants.MILLIS_PER_SECOND);
+                        continue;
                     }
                     long clientID = expiredNotify.getClientId();
                     RegistryManager.getInstance().countDownLogin(clientID);
@@ -61,9 +62,9 @@ public class ThrottleManager {
     public void startWorker(){
 
         for(int i=0;i<workerThreads.length;i++){
-//            workerThread = new Thread(
-//                    new ThrottleWorker(delayQueue, runFlag));
-//            workerThread.start();
+            this.workerThreads[i] = new Thread(
+                    new ThrottleWorker(delayQueue, runFlag));
+            this.workerThreads[i].start();
 
         }
     }

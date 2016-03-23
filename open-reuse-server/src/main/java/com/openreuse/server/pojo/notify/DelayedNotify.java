@@ -4,49 +4,62 @@ import com.openreuse.server.misc.Constants;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by kimmin on 3/20/16.
  */
 public class DelayedNotify implements Delayed {
 
-    public DelayedNotify(){}
-    public DelayedNotify(long clientId, long milliDelay){
+    public DelayedNotify(long clientId, long nanoDelay){
         this.clientId = clientId;
-        this.milliDelay = milliDelay;
+        this.nanoDelay = nanoDelay;
+        this.sequenceNumber = sequencer.getAndIncrement();
+        this.executeTime = now() + nanoDelay;
     }
 
-    private long clientId = Constants.INVALID_CLIENT_ID; //Default invalid client ID
-    private long milliDelay = Constants.INVALID_DELAY_VALUE; //Default invalid delay value
+    private long clientId; //Default invalid client ID
+
+
+    private long nanoDelay; //Default invalid delay value
+    private long executeTime;
+    public final long sequenceNumber;
+
+    private static final long NANO_ORIGIN = System.nanoTime();
+    private static final AtomicLong sequencer = new AtomicLong(0);
+
+
+    final static long now() {
+        return System.nanoTime() - NANO_ORIGIN;
+    }
 
     /** Methods of Delayed Interface **/
+    @Override
     public int compareTo(Delayed delayed){
-        if(this.getDelay(TimeUnit.MILLISECONDS) < delayed.getDelay(TimeUnit.MILLISECONDS)){
+        if(! (delayed instanceof DelayedNotify)
+                || this == null) return 0;
+        if(delayed == this) return 0;
+        DelayedNotify delayedNotify = (DelayedNotify) delayed;
+        if(this.getDelay(TimeUnit.NANOSECONDS) < delayedNotify.getDelay(TimeUnit.NANOSECONDS)){
             return -1;
-        }else if(this.getDelay(TimeUnit.MILLISECONDS) > delayed.getDelay(TimeUnit.MILLISECONDS)){
+        }else if(this.getDelay(TimeUnit.NANOSECONDS) > delayedNotify.getDelay(TimeUnit.NANOSECONDS)){
             return 1;
+        }else if(this.sequenceNumber < delayedNotify.sequenceNumber){
+            return -1;
         }else return 0;
     }
 
     public long getDelay(TimeUnit unit){
-        return unit.convert(this.getMilliDelay(), TimeUnit.MILLISECONDS);
+        return unit.convert(this.executeTime - now(), TimeUnit.NANOSECONDS);
     }
 
 
-    public long getMilliDelay() {
-        return milliDelay;
-    }
-
-    public void setMilliDelay(long milliDelay) {
-        this.milliDelay = milliDelay;
+    public long getNanoDelay() {
+        return nanoDelay;
     }
 
     public long getClientId() {
         return clientId;
-    }
-
-    public void setClientId(long clientId) {
-        this.clientId = clientId;
     }
 
 }

@@ -35,7 +35,8 @@ public class RegistryManager {
             loginCountMap.put(clientID, 1);
         }
         /** Produce count down task **/
-        DelayedNotify notify = new DelayedNotify(clientID, Constants.MILLIS_PER_MINUTE);
+        DelayedNotify notify = new DelayedNotify(clientID, Constants.MILLIS_PER_MINUTE
+                * Constants.NANOS_PER_MILLI);
         ThrottleManager.getInstance().notity(notify);
     }
 
@@ -54,6 +55,7 @@ public class RegistryManager {
     public void countDownLogin(long clientID){
         assert Validators.validateClientID(clientID);
         Integer currentCount = loginCountMap.get(clientID);
+        if(currentCount == null) return;
         if(currentCount > 1){
             currentCount = currentCount - 1;
             loginCountMap.put(clientID, currentCount);
