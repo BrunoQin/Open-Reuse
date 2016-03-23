@@ -1,4 +1,4 @@
-package com.openresure.common.message;
+package com.openreuse.common.message;
 
 /**
  * Created by kimmin on 3/23/16.
