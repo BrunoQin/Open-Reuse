@@ -34,6 +34,8 @@ maven-eclipse.xml
 **/*.swp
 **/*.checkstyle
 **/*.swo
+**/*.iml
+**/build
 .zsh*
 .helper
 eclimd.log
