@@ -1,5 +1,6 @@
 package com.openreuse.server.handler;
 
+import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandler;
@@ -15,7 +16,9 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx,
                             Object msg) throws Exception {
-        ctx.write(msg);
+        ByteBuf buf = (ByteBuf) msg;
+        byte[] rawBytes = buf.array();
+
     }
 
     @Override
