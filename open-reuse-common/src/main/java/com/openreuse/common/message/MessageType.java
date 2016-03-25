@@ -10,7 +10,9 @@ public enum MessageType {
     LOGOUT_MESSAGE("logout"),
     TEXT_MESSAGE("text"),
     HEARTBEAT_MESSAGE("heartbeat"),
-    RESP_OK("response");
+    RESP_OK("response_ok"),
+    RESP_INTERNAL_ERROR("response_error"),
+    RESP_REFUSE("response_refuse");
 
     final String type;
 
