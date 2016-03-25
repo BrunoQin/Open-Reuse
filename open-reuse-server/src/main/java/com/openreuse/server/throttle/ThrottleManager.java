@@ -25,7 +25,7 @@ public class ThrottleManager {
 
     /** Scheduled pool for managing incoming log-in frequency **/
     private DelayQueue<DelayedNotify> delayQueue = new DelayQueue<DelayedNotify>();
-    private Thread[] workerThreads = new Thread[Constants.THROTTLE_WORK_NUMBER];
+    private Thread[] workerThreads = new Thread[Constants.THROTTLE_WORKER_NUMBER];
     private AtomicBoolean runFlag = new AtomicBoolean(true);
 
     public void notity(DelayedNotify notify){

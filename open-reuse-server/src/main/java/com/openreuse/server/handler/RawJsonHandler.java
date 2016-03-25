@@ -1,5 +1,8 @@
 package com.openreuse.server.handler;
 
+import com.openreuse.common.message.Message;
+import com.openreuse.server.request.json.ParseJsonService;
+import com.openreuse.server.response.ResponseHelper;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
@@ -18,16 +21,20 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
                             Object msg) throws Exception {
         ByteBuf buf = (ByteBuf) msg;
         byte[] rawBytes = buf.array();
-
+        ParseJsonService.getInstance().provideRawBytes(rawBytes);
     }
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx){
+        ctx.write(ResponseHelper.OK_RESP_MESSAGE);
+
+        /**  **/
         ctx.flush();
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause){
+        ctx.write(ResponseHelper.ERROR_RESP_MESSAGE);
         ctx.close();
     }
 

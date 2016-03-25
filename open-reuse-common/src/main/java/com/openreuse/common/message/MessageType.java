@@ -8,6 +8,7 @@ public enum MessageType {
 
     LOGIN_MESSAGE("login"),
     LOGOUT_MESSAGE("logout"),
+    REGISTER_MESSAGE("register"),
     TEXT_MESSAGE("text"),
     HEARTBEAT_MESSAGE("heartbeat"),
     RESP_OK("response_ok"),
