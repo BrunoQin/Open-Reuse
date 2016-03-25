@@ -9,9 +9,17 @@ public class SimpleClientConnTest {
 
     @Test
     public void connectionTest(){
-        int port = 8080;
         try{
             new SimpleClient().connect(30000, "127.0.0.1");
+        }catch (Throwable e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void connectionMessageTest(){
+        try{
+            new SimpleMessageClient().connect(30000, "127.0.0.1");
         }catch (Throwable e){
             e.printStackTrace();
         }

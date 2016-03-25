@@ -20,5 +20,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:1.8.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: io.netty:netty-all:4.0.35.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
+    <orderEntry type="module" module-name="open-reuse-common" exported="" />
   </component>
 </module>

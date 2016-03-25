@@ -3,7 +3,10 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
+archivesBaseName = 'open-reuse-common'
+
+
+sourceCompatibility = 1.7
 
 repositories {
     mavenCentral()

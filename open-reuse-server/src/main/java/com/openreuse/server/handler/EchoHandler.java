@@ -2,10 +2,7 @@ package com.openreuse.server.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelHandlerAdapter;
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.ChannelInitializer;
+import io.netty.channel.*;
 import io.netty.channel.socket.SocketChannel;
 
 import java.io.IOException;
@@ -13,6 +10,8 @@ import java.io.IOException;
 /**
  * Created by kimmin on 3/23/16.
  */
+
+@ChannelHandler.Sharable
 public class EchoHandler extends ChannelInboundHandlerAdapter {
 
     @Override
@@ -30,7 +29,6 @@ public class EchoHandler extends ChannelInboundHandlerAdapter {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause){
         ctx.close();
     }
-
 
 
 }

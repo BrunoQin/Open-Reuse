@@ -2,12 +2,12 @@ group 'com.tjsse.openreuse.'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'idea'
 
 sourceCompatibility = 1.7
 
 repositories {
     mavenCentral()
-    maven { url 'http://maven.oschina.net/content/groups/public/' }
 }
 
 dependencies {

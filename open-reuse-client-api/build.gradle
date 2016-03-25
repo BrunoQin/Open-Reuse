@@ -3,9 +3,10 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
+archivesBaseName = 'open-reuse-client-api'
+
 
 sourceCompatibility = 1.7
-
 
 task "create-dirs" << {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
