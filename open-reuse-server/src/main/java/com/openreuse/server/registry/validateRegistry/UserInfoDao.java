@@ -1,10 +1,13 @@
 package com.openreuse.server.registry.validateRegistry;
 
-import org.hibernate.Query;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Restrictions;
+
 import java.util.List;
 
 
@@ -15,7 +18,7 @@ public class UserInfoDao {
 
     private Session session = null;
 
-    UserInfoDao(){
+    public UserInfoDao(){
         Configuration configuration = new Configuration();
         SessionFactory factory = configuration.configure().buildSessionFactory();
         session = factory.openSession();
@@ -44,13 +47,30 @@ public class UserInfoDao {
     }
 
     //Check if the user already exists.
-    private boolean existOrNot(String username, String password){
-        Query query = session.createQuery("from UserInfoEntity where username = username and password = password");
-        List list = query.list();
+    public boolean existOrNot(String username, String password){
+        //Query query = session.createQuery("from UserInfoEntity where username = username and password = password");
+        //List list = query.list();
+        Criteria criteria = session.createCriteria(UserInfoEntity.class);
+        Criterion criterion = Restrictions.like("username",username);
+        criteria.add(criterion);
+        List<UserInfoEntity> list = criteria.list();
         if(list != null && !list.isEmpty()) {
             return true;
         }else
             return false;
+    }
+
+    //Get userid by username
+    public long getIdbyName(String username){
+        long id = -1;
+        Criteria criteria = session.createCriteria(UserInfoEntity.class);
+        Criterion criterion = Restrictions.like("username",username);
+        criteria.add(criterion);
+        List<UserInfoEntity> list = criteria.list();
+        if(list != null && !list.isEmpty()) {
+           id = list.get(0).getUserid();
+        }
+        return id;
     }
 
 
