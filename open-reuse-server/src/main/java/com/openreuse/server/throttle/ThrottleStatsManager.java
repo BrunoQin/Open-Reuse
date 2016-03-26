@@ -22,7 +22,7 @@ public class ThrottleStatsManager {
             public void run() {
                 LocalPersistHelper.persistMapToLocal(statsMap, new File("stats.json"));
             }
-        }, 0, Constants.REDUMP_STATS_INTERVAL_MILLIS);
+        }, 1, Constants.REDUMP_STATS_INTERVAL_MILLIS);
     }
     private static class Singleton {
         private static ThrottleStatsManager instance = new ThrottleStatsManager();
