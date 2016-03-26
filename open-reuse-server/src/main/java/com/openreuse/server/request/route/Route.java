@@ -7,6 +7,6 @@ import java.util.concurrent.Future;
 /**
  * Created by kimmin on 3/25/16.
  */
-public interface Route <T> {
-    Future<T> route(Message message);
+public interface Route {
+    boolean route(Message message);
 }

@@ -3,6 +3,14 @@ package com.openreuse.server.request.json;
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
 import com.openreuse.server.misc.worker.Worker;
+import com.openreuse.server.registry.RegistryManager;
+import com.openreuse.server.request.dispatcher.RouteDispatcher;
+import com.openreuse.server.request.session.SessionManager;
+import com.openreuse.server.response.ResponseHelper;
+import com.openreuse.server.throttle.ThrottleStatsManager;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,10 +44,17 @@ public class RawBytesWorker implements Worker {
                 Message message = om.readValue(rawBytes, Message.class);
                 /** Do message verification here **/
                 String from = message.getFrom();
-
-
+                Long uid = SessionManager.getInstance().getUsrId(from);
+                assert uid != null;
+                boolean successMsgCnt = ThrottleStatsManager.getInstance().checkMsgCount(uid);
+                if(!successMsgCnt){
+                    ThrottleStatsManager.getInstance().incIgnoredMsgCount();
+                    return;
+                }
+                ThrottleStatsManager.getInstance().incMsgCount(uid);
+                ThrottleStatsManager.getInstance().incReceivedMsgCount();
                 /** Dispatch the message toward different services  **/
-
+                RouteDispatcher.getInstance().dispatch(message);
 
             }catch (IOException ioe){
                 ioe.printStackTrace();

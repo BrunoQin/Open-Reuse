@@ -13,7 +13,8 @@ public enum MessageType {
     HEARTBEAT_MESSAGE("heartbeat"),
     RESP_OK("response_ok"),
     RESP_INTERNAL_ERROR("response_error"),
-    RESP_REFUSE("response_refuse");
+    RESP_REFUSE("response_refuse"),
+    REDO_LOGIN_MESSAGE("redo_login");
 
     final String type;
 

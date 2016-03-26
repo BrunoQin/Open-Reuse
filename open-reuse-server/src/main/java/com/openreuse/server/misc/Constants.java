@@ -12,8 +12,10 @@ public class Constants {
     public final static int THROTTLE_WORKER_NUMBER = 2;
     public final static int SERVER_PORT = 30000;
     public final static int MAX_JSON_SIZE = 1024;
+    public final static int MAX_MSG_CNT_PER_LOGIN = 100;
     public final static int PARSE_WORKER_NUMBER = 2;
     public final static long REFRESH_ID_CACHE_INTERVAL_MILLIS = 1000 * 5;
+    public final static long REDUMP_STATS_INTERVAL_MILLIS = 1000 * 60;
 
     /** Time Def Constants **/
     public final static long MILLIS_PER_SECOND = 1000;
