@@ -19,6 +19,6 @@ repositories {
 
 dependencies {
     compile "com.google.guava:guava:18.0"
-    compile "io.netty:netty:3.9.0.Final"
+    compile "io.netty:netty-all:4.0.35.Final"
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
