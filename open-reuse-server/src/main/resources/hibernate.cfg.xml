@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- 正文开始 -->
+<hibernate-configuration>
+    <!--下面是数据库的基本连接信息，对一个应用来说，设置一个session-factory节点就够了，除非我们中间使用了多个数据库-->
+    <session-factory>
+        <!--用户名 -->
+        <property name="connection.username">root</property>
+        <!--url信息 -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/OpenReuse</property>
+        <!--密码 -->
+        <property name="connection.password">1234</property>
+        <!--数据库驱动信息 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--指定Hibernate映射文件路径 -->
+        <mapping class="com.openreuse.server.registry.validateRegistry.UserInfoEntity"/>
+    </session-factory>
+</hibernate-configuration>
