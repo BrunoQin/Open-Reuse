@@ -27,7 +27,7 @@ public class SimpleMessageHandler extends ChannelInboundHandlerAdapter {
         Message message = new Message(MessageType.RESP_OK,
                 new Reserved("null"),
                 "Message Fake Body",
-                0L);
+                "jinmin");
         /** Try JSON-Serialization here **/
         try{
             byte[] bytes = om.writeValueAsBytes(message);

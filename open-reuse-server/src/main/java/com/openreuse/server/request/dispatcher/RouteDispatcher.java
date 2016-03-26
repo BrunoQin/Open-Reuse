@@ -12,6 +12,10 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class RouteDispatcher implements Dispatcher {
 
+    public RouteDispatcher(){
+        /** Init route map for dispatcher **/
+    }
+
     private Map<MessageType, Route> routeMap = new ConcurrentHashMap<MessageType, Route>();
 
     public void dispatch(Message message){

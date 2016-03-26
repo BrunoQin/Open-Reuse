@@ -1,14 +1,12 @@
 package com.openreuse.server.throttle;
 
-import com.google.common.util.concurrent.ListeningExecutorService;
-import com.google.common.util.concurrent.ListeningScheduledExecutorService;
-import com.google.common.util.concurrent.MoreExecutors;
 import com.openreuse.server.misc.Constants;
 import com.openreuse.server.pojo.notify.DelayedNotify;
 import com.openreuse.server.registry.RegistryManager;
 import com.openreuse.server.validate.Validators;
 
-import java.util.concurrent.*;
+import java.util.concurrent.DelayQueue;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**

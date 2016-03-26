@@ -1,6 +1,7 @@
 package com.openreuse.server.request.json;
 
 import com.openreuse.common.message.Message;
+import com.openreuse.common.message.MessageType;
 import com.openreuse.server.misc.worker.Worker;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
@@ -33,7 +34,12 @@ public class RawBytesWorker implements Worker {
             byte[] rawBytes = queue.poll(1000, TimeUnit.MILLISECONDS);
             try{
                 Message message = om.readValue(rawBytes, Message.class);
+                /** Do message verification here **/
+                String from = message.getFrom();
+
+
                 /** Dispatch the message toward different services  **/
+
 
             }catch (IOException ioe){
                 ioe.printStackTrace();

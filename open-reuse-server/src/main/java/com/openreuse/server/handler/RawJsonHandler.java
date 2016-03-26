@@ -2,6 +2,7 @@ package com.openreuse.server.handler;
 
 import com.openreuse.common.message.Message;
 import com.openreuse.server.request.json.ParseJsonService;
+import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
@@ -22,12 +23,12 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
         ByteBuf buf = (ByteBuf) msg;
         byte[] rawBytes = buf.array();
         ParseJsonService.getInstance().provideRawBytes(rawBytes);
+
     }
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx){
         ctx.write(ResponseHelper.OK_RESP_MESSAGE);
-
         /**  **/
         ctx.flush();
     }

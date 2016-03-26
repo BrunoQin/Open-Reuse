@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class Message {
 
-    public Message(MessageType type, Reserved reserved, String body, long from){
+    public Message(MessageType type, Reserved reserved, String body, String from){
         this.type = type;
         this.reserved = reserved;
         this.body = body;
@@ -17,7 +17,7 @@ public class Message {
     private MessageType type;
     private Reserved reserved;
     private String body;
-    private long from;
+    private String from;
 
     public String getBody() {
         return body;
@@ -43,11 +43,11 @@ public class Message {
         this.type = type;
     }
 
-    public long getFrom() {
+    public String getFrom() {
         return from;
     }
 
-    public void setFrom(long from) {
+    public void setFrom(String from) {
         this.from = from;
     }
 
