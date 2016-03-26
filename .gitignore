@@ -1,3 +1,4 @@
+open-reuse-server/build/
 .NERDTreeBookmarksFile
 *.class
 *.swp
@@ -40,3 +41,5 @@ maven-eclipse.xml
 .helper
 eclimd.log
 *.xmi
+build/
+*.class
