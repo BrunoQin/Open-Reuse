@@ -43,6 +43,7 @@ public class LoginRoute implements Route{
                     new Reserved("null"),
                     message.getFrom(),
                     "SERVER");
+            ThrottleStatsManager.getInstance().clrMsgCount(uid);
             try{
                 byte[] bytes = om.writeValueAsBytes(resp);
                 ByteBuf bufResp = Unpooled.copiedBuffer(bytes);

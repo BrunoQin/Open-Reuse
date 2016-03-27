@@ -20,7 +20,8 @@ public class ThrottleStatsManager {
         dumpTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                LocalPersistHelper.persistMapToLocal(statsMap, new File("stats.json"));
+                LocalPersistHelper.persistMapToLocal(statsMap,
+                        new File("stats.json"));
             }
         }, 1, Constants.REDUMP_STATS_INTERVAL_MILLIS);
     }
