@@ -1,5 +1,6 @@
 package com.openreuse.window.body;
 
+import com.openresure.client.ClientAgent;
 import com.openresure.client.listener.MessageListener;
 import com.openresure.client.listener.ValidateLoginListener;
 
@@ -242,10 +243,14 @@ public class LoginWindow extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
         if(e.getActionCommand().equals("Login")){
-            this.registerListener( new ValidateLoginListener());
+//            this.registerListener( new ValidateLoginListener());
+            String username = userNameField.getText();
+            char[] szPasswd = passwordField.getPassword();
+            String serverIP = serverField.getText();
+            boolean success = ClientAgent.loginValidate(serverIP, username, new String(szPasswd));
             this.dispose();
-            loginSuccessDialog();
-
+            if(success) loginSuccessDialog();
+            else passwordErroDialog();
         }else if(e.getActionCommand().equals("Register")){
             System.out.print("Register");
             this.dispose();

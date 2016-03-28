@@ -3,6 +3,7 @@ package com.openreuse.window.body;
 /**
  * Created by Jasmine on 16/3/28.
  */
+import com.openresure.client.ClientAgent;
 import com.openresure.client.listener.MessageListener;
 import com.openresure.client.listener.ValidateRegisterListener;
 
@@ -86,10 +87,17 @@ public class RegisterWindow extends JFrame implements ActionListener {
         char[] passwordConfirmed = confirmPasswordField.getPassword();
 
         if(password.equals(passwordConfirmed)){
-            this.registerListener(new ValidateRegisterListener());
-            JOptionPane.showMessageDialog(this,"Register Successfully","Register",JOptionPane.OK_OPTION);
-            jFrame.dispose();
-            new LoginWindow();
+//            this.registerListener(new ValidateRegisterListener());
+            boolean success = ClientAgent.registerValidate(userName, new String(password));
+            if(success){
+                JOptionPane.showMessageDialog(this, "Register Successfully","Register", JOptionPane.OK_OPTION);
+                jFrame.dispose();
+                new LoginWindow();
+            }else{
+                JOptionPane.showMessageDialog(this, "Register failure", "Server decline", JOptionPane.OK_OPTION);
+                jFrame.dispose();
+                new LoginWindow();
+            }
         }else{
             JOptionPane.showMessageDialog(this,"Password confirmed error!","Register Again",JOptionPane.OK_OPTION);
         }

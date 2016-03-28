@@ -4,6 +4,8 @@ package com.openreuse.window.body;
  * Created by Jasmine on 16/3/28.
  */
 
+import com.openresure.client.ClientAgent;
+
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
@@ -14,7 +16,7 @@ import java.awt.event.WindowEvent;
 
 public class SendMessageWindow{
 
-    private JFrame frame;
+    public JFrame frame;
     private JList userList;
     private JTextArea textArea;
     private JTextField textField;
@@ -35,24 +37,25 @@ public class SendMessageWindow{
 
 
     // 执行发送
-    public void send() {
-        if (!isConnected) {
-            JOptionPane.showMessageDialog(frame, "Connection Failed! Please Redo Login", "Error",
-                    JOptionPane.ERROR_MESSAGE);
-            new LoginWindow();
-        }
-        String message = textField.getText().trim();
-        if (message == null || message.equals("")) {
-            JOptionPane.showMessageDialog(frame, "Message cannot be null！", "Error",
-                    JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        sendMessage(txt_name.getText() + ": " + message+"\n");
-        textField.setText(null);
-    }
+//    public void send() {
+//        if (!isConnected) {
+//            JOptionPane.showMessageDialog(frame, "Connection Failed! Please Redo Login", "Error",
+//                    JOptionPane.ERROR_MESSAGE);
+//            new LoginWindow();
+//        }
+//        String message = textField.getText().trim();
+//        if (message == null || message.equals("")) {
+//            JOptionPane.showMessageDialog(frame, "Message cannot be null！", "Error",
+//                    JOptionPane.ERROR_MESSAGE);
+//            return;
+//        }
+//        sendMessage(txt_name.getText() + ": " + message+"\n");
+//        textField.setText(null);
+//    }
+
 
     // 构造方法
-    public SendMessageWindow(String username, String serverAddress) {
+    public SendMessageWindow(final String username, String serverAddress) {
         textArea = new JTextArea();
         textArea.setEditable(false);
         textArea.setForeground(Color.blue);
@@ -107,14 +110,15 @@ public class SendMessageWindow{
         // 写消息的文本框中按回车键时事件
         textField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                send();
+//                send();
+                textField.setText("");
             }
         });
 
         // 单击发送按钮时事件
         btn_send.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                send();
+                ClientAgent.sendTextMessage(username, textField.getText());
             }
         });
 
@@ -132,6 +136,7 @@ public class SendMessageWindow{
                 JOptionPane.showMessageDialog(frame, "Disconnect successfully!");
                 new LoginWindow();
                 frame.dispose();
+                ClientAgent.logout(username);
             }
         });
 
@@ -155,7 +160,6 @@ public class SendMessageWindow{
     }
 
 
-
     /**
      * 发送消息
      *
@@ -163,7 +167,6 @@ public class SendMessageWindow{
      */
     public void sendMessage(String message) {
         textArea.append(message);
-
     }
 
     public boolean closeConnection() {
@@ -171,7 +174,15 @@ public class SendMessageWindow{
     }
 
     public static void main(String args[]){
+        new SendMessageWindow("jinmin", "12345");
+    }
 
+    public void somebodyLogin(String username){
+        listModel.addElement(username);
+    }
+
+    public void somebodyLogout(String username){
+        listModel.removeElement(username);
     }
 
 }
