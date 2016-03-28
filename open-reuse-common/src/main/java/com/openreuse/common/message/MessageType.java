@@ -10,7 +10,7 @@ public enum MessageType {
     LOGOUT_MESSAGE("logout"),
     REGISTER_MESSAGE("register"),
     TEXT_MESSAGE("text"),
-//    HEARTBEAT_MESSAGE("heartbeat"),
+    HEARTBEAT_MESSAGE("heartbeat"),
     RESP_OK("response_ok"),
     RESP_INTERNAL_ERROR("response_error"),
     RESP_REFUSE("response_refuse"),
