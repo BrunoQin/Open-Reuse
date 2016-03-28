@@ -43,6 +43,7 @@ public class ClientAgent {
                 .setBody(username + "\n" + password)
                 .setType(MessageType.REGISTER_MESSAGE)
                 .setFrom(username)
+                .setTo(ConfigManager.getInstance().getCurrentServerAddr())
                 .build();
         ConfigManager.getInstance().registerSuccess = false;
         MessageSendingService.getInstance().provideMessage(message);
@@ -65,6 +66,7 @@ public class ClientAgent {
                 .setBody(username + "\n" + password)
                 .setFrom(ConfigManager.getInstance().getUsrFrom())
                 .setType(MessageType.LOGIN_MESSAGE)
+                .setTo(ConfigManager.getInstance().getCurrentServerAddr())
                 .build();
         /** Sending Validate Request **/
         MessageSendingService.getInstance().provideMessage(message);
@@ -84,6 +86,7 @@ public class ClientAgent {
                 .setBody("null")
                 .setFrom(username)
                 .setType(MessageType.LOGOUT_MESSAGE)
+                .setTo(ConfigManager.getInstance().getCurrentServerAddr())
                 .build();
         MessageSendingService.getInstance().provideMessage(message);
         ConfigManager.getInstance().unsetLogined(username);
@@ -94,6 +97,7 @@ public class ClientAgent {
                 .setBody(content)
                 .setFrom(username)
                 .setType(MessageType.TEXT_MESSAGE)
+                .setTo(ConfigManager.getInstance().getCurrentServerAddr())
                 .build();
         MessageSendingService.getInstance().provideMessage(message);
     }

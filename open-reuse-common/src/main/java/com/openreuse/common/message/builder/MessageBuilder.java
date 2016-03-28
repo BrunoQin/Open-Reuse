@@ -17,7 +17,7 @@ public class MessageBuilder {
 
     private Message message = new Message(MessageType.HEARTBEAT_MESSAGE,
             new Reserved("null"),
-            "","");
+            "","","");
 
     public Message build(){
         return message;
@@ -35,6 +35,11 @@ public class MessageBuilder {
 
     public MessageBuilder setType(MessageType type){
         message.setType(type);
+        return this;
+    }
+
+    public MessageBuilder setTo(String to){
+        message.setTo(to);
         return this;
     }
 

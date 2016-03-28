@@ -12,12 +12,12 @@ import org.codehaus.jackson.map.ObjectMapper;
 public class ResponseHelper {
     /** Pre-defined message content **/
     public final static Message OK_RESP_MESSAGE = new Message(MessageType.RESP_OK,
-            new Reserved("null"), "MESSAGE RECEIVED SUCCESS!", "SERVER");
+            new Reserved("null"), "MESSAGE RECEIVED SUCCESS!", "SERVER", "MULTICAST");
 
     public final static Message ERROR_RESP_MESSAGE = new Message(MessageType.RESP_INTERNAL_ERROR,
-            new Reserved("null"), "MESSAGE REJECTED BECAUSE OF INTERNAL SERVER ERROR", "SERVER");
+            new Reserved("null"), "MESSAGE REJECTED BECAUSE OF INTERNAL SERVER ERROR", "SERVER", "MULTICAST");
     public final static Message REDO_LOGIN_RESP_MESSAGE = new Message(MessageType.REDO_LOGIN_MESSAGE,
-            new Reserved("null"), "MESSAGE MORE THAN 100 TIMES! PLEASE REDO LOGIN", "SERVER");
+            new Reserved("null"), "MESSAGE MORE THAN 100 TIMES! PLEASE REDO LOGIN", "SERVER", "MULTICAST");
 
     public static byte[] BYTE_OK_RESP_MESSAGE;
     public static byte[] BYTE_ERROR_RESP_MESSAGE;
