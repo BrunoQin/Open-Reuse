@@ -5,6 +5,7 @@ import com.openreuse.common.message.MessageType;
 import com.openreuse.common.message.Reserved;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -20,7 +21,9 @@ import java.io.ObjectOutputStream;
 public class SimpleMessageHandler extends ChannelInboundHandlerAdapter {
 
 
-    private ByteBuf message;
+    public static ByteBuf amessage;
+
+    public static Channel achannel = null;
 
     public SimpleMessageHandler() {
         ObjectMapper om = new ObjectMapper();
@@ -34,7 +37,7 @@ public class SimpleMessageHandler extends ChannelInboundHandlerAdapter {
             String str = new String(bytes);
             System.out.println(str);
             ByteBuf buf = Unpooled.copiedBuffer(bytes);
-            this.message = buf;
+            amessage = buf;
         }catch (Throwable e){
             e.printStackTrace();
         }
@@ -42,7 +45,12 @@ public class SimpleMessageHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        ctx.writeAndFlush(message);
+        Channel channel = ctx.channel();
+        achannel = ctx.channel();
+
+        SimpleMessageHandler.achannel.write(SimpleMessageHandler.amessage);
+
+//        ctx.writeAndFlush(message);
     }
 
     @Override

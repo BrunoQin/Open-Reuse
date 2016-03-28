@@ -8,6 +8,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 
 /**
  * Created by kimmin on 3/25/16.
@@ -24,11 +25,11 @@ public class SimpleMessageClient {
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel channel) throws Exception{
+//                            channel.pipeline().addLast(new FixedLengthFrameDecoder(1024));
                             channel.pipeline().addLast(new SimpleMessageHandler());
                         }
                     });
             ChannelFuture future = bootstrap.connect(host, port).sync();
-            future.channel().closeFuture().sync();
         }catch (Throwable e){
             e.printStackTrace();
         }finally {

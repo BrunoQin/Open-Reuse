@@ -50,7 +50,7 @@ public class LoginRoute implements Route{
                 for (Iterator<Map.Entry<Long, Channel>> iter = SessionManager.getInstance().sessionIterator();
                      iter.hasNext(); ) {
                     Map.Entry<Long, Channel> entry = iter.next();
-                    entry.getValue().write(bufResp);
+                    entry.getValue().writeAndFlush(bufResp);
                     ThrottleStatsManager.getInstance().incForwardedMsgCount();
                 }
             }catch (Throwable e){

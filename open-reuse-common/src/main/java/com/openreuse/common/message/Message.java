@@ -7,6 +7,8 @@ import java.io.Serializable;
  */
 public class Message {
 
+    public Message(){}
+
     public Message(MessageType type, Reserved reserved, String body, String from){
         this.type = type;
         this.reserved = reserved;

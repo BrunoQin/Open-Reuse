@@ -1,5 +1,6 @@
 package com.openreuse.server.test.basic;
 
+import com.openreuse.server.response.ResponseHelper;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
@@ -16,7 +17,7 @@ public class SimpleClientHandler extends ChannelInboundHandlerAdapter {
     private final ByteBuf message;
 
     public SimpleClientHandler() {
-        byte[] req = "I'M CLIENT!".getBytes();
+        byte[] req = ResponseHelper.BYTE_OK_RESP_MESSAGE;
         message = Unpooled.buffer(req.length);
         message.writeBytes(req);
     }
