@@ -40,6 +40,7 @@ public class RegisterRoute implements Route {
                             .setType(MessageType.REGISTER_MESSAGE)
                             .setBody(message.getFrom())
                             .setFrom("SERVER")
+                            .setTo(message.getFrom())
                             .build();
                     byte[] bytes = new ObjectMapper().writeValueAsBytes(resp);
                     ByteBuf buf = Unpooled.copiedBuffer(bytes);

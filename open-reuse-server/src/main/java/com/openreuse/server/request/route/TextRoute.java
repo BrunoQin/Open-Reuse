@@ -30,7 +30,8 @@ public class TextRoute implements Route{
             Message resp = new Message(MessageType.TEXT_MESSAGE,
                     new Reserved("null"),
                     message.getBody(),
-                    "SERVER");
+                    "SERVER",
+                    "MULTICAST");
             byte[] bytes = om.writeValueAsBytes(resp);
             ByteBuf buf = Unpooled.copiedBuffer(bytes);
             for (Iterator<Map.Entry<Long, Channel>> iter = SessionManager.getInstance().sessionIterator();

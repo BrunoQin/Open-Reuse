@@ -31,7 +31,8 @@ public class LogoutRoute implements Route {
             Message resp = new Message(MessageType.LOGOUT_MESSAGE,
                     new Reserved("null"),
                     message.getFrom(),
-                    "SERVER");
+                    "SERVER",
+                    "MULTICAST");
             try{
                 byte[] bytes = om.writeValueAsBytes(resp);
                 ByteBuf bufResp = Unpooled.copiedBuffer(bytes);

@@ -42,7 +42,8 @@ public class LoginRoute implements Route{
             Message resp = new Message(MessageType.LOGIN_MESSAGE,
                     new Reserved("null"),
                     message.getFrom(),
-                    "SERVER");
+                    "SERVER",
+                    "MULTICAST");
             ThrottleStatsManager.getInstance().clrMsgCount(uid);
             try{
                 byte[] bytes = om.writeValueAsBytes(resp);
