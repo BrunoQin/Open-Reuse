@@ -1,7 +1,6 @@
 package com.openresure.client.queue;
 
 import com.openreuse.common.message.Message;
-import sun.org.mozilla.javascript.internal.ast.Block;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;

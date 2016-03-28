@@ -5,6 +5,7 @@ import com.openreuse.common.message.MessageType;
 import com.openreuse.common.message.Reserved;
 import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
+import com.openreuse.server.response.ResponseService;
 import com.openreuse.server.throttle.ThrottleStatsManager;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -30,15 +31,9 @@ public class TextRoute implements Route{
             Message resp = new Message(MessageType.TEXT_MESSAGE,
                     new Reserved("null"),
                     message.getBody(),
-                    "SERVER");
-            byte[] bytes = om.writeValueAsBytes(resp);
-            ByteBuf buf = Unpooled.copiedBuffer(bytes);
-            for (Iterator<Map.Entry<Long, Channel>> iter = SessionManager.getInstance().sessionIterator();
-                 iter.hasNext(); ) {
-                Map.Entry<Long, Channel> entry = iter.next();
-                entry.getValue().writeAndFlush(buf);
-                ThrottleStatsManager.getInstance().incForwardedMsgCount();
-            }
+                    "SERVER",
+                    "MULTICAST");
+            ResponseService.getInstance().sendMessage(resp);
             if(!ThrottleStatsManager.getInstance().checkMsgCount(uid)) {
                 Channel channel = SessionManager.getInstance().getSession(uid);
                 ByteBuf bufResp = Unpooled.copiedBuffer(ResponseHelper.BYTE_REDO_LOGIN_RESP_MESSAGE);

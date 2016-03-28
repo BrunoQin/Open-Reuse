@@ -7,17 +7,29 @@ public class Message {
 
     public Message(){}
 
-    public Message(MessageType type, Reserved reserved, String body, String from){
+    public Message(MessageType type, Reserved reserved, String body, String from, String to){
         this.type = type;
         this.reserved = reserved;
         this.body = body;
         this.from = from;
+        this.to = to;
     }
 
     private MessageType type;
     private Reserved reserved;
     private String body;
     private String from;
+    private String to;
+
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
 
     public String getBody() {
         return body;

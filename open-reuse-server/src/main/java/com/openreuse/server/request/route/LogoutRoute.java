@@ -6,6 +6,7 @@ import com.openreuse.common.message.Reserved;
 import com.openreuse.server.registry.RegistryManager;
 import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
+import com.openreuse.server.response.ResponseService;
 import com.openreuse.server.throttle.ThrottleStatsManager;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -31,18 +32,9 @@ public class LogoutRoute implements Route {
             Message resp = new Message(MessageType.LOGOUT_MESSAGE,
                     new Reserved("null"),
                     message.getFrom(),
-                    "SERVER");
-            try{
-                byte[] bytes = om.writeValueAsBytes(resp);
-                ByteBuf bufResp = Unpooled.copiedBuffer(bytes);
-                for (Iterator<Map.Entry<Long, Channel>> iter = SessionManager.getInstance().sessionIterator();
-                     iter.hasNext(); ) {
-                    Map.Entry<Long, Channel> entry = iter.next();
-                    entry.getValue().writeAndFlush(bufResp);
-                }
-            }catch (Throwable e){
-                e.printStackTrace();
-            }
+                    "SERVER",
+                    "MULTICAST");
+            ResponseService.getInstance().sendMessage(resp);
             SessionManager.getInstance().removeSession(uid);
             return true;
         }
