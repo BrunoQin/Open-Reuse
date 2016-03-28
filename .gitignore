@@ -41,3 +41,5 @@ maven-eclipse.xml
 .helper
 eclimd.log
 *.xmi
+build/
+*.class

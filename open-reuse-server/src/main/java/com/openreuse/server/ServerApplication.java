@@ -1,6 +1,7 @@
 package com.openreuse.server;
 
 import com.openreuse.server.handler.EchoHandler;
+import com.openreuse.server.handler.RawJsonHandler;
 import com.openreuse.server.misc.Constants;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -25,7 +26,7 @@ public class ServerApplication {
         bootstrap.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class)
                 .option(ChannelOption.SO_BACKLOG, 1024)
-                .childHandler(new EchoHandler());
+                .childHandler(new RawJsonHandler());
         try {
             ChannelFuture future = bootstrap.bind(Constants.SERVER_PORT).sync();
             future.channel().closeFuture().sync();
