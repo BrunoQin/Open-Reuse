@@ -1,5 +1,3 @@
-//package com.openreuse.server.test.validate;
-//
 //import com.openreuse.server.pojo.notify.DelayedNotify;
 //import com.openreuse.server.registry.RegistryManager;
 //import com.openreuse.server.throttle.ThrottleManager;
@@ -9,9 +7,20 @@
 //import org.mockito.Mock;
 //import org.mockito.MockitoAnnotations;
 //
-///**
-// * Created by kimmin on 3/20/16.
-// */
+////package com.openreuse.server.test.validate;
+////
+////import com.openreuse.server.pojo.notify.DelayedNotify;
+////import com.openreuse.server.registry.RegistryManager;
+////import com.openreuse.server.throttle.ThrottleManager;
+////import org.junit.After;
+////import org.junit.Before;
+////import org.junit.Test;
+////import org.mockito.Mock;
+////import org.mockito.MockitoAnnotations;
+////
+/////**
+//// * Created by kimmin on 3/20/16.
+//// */
 //public class SimpleValidateTest {
 //    @Mock
 //    private DelayedNotify mockNotify;

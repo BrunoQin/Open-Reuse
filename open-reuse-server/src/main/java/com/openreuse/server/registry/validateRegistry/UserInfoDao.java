@@ -73,6 +73,17 @@ public class UserInfoDao {
         return id;
     }
 
+    //Validate username and password
+    public boolean validatePassword(String username, String password){
+        Criteria criteria = session.createCriteria(UserInfoEntity.class);
+        Criterion criterion = Restrictions.like("username",username);
+        criteria.add(criterion);
+        List<UserInfoEntity> list = criteria.list();
+        if(list != null && !list.isEmpty() && password.equals(list.get(0).getPassword())){
+            return true;
+        }
+        return false;
+    }
 
 }
 

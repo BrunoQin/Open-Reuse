@@ -1,91 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a41de5f-efff-4b16-9652-9d8410d54342" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/cache.properties.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/fileHashes.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/fileSnapshots.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/outputFileStates.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/taskArtifacts.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/cache.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/ClientAgent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/config/ConfigManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/handler/IncomingMessageHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/MessageListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateLoginListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/queue/MessageQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/sender/MessageSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/service/ConnectionMgmtService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/service/MessageNotifyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/service/MessageSendingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/api/TestAPI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/builder/MessageBuilder.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/ClientApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/action/OpenReuseClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/channel/BaseChannelInit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/channel/RecieveHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/publish/MessagePublisher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/task/worker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/util/MsgHandler.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="a4fe82db-86ad-4f73-aacc-3d2d4e3b8603" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Open-Reuse.iml" afterPath="$PROJECT_DIR$/Open-Reuse.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-client-api/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" afterPath="$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServer.java" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServerHandler.java" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServerHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-window/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-client-window/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-common/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" afterPath="$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Message.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Reserved.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Reserved.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-server/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" afterPath="$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/ServerApplication.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/ServerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/EchoHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/EchoHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/RawJsonHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/RawJsonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/Constants.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/Worker.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/Worker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/WorkerPool.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/WorkerPool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDao.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoEntity.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/RequestHelper.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/RequestHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/Dispatcher.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/Dispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/RouteDispatcher.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/RouteDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/ParseJsonService.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/ParseJsonService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorker.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/DisconnectRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/DisconnectRoute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LoginRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LoginRoute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LogoutRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LogoutRoute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/RegisterRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/RegisterRoute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/Route.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/Route.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/TextRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/TextRoute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/CacheMapRefresher.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/CacheMapRefresher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/SessionManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/SessionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/response/ResponseHelper.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/response/ResponseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClient.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientConnTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientConnTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageClient.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java" />
     </list>
     <ignored path="Open-Reuse.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/open-reuse-client-api/.gradle/" />
     <ignored path="$PROJECT_DIR$/open-reuse-client-api/build/" />
     <ignored path="$PROJECT_DIR$/open-reuse-common/.gradle/" />
@@ -96,7 +27,6 @@
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/open-reuse-client-window/.gradle/" />
     <ignored path="$PROJECT_DIR$/open-reuse-client-window/build/" />
-    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,24 +48,6 @@
       <PATH_ELEMENT>
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - OpenReuse@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="UserInfo" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - OpenReuse@10.60.42.69" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
   </component>
@@ -159,6 +71,72 @@
                 <option name="myItemId" value="open-reuse" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
               </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":open-reuse-server" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="open-reuse" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":open-reuse-server" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Source Sets" />
+                <option name="myItemType" value="org.jetbrains.plugins.gradle.service.project.view.GradleViewContributor$SourceSetsNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="test" />
+                <option name="myItemType" value="org.jetbrains.plugins.gradle.service.project.view.GradleViewContributor$SourceSetNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Dependencies" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="open-reuse" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":open-reuse-server" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Source Sets" />
+                <option name="myItemType" value="org.jetbrains.plugins.gradle.service.project.view.GradleViewContributor$SourceSetsNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="main" />
+                <option name="myItemType" value="org.jetbrains.plugins.gradle.service.project.view.GradleViewContributor$SourceSetNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Dependencies" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="open-reuse" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
             </PATH>
           </tree_state>
         </projects_view>
@@ -170,118 +148,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="open-reuse-client-api.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/MessageListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidateLoginListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateLoginListener.java">
+      <file leaf-file-name="UserInfoDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidateRegisterListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java">
+      <file leaf-file-name="RegistryManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="-554">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Open-Reuse.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Open-Reuse.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendMessageWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3952#4079#0" expanded="true" />
-                <element signature="e#4078#4079#0" expanded="true" />
-                <element signature="e#5076#5077#0" expanded="true" />
-                <element signature="e#5134#5135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/RegisterWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Cao Qi &lt;caoqiyeah2014@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="caoqi_dev" />
-      </map>
-    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1016,23 +906,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/open-reuse-server/build.gradle" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/main/Resource/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/TestUserInfoDao.java" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/registry/validateRegistry/UserInfoDaoTest.java" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDaoTest.java" />
+        <option value="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java" />
         <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoEntity.java" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDao.java" />
-        <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java" />
-        <option value="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/ReceivedMessage.java" />
-        <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java" />
-        <option value="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/PrintToWindow.java" />
-        <option value="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/Main.java" />
-        <option value="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/RegisterWindow.java" />
-        <option value="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java" />
-        <option value="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java" />
       </list>
     </option>
   </component>
@@ -1048,6 +923,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -1060,7 +938,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -1079,69 +957,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.openreuse.server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.openreuse.server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="registry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1170,7 +987,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-window" />
+              <option name="myItemId" value="open-reuse-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1184,13 +1001,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-window" />
+              <option name="myItemId" value="open-reuse-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1202,7 +1023,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-window" />
+              <option name="myItemId" value="open-reuse-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1224,7 +1109,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-window" />
+              <option name="myItemId" value="open-reuse-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1240,7 +1151,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="window" />
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-client-window" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1259,140 +1256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="window" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="body" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-client-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listener" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1401,34 +1264,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chat-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/jar/mockito-all-1.8.4.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="f46f4b22-d908-4ef4-a59a-5a5901663b89" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.openreuse.server.registry.validateRegistry" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="com.openreuse.server.registry.validateRegistry" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.LoginWindow">
-    <configuration default="false" name="UserInfoDaoTest.TestAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserInfoDaoTest.TestValidatePassword">
+    <configuration default="false" name="UserInfoDaoTest.TestValidatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.openreuse.server.test.validate.*" />
@@ -1440,7 +1287,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.openreuse.server.test.validate" />
       <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.validate.UserInfoDaoTest" />
-      <option name="METHOD_NAME" value="TestAddUser" />
+      <option name="METHOD_NAME" value="TestValidatePassword" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1480,64 +1327,25 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RegisterWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.openreuse.window.body.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.window.body.RegisterWindow" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration default="false" name="SimpleValidateTest.testRegistryExpire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="open-reuse-server_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.openreuse.server.test.validate" />
+      <option name="MAIN_CLASS_NAME" value="SimpleValidateTest" />
+      <option name="METHOD_NAME" value="testRegistryExpire" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/open-reuse-server" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="open-reuse-client-window_main" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="LoginWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.openreuse.window.body.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.window.body.LoginWindow" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="open-reuse-client-window_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SendMessageWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.openreuse.window.body.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.window.body.SendMessageWindow" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="open-reuse-client-window_main" />
-      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1833,7 +1641,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="main" />
+      <module name="open-reuse-client-api" />
       <envs />
       <method />
     </configuration>
@@ -1941,20 +1749,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestAddUser" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestValidatePassword" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestGetIdbyName" />
-      <item index="2" class="java.lang.String" itemvalue="Application.RegisterWindow" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LoginWindow" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SendMessageWindow" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleValidateTest.testRegistryExpire" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LoginWindow" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SendMessageWindow" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RegisterWindow" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestGetIdbyName" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestAddUser" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestValidatePassword" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SimpleValidateTest.testRegistryExpire" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserInfoDaoTest.TestGetIdbyName" />
       </list>
     </recent_temporary>
   </component>
@@ -1963,63 +1767,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0a41de5f-efff-4b16-9652-9d8410d54342" name="Default" comment="" />
-      <created>1458986849063</created>
+      <changelist id="a4fe82db-86ad-4f73-aacc-3d2d4e3b8603" name="Default" comment="" />
+      <created>1459158314097</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1458986849063</updated>
-      <workItem from="1458986852074" duration="137000" />
-      <workItem from="1458986992340" duration="526000" />
-      <workItem from="1458987717464" duration="8835000" />
-      <workItem from="1459103478415" duration="939000" />
-      <workItem from="1459128356069" duration="5175000" />
-      <workItem from="1459135169091" duration="4413000" />
-      <workItem from="1459144746373" duration="5637000" />
+      <updated>1459158314097</updated>
+      <workItem from="1459158315675" duration="415000" />
+      <workItem from="1459159012852" duration="614000" />
     </task>
-    <task id="LOCAL-00001" summary="TMP SAVE&#10;(cherry picked from commit 0e3f5cd)">
-      <created>1458992767108</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1458992767108</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="UserInfoDaoTest_TestAddUser - 2016.03.26 at 19h 59m 14s.xml">
-      <configuration name="UserInfoDaoTest.TestAddUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestAddUser - 2016.03.26 at 20h 01m 09s.xml">
-      <configuration name="UserInfoDaoTest.TestAddUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestAddUser - 2016.03.26 at 20h 06m 56s.xml">
-      <configuration name="UserInfoDaoTest.TestAddUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestAddUser - 2016.03.26 at 20h 07m 17s.xml">
-      <configuration name="UserInfoDaoTest.TestAddUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestAddUser - 2016.03.26 at 20h 37m 06s.xml">
-      <configuration name="UserInfoDaoTest.TestAddUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestAddUser - 2016.03.26 at 20h 38m 57s.xml">
-      <configuration name="UserInfoDaoTest.TestAddUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestGetIdbyName - 2016.03.26 at 20h 45m 45s.xml">
-      <configuration name="UserInfoDaoTest.TestGetIdbyName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestGetIdbyName - 2016.03.26 at 20h 46m 08s.xml">
-      <configuration name="UserInfoDaoTest.TestGetIdbyName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestGetIdbyName - 2016.03.26 at 20h 55m 58s.xml">
-      <configuration name="UserInfoDaoTest.TestGetIdbyName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserInfoDaoTest_TestGetIdbyName - 2016.03.26 at 20h 58m 28s.xml">
-      <configuration name="UserInfoDaoTest.TestGetIdbyName" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25662000" />
+    <option name="totallyTimeSpent" value="1029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -2027,26 +1786,26 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3211731" sideWeight="0.34732825" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2353362" sideWeight="0.65267175" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15450644" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22603719" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2054,55 +1813,21 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19670959" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3211731" sideWeight="0.34732825" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2353362" sideWeight="0.65267175" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15450644" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="TMP SAVE&#10;(cherry picked from commit 0e3f5cd)" />
-    <option name="LAST_COMMIT_MESSAGE" value="TMP SAVE&#10;(cherry picked from commit 0e3f5cd)" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2111,264 +1836,102 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f46f4b22-d908-4ef4-a59a-5a5901663b89/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f46f4b22-d908-4ef4-a59a-5a5901663b89/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ea136ee7-6527-45cc-9b8c-fd0da60b6aed/console.sql">
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/TestUserInfoDao.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f46f4b22-d908-4ef4-a59a-5a5901663b89/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7efec84a/f46f4b22-d908-4ef4-a59a-5a5901663b89/OpenReuse.userInfo" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.2.1.Final/43251716227d467ff6195d48451b1cbb7ff052a6/hibernate-core-4.2.1.Final-sources.jar!/org/hibernate/Criteria.java">
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/pojo/notify/DelayedNotify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoEntity.java">
+    <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDao.java">
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7efec84a/ea136ee7-6527-45cc-9b8c-fd0da60b6aed/OpenReuse.UserInfo" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/ReceivedMessage.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Reserved.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/PrintToWindow.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/QQMain.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/MyFrame.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/QQServer.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/MyListRender.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/ListItem.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/User.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/Snippet.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/Main.java" />
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/QQ/User_listAction.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/RegisterWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3952#4079#0" expanded="true" />
-            <element signature="e#4078#4079#0" expanded="true" />
-            <element signature="e#5076#5077#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Open-Reuse.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/950085fc-886b-48a8-a87d-021cde7a1c7a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Open-Reuse.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="116" column="2" selection-start-line="116" selection-start-column="2" selection-end-line="116" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2376,37 +1939,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/MessageListener.java">
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/pojo/notify/DelayedNotify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateLoginListener.java">
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java">
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="-554">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2462,7 +2023,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>open-reuse-client-window_main|open-reuse-client-window</last-edited>
+          <last-edited>open-reuse-server</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2486,7 +2047,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Hibernate 4.2.2-4.2.2</last-edited>
+          <last-edited>mockito-all-1.8.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
