@@ -36,13 +36,13 @@ public class TextRoute implements Route{
             for (Iterator<Map.Entry<Long, Channel>> iter = SessionManager.getInstance().sessionIterator();
                  iter.hasNext(); ) {
                 Map.Entry<Long, Channel> entry = iter.next();
-                entry.getValue().write(buf);
+                entry.getValue().writeAndFlush(buf);
                 ThrottleStatsManager.getInstance().incForwardedMsgCount();
             }
             if(!ThrottleStatsManager.getInstance().checkMsgCount(uid)) {
                 Channel channel = SessionManager.getInstance().getSession(uid);
                 ByteBuf bufResp = Unpooled.copiedBuffer(ResponseHelper.BYTE_REDO_LOGIN_RESP_MESSAGE);
-                channel.write(bufResp);
+                channel.writeAndFlush(bufResp);
             }
             return true;
         }catch (Throwable e){

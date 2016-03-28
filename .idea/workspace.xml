@@ -2,82 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a41de5f-efff-4b16-9652-9d8410d54342" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/Dispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/RouteDispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/DisconnectRoute.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LoginRoute.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LogoutRoute.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/RegisterRoute.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/Route.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/TextRoute.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/CacheMapRefresher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/SessionManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_all_4_0_35_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/main/com/openresure/client/ClientApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/main/com/openresure/client/action/OpenReuseClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/main/com/openresure/client/action/OpenReuseClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/main/com/openresure/client/channel/BaseChannelInit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/main/com/openresure/client/channel/RecieveHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/main/com/openresure/client/task/Worker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/test/com/openreuse/client/EchoServer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/test/com/openreuse/client/EchoServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/classes/test/com/openreuse/client/EchoServerHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/libs/open-reuse-client-api-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/build/tmp/jar/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-common/build/classes/main/com/openreuse/common/message/Message.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-common/build/classes/main/com/openreuse/common/message/MessageType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-common/build/classes/main/com/openreuse/common/message/Reserved.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-common/build/classes/main/com/openreuse/common/persist/LocalPersistHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-common/build/libs/open-reuse-common-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-common/build/tmp/jar/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/ServerApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/handler/EchoHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/misc/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/pojo/client/AbstactClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/pojo/notify/DelayedNotify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/registry/RegistryManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/registry/RegistryManager$Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/registry/RegistryManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/response/ResponseHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/throttle/ThrottleManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/throttle/ThrottleManager$Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/throttle/ThrottleManager$ThrottleWorker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/throttle/ThrottleManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/main/com/openreuse/server/validate/Validators.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleClientConnTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleClientHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleMessageClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleMessageClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/basic/SimpleMessageHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-server/build/classes/test/com/openreuse/server/test/validate/SimpleValidateTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/cache.properties.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/fileHashes.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/fileSnapshots.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/outputFileStates.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/taskArtifacts.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/cache.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/ClientAgent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/config/ConfigManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/handler/IncomingMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/MessageListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateLoginListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/queue/MessageQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/sender/MessageSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/service/ConnectionMgmtService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/service/MessageNotifyService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/service/MessageSendingService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/api/TestAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/builder/MessageBuilder.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/ClientApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/action/OpenReuseClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/channel/BaseChannelInit.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/channel/RecieveHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/publish/MessagePublisher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/task/worker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/util/MsgHandler.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.9/taskArtifacts/cache.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Open-Reuse.iml" afterPath="$PROJECT_DIR$/Open-Reuse.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-client-api/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" afterPath="$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServer.java" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServerHandler.java" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/com/openreuse/client/EchoServerHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-window/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-client-window/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-common/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" afterPath="$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Message.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Message.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/MessageType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Reserved.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/message/Reserved.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-server/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" afterPath="$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/ServerApplication.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/ServerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/EchoHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/EchoHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/RawJsonHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/handler/RawJsonHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/Constants.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/Worker.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/Worker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/WorkerPool.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/worker/WorkerPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDao.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoEntity.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/validateRegistry/UserInfoEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/RequestHelper.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/RequestHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/Dispatcher.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/Dispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/RouteDispatcher.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/dispatcher/RouteDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/ParseJsonService.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/ParseJsonService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorker.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/json/RawBytesWorkerPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/DisconnectRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/DisconnectRoute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LoginRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LoginRoute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LogoutRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/LogoutRoute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/RegisterRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/RegisterRoute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/Route.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/Route.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/TextRoute.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/route/TextRoute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/CacheMapRefresher.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/CacheMapRefresher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/SessionManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/SessionManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/response/ResponseHelper.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/response/ResponseHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClient.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientConnTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientConnTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleClientHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageClient.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageHandler.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/SimpleMessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java" />
     </list>
     <ignored path="Open-Reuse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -166,11 +170,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="241" column="51" selection-start-line="241" selection-start-column="51" selection-end-line="241" selection-end-column="51" />
+            <state relative-caret-position="286">
+              <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,7 +182,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendMessageWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="open-reuse-client-api.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/MessageListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidateLoginListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateLoginListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidateRegisterListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Open-Reuse.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Open-Reuse.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMessageWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="546">
@@ -895,7 +949,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="8753959191000" />
+        <entry key="$PROJECT_DIR$" value="8754766034000" />
         <entry key="$PROJECT_DIR$/../OpenReuse/Open-Reuse" value="8753274331000" />
       </map>
     </option>
@@ -1102,6 +1156,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse-client-window" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1110,6 +1178,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse-client-window" />
@@ -1124,6 +1196,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse-client-window" />
@@ -1142,6 +1218,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse-client-window" />
@@ -1168,6 +1248,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="open-reuse-client-window" />
@@ -1191,6 +1275,124 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="body" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-client-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-client-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-client-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-client-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-client-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listener" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1772,7 +1974,7 @@
       <workItem from="1459103478415" duration="939000" />
       <workItem from="1459128356069" duration="5175000" />
       <workItem from="1459135169091" duration="4413000" />
-      <workItem from="1459144746373" duration="4869000" />
+      <workItem from="1459144746373" duration="5637000" />
     </task>
     <task id="LOCAL-00001" summary="TMP SAVE&#10;(cherry picked from commit 0e3f5cd)">
       <created>1458992767108</created>
@@ -1817,11 +2019,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24894000" />
+    <option name="totallyTimeSpent" value="25662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1833,7 +2035,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3211731" sideWeight="0.34732825" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1909,40 +2111,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3952#4079#0" expanded="true" />
-            <element signature="e#4078#4079#0" expanded="true" />
-            <element signature="e#5076#5077#0" expanded="true" />
-            <element signature="e#5134#5135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/RegisterWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2168,16 +2336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="241" column="51" selection-start-line="241" selection-start-column="51" selection-end-line="241" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/RegisterWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
@@ -2198,6 +2356,56 @@
             <element signature="e#4078#4079#0" expanded="true" />
             <element signature="e#5076#5077#0" expanded="true" />
             <element signature="e#5134#5135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Open-Reuse.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/MessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateLoginListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

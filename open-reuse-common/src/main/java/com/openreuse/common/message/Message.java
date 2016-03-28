@@ -1,11 +1,11 @@
 package com.openreuse.common.message;
 
-import java.io.Serializable;
-
 /**
  * Created by kimmin on 3/23/16.
  */
 public class Message {
+
+    public Message(){}
 
     public Message(MessageType type, Reserved reserved, String body, String from){
         this.type = type;

@@ -1,6 +1,8 @@
 package com.openreuse.server.request.route;
 
 import com.openreuse.common.message.Message;
+import com.openreuse.common.message.MessageType;
+import com.openreuse.common.message.builder.MessageBuilder;
 import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
 import io.netty.buffer.ByteBuf;
@@ -34,7 +36,13 @@ public class RegisterRoute implements Route {
                 String password = br.readLine();
                 boolean success = SessionManager.getInstance().registerUsr(username, password);
                 if(success){
-                    ByteBuf buf = Unpooled.copiedBuffer(ResponseHelper.BYTE_OK_RESP_MESSAGE);
+                    Message resp = MessageBuilder.messageBuilder()
+                            .setType(MessageType.REGISTER_MESSAGE)
+                            .setBody(message.getFrom())
+                            .setFrom("SERVER")
+                            .build();
+                    byte[] bytes = new ObjectMapper().writeValueAsBytes(resp);
+                    ByteBuf buf = Unpooled.copiedBuffer(bytes);
                     channel.write(buf);
                 }else{
                     ByteBuf buf = Unpooled.copiedBuffer(ResponseHelper.BYTE_ERROR_RESP_MESSAGE);

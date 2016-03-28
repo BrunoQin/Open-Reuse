@@ -8,6 +8,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 import org.junit.After;
 import org.junit.Test;
 
@@ -28,6 +29,7 @@ public class SimpleClient {
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel channel) throws Exception{
+//                            channel.pipeline().addLast(new FixedLengthFrameDecoder(1024));
                             channel.pipeline().addLast(new SimpleClientHandler());
                         }
                     });
