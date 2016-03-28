@@ -20,4 +20,9 @@ public class RedoLoginListener implements MessageListener {
         new LoginWindow();
     }
 
+
+    public boolean isValid(){
+        return null == this.window;
+    }
+
 }

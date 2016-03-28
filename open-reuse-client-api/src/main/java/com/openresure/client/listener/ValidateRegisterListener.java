@@ -13,4 +13,9 @@ public class ValidateRegisterListener implements MessageListener {
             ConfigManager.getInstance().registerSuccess = true;
         }
     }
+
+    public boolean isValid(){
+        return true;
+    }
+
 }

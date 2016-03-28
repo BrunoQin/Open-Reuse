@@ -42,7 +42,8 @@ public class MessageNotifyService {
             Collection<MessageListener> listeners = Collections.unmodifiableCollection(list);
             Iterator<MessageListener> iter = listeners.iterator();
             while(iter.hasNext()){
-                iter.next().onMessageArrive(message.getBody());
+                MessageListener listener = iter.next();
+                if(listener.isValid()) listener.onMessageArrive(message.getBody());
             }
         }
     }

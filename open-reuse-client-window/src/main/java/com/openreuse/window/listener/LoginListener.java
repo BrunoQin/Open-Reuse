@@ -21,4 +21,7 @@ public class LoginListener implements MessageListener{
         window.somebodyLogin(body);
     }
 
+    public boolean isValid(){
+        return null == this.window;
+    }
 }

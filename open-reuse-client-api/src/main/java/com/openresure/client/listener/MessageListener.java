@@ -5,4 +5,5 @@ package com.openresure.client.listener;
  */
 public interface MessageListener {
     void onMessageArrive(String body);
+    boolean isValid();
 }

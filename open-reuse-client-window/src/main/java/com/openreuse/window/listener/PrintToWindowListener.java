@@ -17,4 +17,9 @@ public class PrintToWindowListener implements MessageListener {
     public void onMessageArrive(String body){
         window.sendMessage(body);
     }
+
+
+    public boolean isValid(){
+        return null == this.window;
+    }
 }

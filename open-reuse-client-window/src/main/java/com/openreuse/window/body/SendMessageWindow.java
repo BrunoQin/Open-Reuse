@@ -35,6 +35,16 @@ public class SendMessageWindow{
 
     private UserLoginListener userLoginListener;
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**  **/
+    private String username = "";
 
     // 执行发送
 //    public void send() {
@@ -56,6 +66,9 @@ public class SendMessageWindow{
 
     // 构造方法
     public SendMessageWindow(final String username, String serverAddress) {
+
+        this.username = username;
+
         textArea = new JTextArea();
         textArea.setEditable(false);
         textArea.setForeground(Color.blue);

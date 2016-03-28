@@ -15,7 +15,12 @@ public class LogoutListener implements MessageListener {
     private SendMessageWindow window;
 
     public void onMessageArrive(String body){
+        if(null == this.window) return;
         /** Message body contains username only **/
         window.somebodyLogout(body);
+    }
+
+    public boolean isValid(){
+        return null == this.window;
     }
 }

@@ -10,4 +10,8 @@ public class ValidateLoginListener implements MessageListener {
         /** The body is who actually logined **/
         ConfigManager.getInstance().setLogined(body);
     }
+
+    public boolean isValid(){
+        return true;
+    }
 }
