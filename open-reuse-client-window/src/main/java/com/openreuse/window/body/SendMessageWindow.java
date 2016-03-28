@@ -11,8 +11,6 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 
 public class SendMessageWindow{
 
@@ -22,7 +20,6 @@ public class SendMessageWindow{
     private JTextField textField;
     private JTextField txt_hostIp;
     private JTextField txt_name;
-    private JButton btn_start;
     private JButton btn_stop;
     private JButton btn_send;
     private JPanel northPanel;
@@ -31,9 +28,7 @@ public class SendMessageWindow{
     private JScrollPane leftScroll;
     private JSplitPane centerSplit;
     private DefaultListModel listModel;
-    private boolean isConnected = true;
 
-    private UserLoginListener userLoginListener;
 
     public String getUsername() {
         return username;
@@ -69,6 +64,7 @@ public class SendMessageWindow{
 
         this.username = username;
 
+
         textArea = new JTextArea();
         textArea.setEditable(false);
         textArea.setForeground(Color.blue);
@@ -77,20 +73,19 @@ public class SendMessageWindow{
         txt_hostIp.setEditable(false);
         txt_name = new JTextField(username);
         txt_name.setEditable(false);
-        btn_start = new JButton("Connect");
+
         btn_stop = new JButton("Disconnect");
         btn_send = new JButton("Send");
         listModel = new DefaultListModel();
         userList = new JList(listModel);
 
         northPanel = new JPanel();
-        northPanel.setLayout(new GridLayout(1, 6));
+        northPanel.setLayout(new GridLayout(1, 5));
 
         northPanel.add(new JLabel("Server Address"));
         northPanel.add(txt_hostIp);
         northPanel.add(new JLabel(" User Name"));
         northPanel.add(txt_name);
-        northPanel.add(btn_start);
         northPanel.add(btn_stop);
         northPanel.setBorder(new TitledBorder("Server"));
 
@@ -107,7 +102,7 @@ public class SendMessageWindow{
                 rightScroll);
         centerSplit.setDividerLocation(150);
 
-        frame = new JFrame("Client");
+        frame = new JFrame(getUsername());
 
         frame.setLayout(new BorderLayout());
         frame.add(northPanel, "North");
@@ -135,14 +130,6 @@ public class SendMessageWindow{
             }
         });
 
-        // 单击连接按钮时事件
-        btn_start.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                new LoginWindow();
-                frame.dispose();
-            }
-        });
-
         // 单击断开按钮时事件
         btn_stop.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -153,23 +140,6 @@ public class SendMessageWindow{
             }
         });
 
-        // 关闭窗口时事件
-        frame.addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                if (isConnected) {
-                    closeConnection();// 关闭连接
-                }
-                System.exit(0);// 退出程序
-            }
-        });
-    }
-
-    public interface UserLoginListener{
-        String updateUserList();
-    }
-
-    public void registerListener(UserLoginListener userLoginListener){
-        this.userLoginListener = userLoginListener;
     }
 
 
@@ -180,10 +150,6 @@ public class SendMessageWindow{
      */
     public void sendMessage(String message) {
         textArea.append(message);
-    }
-
-    public boolean closeConnection() {
-        return true;
     }
 
     public static void main(String args[]){
