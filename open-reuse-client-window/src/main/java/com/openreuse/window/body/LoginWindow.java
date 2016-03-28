@@ -1,6 +1,8 @@
 package com.openreuse.window.body;
 
-import com.openreuse.common.message.*;
+import com.openresure.client.listener.MessageListener;
+import com.openresure.client.listener.ValidateLoginListener;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -154,7 +156,8 @@ import java.awt.event.ActionListener;
 
 public class LoginWindow extends JFrame implements ActionListener {
     JLabel userNameLabel, passwordLabel, serverLabel;
-    JTextField userNameField, passwordField, serverField;
+    JTextField userNameField, serverField;
+    JPasswordField passwordField;
     JFrame jFrame;
     JPanel jPanel;
     JButton loginButton, registerButton;
@@ -175,7 +178,7 @@ public class LoginWindow extends JFrame implements ActionListener {
         passwordLabel = new JLabel("Password");
         serverLabel = new JLabel("Server Address");
         userNameField = new JTextField();
-        passwordField = new JTextField();
+        passwordField = new JPasswordField();
         serverField = new JTextField();
 
         loginButton = new JButton("Login");
@@ -239,7 +242,7 @@ public class LoginWindow extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
         if(e.getActionCommand().equals("Login")){
-            messageListener.onMessageArrived("Login");
+            this.registerListener( new ValidateLoginListener());
             this.dispose();
             loginSuccessDialog();
 
@@ -252,11 +255,8 @@ public class LoginWindow extends JFrame implements ActionListener {
         }
     }
 
-    public interface MessageListener{
-        void onMessageArrived(String string);
-    }
 
-    public void registerListener(MessageType type, MessageListener messageListener){
+    public void registerListener( MessageListener messageListener){
         this.messageListener = messageListener;
     }
 

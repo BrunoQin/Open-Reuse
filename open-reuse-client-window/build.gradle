@@ -13,5 +13,9 @@ repositories {
 }
 
 dependencies {
+    compile project(":open-reuse-server")
+    compile project(":open-reuse-common")
+    compile project(":open-reuse-client-api")
+
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }

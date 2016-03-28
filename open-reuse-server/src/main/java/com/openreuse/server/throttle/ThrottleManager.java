@@ -1,7 +1,7 @@
 package com.openreuse.server.throttle;
 
 import com.openreuse.server.misc.Constants;
-import com.openreuse.server.pojo.notify.DelayedNotify;
+import com.openreuse.server.pojo.notify.*;
 import com.openreuse.server.registry.RegistryManager;
 import com.openreuse.server.validate.Validators;
 
@@ -22,7 +22,7 @@ public class ThrottleManager {
     }
 
     /** Scheduled pool for managing incoming log-in frequency **/
-    private DelayQueue<DelayedNotify> delayQueue = new DelayQueue<DelayedNotify>();
+    private DelayQueue<DelayedNotify> delayQueue = new DelayQueue();
     private Thread[] workerThreads = new Thread[Constants.THROTTLE_WORKER_NUMBER];
     private AtomicBoolean runFlag = new AtomicBoolean(true);
 

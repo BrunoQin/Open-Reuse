@@ -13,6 +13,7 @@ dependencies {
 
     compile project(":open-reuse-common")
 
+
     compile 'io.netty:netty-all:4.0.35.Final'
     compile "com.google.guava:guava:18.0"
     compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'

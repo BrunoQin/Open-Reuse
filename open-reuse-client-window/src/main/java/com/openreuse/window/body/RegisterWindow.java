@@ -3,6 +3,9 @@ package com.openreuse.window.body;
 /**
  * Created by Jasmine on 16/3/28.
  */
+import com.openresure.client.listener.MessageListener;
+import com.openresure.client.listener.ValidateRegisterListener;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,6 +14,7 @@ import java.awt.event.ActionListener;
 public class RegisterWindow extends JFrame implements ActionListener {
     public static final int WIDTH = 400;
     public static final int HEIGHT = 260;
+    MessageListener messageListener;
     JTextField userNameField;
     JPasswordField passwordField;
     JPasswordField confirmPasswordField;
@@ -82,6 +86,7 @@ public class RegisterWindow extends JFrame implements ActionListener {
         char[] passwordConfirmed = confirmPasswordField.getPassword();
 
         if(password.equals(passwordConfirmed)){
+            this.registerListener(new ValidateRegisterListener());
             JOptionPane.showMessageDialog(this,"Register Successfully","Register",JOptionPane.OK_OPTION);
             jFrame.dispose();
             new LoginWindow();
@@ -95,6 +100,9 @@ public class RegisterWindow extends JFrame implements ActionListener {
 
     }
 
+    public void registerListener( MessageListener messageListener){
+        this.messageListener = messageListener;
+    }
 
 
 }
