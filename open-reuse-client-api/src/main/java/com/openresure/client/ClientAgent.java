@@ -88,4 +88,13 @@ public class ClientAgent {
         MessageSendingService.getInstance().provideMessage(message);
         ConfigManager.getInstance().unsetLogined(username);
     }
+
+    public static void sendTextMessage(String username, String content){
+        Message message = MessageBuilder.messageBuilder()
+                .setBody(content)
+                .setFrom(username)
+                .setType(MessageType.TEXT_MESSAGE)
+                .build();
+        MessageSendingService.getInstance().provideMessage(message);
+    }
 }
