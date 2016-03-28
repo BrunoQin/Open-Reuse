@@ -86,4 +86,8 @@ public class SessionManager {
         return userInfoDao.addUser(username, password);
     }
 
+    public boolean validUsrAndPass(String username, String password){
+        return userInfoDao.validatePassword(username, password);
+    }
+
 }
