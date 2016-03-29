@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Open-Reuse.iml" filepath="$PROJECT_DIR$/Open-Reuse.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open-reuse.iml" filepath="$PROJECT_DIR$/open-reuse.iml" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" filepath="$PROJECT_DIR$/open-reuse-client-api/open-reuse-client-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-client-api/open-reuse-client-api.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-client-api/open-reuse-client-api.iml" group="open-reuse-client-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-client-api/open-reuse-client-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-client-api/open-reuse-client-api_main.iml" group="open-reuse-client-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-client-api/open-reuse-client-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-client-api/open-reuse-client-api_test.iml" group="open-reuse-client-api" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-client-window/open-reuse-client-window.iml" filepath="$PROJECT_DIR$/open-reuse-client-window/open-reuse-client-window.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-client-window/open-reuse-client-window.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-client-window/open-reuse-client-window.iml" group="open-reuse-client-window" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-client-window/open-reuse-client-window_main.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-client-window/open-reuse-client-window_main.iml" group="open-reuse-client-window" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-client-window/open-reuse-client-window_test.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-client-window/open-reuse-client-window_test.iml" group="open-reuse-client-window" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" filepath="$PROJECT_DIR$/open-reuse-common/open-reuse-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-common/open-reuse-common.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-common/open-reuse-common.iml" group="open-reuse-common" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-common/open-reuse-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-common/open-reuse-common_main.iml" group="open-reuse-common" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-common/open-reuse-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-common/open-reuse-common_test.iml" group="open-reuse-common" />
       <module fileurl="file://$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" filepath="$PROJECT_DIR$/open-reuse-server/open-reuse-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-server/open-reuse-server.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-server/open-reuse-server.iml" group="open-reuse-server" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-server/open-reuse-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-server/open-reuse-server_main.iml" group="open-reuse-server" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse-server/open-reuse-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse-server/open-reuse-server_test.iml" group="open-reuse-server" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse_main.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse_main.iml" group="open-reuse" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/open-reuse_test.iml" filepath="$PROJECT_DIR$/.idea/modules/open-reuse_test.iml" group="open-reuse" />
     </modules>
   </component>
 </project>

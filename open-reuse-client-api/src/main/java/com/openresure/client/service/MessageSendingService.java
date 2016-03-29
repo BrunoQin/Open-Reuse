@@ -8,6 +8,7 @@ import com.openreuse.common.message.Message;
 /**
  * Created by min.jin on 2016/3/28.
  */
+
 public class MessageSendingService {
     private MessageSendingService(){
         this.queue = new MessageQueue();

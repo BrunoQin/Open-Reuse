@@ -2,6 +2,7 @@ package com.openresure.client.sender;
 
 
 import com.openresure.client.config.ConfigManager;
+import com.openresure.client.service.ConnectionMgmtService;
 import com.openresure.client.service.MessageSendingService;
 import com.openreuse.common.message.Message;
 import io.netty.buffer.ByteBuf;
