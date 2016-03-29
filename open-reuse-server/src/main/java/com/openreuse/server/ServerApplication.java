@@ -1,6 +1,5 @@
 package com.openreuse.server;
 
-import com.openreuse.server.handler.EchoHandler;
 import com.openreuse.server.handler.RawJsonHandler;
 import com.openreuse.server.misc.Constants;
 import io.netty.bootstrap.ServerBootstrap;
@@ -8,11 +7,9 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
-import io.netty.channel.nio.NioEventLoop;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.FixedLengthFrameDecoder;
 
 /**
  * Created by kimmin on 3/20/16.
@@ -33,7 +30,7 @@ public class ServerApplication {
                 .childHandler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     public void initChannel(SocketChannel channel) throws Exception{
-//                        channel.pipeline().addLast(new FixedLengthFrameDecoder(1024));
+//                      channel.pipeline().addLast(new FixedLengthFrameDecoder(1024));
                         channel.pipeline().addLast(new RawJsonHandler());
                     }
                 });

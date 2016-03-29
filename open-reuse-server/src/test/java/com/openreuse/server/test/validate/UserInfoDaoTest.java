@@ -12,7 +12,7 @@ public class UserInfoDaoTest {
     @Test
     public void TestAddUser() throws Exception {
         UserInfoDao userInfoDao = new UserInfoDao();
-        boolean result = userInfoDao.addUser("Jasmine","1234");
+        boolean result = userInfoDao.addUser("Bruno","qinbo");
         System.out.print(result);
 
     }
@@ -20,7 +20,7 @@ public class UserInfoDaoTest {
     @Test
     public void TestGetIdbyName() throws Exception{
         UserInfoDao userInfoDao = new UserInfoDao();
-        long id = userInfoDao.getIdbyName("Judy");
+        long id = userInfoDao.getIdbyName("Bruno");
         System.out.print(id);
     }
 
@@ -28,6 +28,9 @@ public class UserInfoDaoTest {
     public void TestValidatePassword()throws Exception{
         UserInfoDao userInfoDao = new UserInfoDao();
         boolean passValidation = userInfoDao.validatePassword("Jasmine","1234");
+        System.out.println(passValidation);
         assertEquals(true,passValidation);
     }
+
+
 }

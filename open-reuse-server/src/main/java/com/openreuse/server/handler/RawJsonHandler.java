@@ -6,10 +6,10 @@ import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.*;
+import io.netty.channel.ChannelHandler;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.codehaus.jackson.map.ObjectMapper;
-
-import java.nio.channels.SeekableByteChannel;
 
 /**
  * Created by kimmin on 3/25/16.
