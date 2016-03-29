@@ -1,9 +1,10 @@
 package com.openreuse.server.response;
 
-import com.google.common.util.concurrent.*;
+import com.google.common.util.concurrent.ListenableFuture;
+import com.google.common.util.concurrent.ListeningExecutorService;
+import com.google.common.util.concurrent.MoreExecutors;
 import com.openreuse.common.message.Message;
 import com.openreuse.server.response.listener.ThrottleStatsListener;
-import com.openreuse.server.throttle.ThrottleStatsManager;
 
 import java.util.concurrent.Executors;
 

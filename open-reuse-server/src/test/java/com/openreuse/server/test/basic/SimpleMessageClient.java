@@ -8,7 +8,6 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.FixedLengthFrameDecoder;
 
 /**
  * Created by kimmin on 3/25/16.
@@ -33,9 +32,13 @@ public class SimpleMessageClient {
         }catch (Throwable e){
             e.printStackTrace();
         }finally {
-            group.shutdownGracefully();
+            //group.shutdownGracefully();
         }
     }
 
+    public static void main(String[] args){
+        SimpleMessageClient simpleMessageClient = new SimpleMessageClient();
+        simpleMessageClient.connect(30000, "localhost");
+    }
 
 }

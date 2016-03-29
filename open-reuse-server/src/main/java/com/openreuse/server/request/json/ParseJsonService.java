@@ -15,8 +15,8 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ParseJsonService {
     /** Singleton **/
     private ParseJsonService() {
-        this.workerPool = new RawBytesWorkerPool(queue, Constants.PARSE_WORKER_NUMBER);
         this.queue = new LinkedBlockingQueue<byte[]>(Constants.MAX_JSON_SIZE);
+        this.workerPool = new RawBytesWorkerPool(queue, Constants.PARSE_WORKER_NUMBER);
         this.workerPool.startWorkers();
     }
     private static class Singleton {
@@ -37,6 +37,7 @@ public class ParseJsonService {
     public void provideRawBytes(byte[] rawBytes) {
         try {
             boolean success = queue.offer(rawBytes, 1000, TimeUnit.MILLISECONDS);
+            System.out.println(queue.size());
             if(!success){
                 atomicLong.getAndIncrement();
                 logger.warn("CANNOT OFFER RAW JSON BYTES:", new String(rawBytes));

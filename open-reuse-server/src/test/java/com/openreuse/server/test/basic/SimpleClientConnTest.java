@@ -19,7 +19,7 @@ public class SimpleClientConnTest {
     @Test
     public void connectionMessageTest(){
         try{
-            new SimpleMessageClient().connect(30000, "127.0.0.1");
+            new SimpleMessageClient().connect(30000, "localhost");
         }catch (Throwable e){
             e.printStackTrace();
         }

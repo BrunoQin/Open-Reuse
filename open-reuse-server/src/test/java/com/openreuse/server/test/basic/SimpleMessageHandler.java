@@ -2,16 +2,13 @@ package com.openreuse.server.test.basic;
 
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
-import com.openreuse.common.message.Reserved;
+import com.openreuse.common.message.builder.MessageBuilder;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.codehaus.jackson.map.ObjectMapper;
-
-import java.io.ObjectOutputStream;
 
 
 /**
@@ -27,10 +24,11 @@ public class SimpleMessageHandler extends ChannelInboundHandlerAdapter {
 
     public SimpleMessageHandler() {
         ObjectMapper om = new ObjectMapper();
-        Message message = new Message(MessageType.RESP_OK,
-                new Reserved("null"),
-                "Message Fake Body",
-                "jinmin", "");
+        Message message = MessageBuilder.messageBuilder()
+                .setBody("Bruno" + "\n" + "qinbo")
+                .setType(MessageType.LOGIN_MESSAGE)
+                .setFrom("Bruno")
+                .build();
         /** Try JSON-Serialization here **/
         try{
             byte[] bytes = om.writeValueAsBytes(message);
@@ -48,15 +46,17 @@ public class SimpleMessageHandler extends ChannelInboundHandlerAdapter {
         Channel channel = ctx.channel();
         achannel = ctx.channel();
 
-        SimpleMessageHandler.achannel.write(SimpleMessageHandler.amessage);
+        //SimpleMessageHandler.achannel.write(SimpleMessageHandler.amessage);
 
-//        ctx.writeAndFlush(message);
+        ctx.writeAndFlush(SimpleMessageHandler.amessage);
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception{
-        Message incomingMessage = (Message) msg;
-        System.out.println(incomingMessage.getBody());
+        ByteBuf buf = (ByteBuf) msg;
+        buf = Unpooled.copiedBuffer(buf);
+        byte[] rawBytes = buf.array();
+        System.out.println(rawBytes);
     }
 
     @Override

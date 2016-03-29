@@ -4,12 +4,7 @@ import com.openreuse.server.misc.worker.WorkerPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
@@ -35,6 +30,7 @@ public class RawBytesWorkerPool implements WorkerPool<RawBytesWorker> {
     public void startWorkers(){
         for(int i=0; i<workerThreads.length; i++){
             workerThreads[i] = new Thread(workers[i]);
+            workerThreads[i].start();
             logger.info("START WORKER SUCCESS!");
         }
     }
