@@ -153,7 +153,7 @@ public class SendMessageWindow{
     }
 
     public static void main(String args[]){
-        new SendMessageWindow("jinmin", "12345");
+        new SendMessageWindow("jinmin", "127.0.0.1");
     }
 
     public void somebodyLogin(String username){
