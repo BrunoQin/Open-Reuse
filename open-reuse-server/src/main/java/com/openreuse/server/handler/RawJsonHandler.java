@@ -12,6 +12,8 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.codehaus.jackson.map.ObjectMapper;
 
+import java.util.concurrent.Future;
+
 /**
  * Created by kimmin on 3/25/16.
  */
@@ -36,18 +38,8 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
             Message message = om.readValue(rawBytes, Message.class);
             String from = message.getFrom();
             if(message.getType() == MessageType.REGISTER_MESSAGE){
+                SessionManager.getInstance().saveChannelForUsr(from, ctx.channel());
                 ParseJsonService.getInstance().provideRawBytes(rawBytes);
-                Long uid = SessionManager.getInstance().getUsrId(from);
-                while(uid == null){
-                    /** Waiting for register complete **/
-                    try{
-                        Thread.currentThread().sleep(500);
-                    }catch (InterruptedException ie){
-                        ie.printStackTrace();
-                    }
-                    uid = SessionManager.getInstance().getUsrId(from);
-                }
-                SessionManager.getInstance().registerSession(uid, ctx.channel());
                 return;
             }
             Long uid = SessionManager.getInstance().getUsrId(from);

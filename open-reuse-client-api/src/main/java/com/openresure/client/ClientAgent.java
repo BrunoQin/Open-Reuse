@@ -41,17 +41,20 @@ public class ClientAgent {
     public static boolean registerValidate(String ipAddr, String username, String password){
         ConfigManager.getInstance().setUsrFrom(username);
         boolean connSuccess = ConnectionMgmtService.getInstance().doConnect(ipAddr);
+        ConfigManager.getInstance().registername = username;
         Message message = MessageBuilder.messageBuilder()
                 .setBody(username + "\n" + password)
                 .setType(MessageType.REGISTER_MESSAGE)
                 .setFrom(username)
                 .setTo(ConfigManager.getInstance().getCurrentServerAddr())
                 .build();
-        ConfigManager.getInstance().registerSuccess = false;
+        ConfigManager.getInstance().registerSuccess.compareAndSet(
+                ConfigManager.getInstance().registerSuccess.get(), false
+        );
         MessageSendingService.getInstance().provideMessage(message);
         long now = System.currentTimeMillis();
-        while(System.currentTimeMillis() < now + 5*1000){
-            if(ConfigManager.getInstance().registerSuccess){
+        while(System.currentTimeMillis() < now + 10 * 1000){
+            if(ConfigManager.getInstance().registerSuccess.get()){
                 return true;
             }
         }

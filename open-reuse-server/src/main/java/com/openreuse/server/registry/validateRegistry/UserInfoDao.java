@@ -41,6 +41,7 @@ public class UserInfoDao {
 
     //Insert record to database.
     private void userInsert(UserInfoEntity userInfoEntity){
+        session.clear();
         Transaction transaction = session.beginTransaction();
         session.save(userInfoEntity);
         transaction.commit();
@@ -58,6 +59,7 @@ public class UserInfoDao {
             return true;
         }else
             return false;
+
     }
 
     //Get userid by username
