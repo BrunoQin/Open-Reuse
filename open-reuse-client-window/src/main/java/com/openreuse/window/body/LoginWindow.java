@@ -83,20 +83,20 @@ public class LoginWindow extends JFrame implements ActionListener {
 
 
     public void loginSuccessDialog(){
-        JOptionPane.showMessageDialog(this,"Login Successfully","Login",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this,"Login Successfully");
         this.setVisible(false);
         new SendMessageWindow(userNameField.getText(),serverField.getText());
     }
 
-    public void passwordErroDialog(){
-        JOptionPane.showMessageDialog(this,"Login Failed","Password Error!",JOptionPane.OK_OPTION);
+    public void loginFailedDialog(){
+        JOptionPane.showMessageDialog(this,"Login Failed!","Login Failed",JOptionPane.OK_OPTION);
         userNameField.setText("");
         passwordField.setText("");
         serverField.setText("");
     }
 
     public void noRegisterDialog(){
-        JOptionPane.showMessageDialog(this,"Login Failed","You haven't register yet.",JOptionPane.OK_OPTION);
+        JOptionPane.showMessageDialog(this,"You haven't register yet.","Login Failed",JOptionPane.OK_OPTION);
         this.setVisible(false);
         new RegisterWindow();
     }
@@ -118,7 +118,7 @@ public class LoginWindow extends JFrame implements ActionListener {
             boolean success = ClientAgent.loginValidate(serverIP, username, new String(szPasswd));
             this.dispose();
             if(success) loginSuccessDialog();
-            else passwordErroDialog();
+            else loginFailedDialog();
         }else if(e.getActionCommand().equals("Register")){
             System.out.print("Register");
             this.dispose();

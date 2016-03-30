@@ -108,7 +108,7 @@ public class RegisterWindow extends JFrame implements ActionListener {
             boolean success = ClientAgent.registerValidate(ConfigManager.getInstance().getCurrentServerAddr(),
                     userName, new String(password));
             if(success){
-                JOptionPane.showMessageDialog(this, "Register Successfully","Register", JOptionPane.OK_OPTION);
+                JOptionPane.showMessageDialog(this, "Register Successfully","Register", JOptionPane.INFORMATION_MESSAGE);
                 jFrame.dispose();
                 new LoginWindow();
             }else{
@@ -117,7 +117,7 @@ public class RegisterWindow extends JFrame implements ActionListener {
                 new LoginWindow();
             }
         }else{
-            JOptionPane.showMessageDialog(this,"Password confirmed error!","Register Again",JOptionPane.OK_OPTION);
+            JOptionPane.showMessageDialog(this,"Password confirmed error!","Register",JOptionPane.OK_OPTION);
         }
         System.out.println("UserName"+userName);
         System.out.println("Password" + new String(password));
