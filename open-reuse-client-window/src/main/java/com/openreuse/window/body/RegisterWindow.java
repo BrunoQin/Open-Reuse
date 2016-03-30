@@ -18,6 +18,7 @@ public class RegisterWindow extends JFrame implements ActionListener {
     JPasswordField passwordField;
     JPasswordField confirmPasswordField;
     JFrame jFrame;
+    boolean isEqual = true;
     public RegisterWindow(){
         jFrame = new JFrame("Register");
         Container container = jFrame.getContentPane();
@@ -49,15 +50,23 @@ public class RegisterWindow extends JFrame implements ActionListener {
         panel.add(confirmPasswordField);
 
         JButton registerButton = new JButton("Register");
-        registerButton.setBounds(80,160,100,20);
+        registerButton.setBounds(30,160,100,20);
         JButton clearButton = new JButton("Clear");
-        clearButton.setBounds(220,160,100,20);
+        clearButton.setBounds(145,160,100,20);
+        JButton returnButton = new JButton("Return");
+        returnButton.setBounds(260,160,100,20);
         panel.add(registerButton);
         panel.add(clearButton);
+        panel.add(returnButton);
         registerButton.addActionListener(this);
 
-
-
+        returnButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jFrame.dispose();
+                new LoginWindow();
+            }
+        });
 
         clearButton.addActionListener(new ActionListener() {
             @Override
@@ -83,8 +92,17 @@ public class RegisterWindow extends JFrame implements ActionListener {
         String userName = userNameField.getText();
         char[] password = passwordField.getPassword();
         char[] passwordConfirmed = confirmPasswordField.getPassword();
+        if (password.length != passwordConfirmed.length){
+            isEqual = false;
+        }else{
+            for(int i = 0; i<password.length; i++){
+                if(password[i] != passwordConfirmed[i]){
+                    isEqual = false;
+                }
+            }
+        }
 
-        if(password.equals(passwordConfirmed)){
+        if(isEqual){
 //            this.registerListener(new ValidateRegisterListener());
             boolean success = ClientAgent.registerValidate(userName, new String(password));
             if(success){
