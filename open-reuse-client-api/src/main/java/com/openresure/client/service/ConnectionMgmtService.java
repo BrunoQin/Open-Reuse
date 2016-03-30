@@ -13,6 +13,8 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.FixedLengthFrameDecoder;
 
+import java.util.concurrent.CountDownLatch;
+
 /**
  * Created by min.jin on 2016/3/28.
  */
@@ -25,8 +27,9 @@ public class ConnectionMgmtService {
         return Singleton.instance;
     }
     private static boolean isConnected = false;
-    public Thread connThread = null;
 
+    public Thread connThread = null;
+    public CountDownLatch latch = new CountDownLatch(1);
 
 
     public boolean doConnect(String ipAddr){
@@ -67,6 +70,7 @@ public class ConnectionMgmtService {
                 ConfigManager.getInstance().setChannel(future.channel());
                 ConfigManager.getInstance().setCurrentServerAddr(ipAddr);
                 ConfigManager.getInstance().setChannelFuture(future);
+                latch.countDown();
                 isConnected = true;
                 /** Confirm Configuration **/
                 future.channel().closeFuture().sync();

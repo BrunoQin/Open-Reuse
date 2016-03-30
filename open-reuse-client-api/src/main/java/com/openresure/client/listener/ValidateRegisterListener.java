@@ -12,6 +12,7 @@ public class ValidateRegisterListener implements MessageListener {
         if(username.equals(body)){
             ConfigManager.getInstance().registerSuccess = true;
         }
+        System.err.println("VALIDATE REG LISTENER TRIGGERED!");
     }
 
     public boolean isValid(){

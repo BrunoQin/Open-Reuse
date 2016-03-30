@@ -34,14 +34,17 @@ public class TestAPI {
                 .build();
         MessageSendingService.getInstance().provideMessage(message);
         try{
-            ConnectionMgmtService.getInstance().connThread.join();
+            ConnectionMgmtService.getInstance().latch.await();
+//            while(ConnectionMgmtService.getInstance().connThread == null);
+//            ConnectionMgmtService.getInstance().connThread.join();
         }catch (Throwable e){
             e.printStackTrace();
         }
     }
 
     public static void main(String[] args){
-        ClientAgent.loginValidate("127.0.0.1", "Bruno", "qinbo");
+//        ClientAgent.loginValidate("127.0.0.1", "Bruno", "qinbo");
+        ClientAgent.registerValidate("127.0.0.1", "jinmin", "jinmin");
     }
 
 }

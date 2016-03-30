@@ -30,6 +30,11 @@ public class MessageSender implements Runnable{
     private Lock channelLock;
 
     public void run(){
+        try{
+            ConnectionMgmtService.getInstance().latch.await();
+        }catch (InterruptedException ie){
+            ie.printStackTrace();
+        }
         while(runFlag.get()){
 //            channelLock.lock();
             Message message = MessageSendingService.getInstance().consumeMessage();

@@ -32,6 +32,9 @@ public class RouteDispatcher implements Dispatcher {
 
     public void dispatch(Message message){
         /** Check if the user has already login **/
+        if(message.getType() == MessageType.REGISTER_MESSAGE){
+            routeMap.get(message.getType()).route(message);
+        }
         long uid = SessionManager.getInstance().getUsrId(message.getFrom());
         Channel channel = SessionManager.getInstance().getSession(uid);
         if(!channel.isOpen()){

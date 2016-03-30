@@ -1,6 +1,7 @@
 package com.openreuse.server.request.json;
 
 import com.openreuse.common.message.Message;
+import com.openreuse.common.message.MessageType;
 import com.openreuse.server.misc.worker.Worker;
 import com.openreuse.server.request.dispatcher.RouteDispatcher;
 import com.openreuse.server.request.session.SessionManager;
@@ -37,6 +38,11 @@ public class RawBytesWorker implements Worker {
             try{
                 if(rawBytes == null) return;
                 Message message = om.readValue(rawBytes, Message.class);
+                /** If register message dispatch it anyway **/
+                if(message.getType() == MessageType.REGISTER_MESSAGE){
+                    ThrottleStatsManager.getInstance().incReceivedMsgCount();
+                    RouteDispatcher.getInstance().dispatch(message);
+                }
                 /** Do message verification here **/
                 String from = message.getFrom();
                 Long uid = SessionManager.getInstance().getUsrId(from);

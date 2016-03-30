@@ -25,17 +25,17 @@ public class UserInfoDao {
     }
 
     //Register with username & password
-    public boolean addUser(String username, String password){
+    public long addUser(String username, String password){
         if (existOrNot(username,password)){
             //User already exists, return false
-            return false;
+            return -1;
         }else{
             //Insert the new record
             UserInfoEntity userInfoEntity = new UserInfoEntity();
             userInfoEntity.setUsername(username);
             userInfoEntity.setPassword(password);
             userInsert(userInfoEntity);
-            return true;
+            return getIdbyName(username);
         }
     }
 
