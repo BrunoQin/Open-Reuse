@@ -135,7 +135,7 @@ public class SendMessageWindow{
         textField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//Set Format
-                String message = username+"\t"+df.format(new Date())+"\n"+textField.getText()+"\n";
+                String message = username+"  "+df.format(new Date())+"\n"+textField.getText()+"\n";
                 ClientAgent.sendTextMessage(username, message);
                 textField.setText("");
             }
@@ -145,7 +145,7 @@ public class SendMessageWindow{
         btn_send.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//Set Format
-                String message = username+"\t"+df.format(new Date())+"\n"+textField.getText()+"\n";
+                String message = username+"  "+df.format(new Date())+"\n"+textField.getText()+"\n";
                 ClientAgent.sendTextMessage(username, message);
                 textField.setText("");
             }
