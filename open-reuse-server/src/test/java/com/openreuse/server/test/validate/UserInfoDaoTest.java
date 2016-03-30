@@ -12,8 +12,8 @@ public class UserInfoDaoTest {
     @Test
     public void TestAddUser() throws Exception {
         UserInfoDao userInfoDao = new UserInfoDao();
-        boolean result = userInfoDao.addUser("Bruno","qinbo");
-        System.out.print(result);
+//        boolean result = userInfoDao.addUser("Bruno","qinbo");
+//        System.out.print(result);
 
     }
 

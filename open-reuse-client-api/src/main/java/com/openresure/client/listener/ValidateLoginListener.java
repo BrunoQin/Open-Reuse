@@ -9,6 +9,7 @@ public class ValidateLoginListener implements MessageListener {
     public void onMessageArrive(String body){
         /** The body is who actually logined **/
         ConfigManager.getInstance().setLogined(body);
+        System.err.println("VALIDATE LOGIN LISTENER TRIGGERED!");
     }
 
     public boolean isValid(){

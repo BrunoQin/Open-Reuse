@@ -47,7 +47,7 @@ public class LoginRoute implements Route{
             }
             if(!(success && validSuccess)){
                 buf = Unpooled.copiedBuffer(ResponseHelper.BYTE_ERROR_RESP_MESSAGE);
-                channel.write(buf);
+                channel.writeAndFlush(buf);
                 /** Remove channel **/
                 SessionManager.getInstance().removeSession(uid);
                 ThrottleStatsManager.getInstance().incInvalidLoginCount();

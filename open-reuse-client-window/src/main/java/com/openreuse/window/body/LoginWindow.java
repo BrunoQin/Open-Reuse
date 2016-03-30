@@ -1,12 +1,15 @@
 package com.openreuse.window.body;
 
 import com.openresure.client.ClientAgent;
+import com.openresure.client.config.ConfigManager;
 import com.openresure.client.listener.MessageListener;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Jasmine on 16/3/28.
@@ -99,11 +102,19 @@ public class LoginWindow extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e){
+        String username = userNameField.getText();
+        char[] szPasswd = passwordField.getPassword();
+        String serverIP = serverField.getText();
+        Pattern pattern = Pattern.compile("[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}");
+        Matcher matcher = pattern.matcher(serverIP);
+        boolean matched = matcher.matches();
+        if(!matched){
+            JOptionPane.showMessageDialog(this, "Invalid Server IP", "Invalid Server IP", JOptionPane.OK_OPTION);
+            return;
+        }
+        ConfigManager.getInstance().setCurrentServerAddr(serverIP);
         if(e.getActionCommand().equals("Login")){
 //            this.registerListener( new ValidateLoginListener());
-            String username = userNameField.getText();
-            char[] szPasswd = passwordField.getPassword();
-            String serverIP = serverField.getText();
             boolean success = ClientAgent.loginValidate(serverIP, username, new String(szPasswd));
             this.dispose();
             if(success) loginSuccessDialog();

@@ -22,10 +22,9 @@ public class RegisterRoute implements Route {
 
     public boolean route(Message message){
         Long uid = SessionManager.getInstance().getUsrId(message.getFrom());
-        if(null == uid){
+        if(null != uid){
             /** Just ignore it! Garbage Msg! **/
         }else{
-            Channel channel = SessionManager.getInstance().getSession(uid);
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(
                     new ByteArrayInputStream(message.getBody().getBytes())));
@@ -33,18 +32,20 @@ public class RegisterRoute implements Route {
             try{
                 String username = br.readLine();
                 String password = br.readLine();
-                boolean success = SessionManager.getInstance().registerUsr(username, password);
-                if(success){
+                long newUid = SessionManager.getInstance().registerUsr(username, password);
+                if(newUid != -1){
                     Message resp = MessageBuilder.messageBuilder()
                             .setType(MessageType.REGISTER_MESSAGE)
                             .setBody(message.getFrom())
                             .setFrom("SERVER")
                             .setTo(message.getFrom())
                             .build();
+//                    Channel channel = SessionManager.getInstance().getSession(uid);
                     ResponseService.getInstance().sendMessage(resp, message.getFrom());
                 }else{
-                    ByteBuf buf = Unpooled.copiedBuffer(ResponseHelper.BYTE_ERROR_RESP_MESSAGE);
-                    channel.write(buf);
+//                    ByteBuf buf = Unpooled.copiedBuffer(ResponseHelper.BYTE_ERROR_RESP_MESSAGE);
+//                    Channel channel = SessionManager.getInstance().getSession(uid);
+//                    channel.write(buf);
                     return false;
                 }
                 return true;

@@ -82,7 +82,7 @@ public class SessionManager {
         }, 0, Constants.REFRESH_ID_CACHE_INTERVAL_MILLIS);
     }
 
-    public boolean registerUsr(String username, String password){
+    public long registerUsr(String username, String password){
         return userInfoDao.addUser(username, password);
     }
 

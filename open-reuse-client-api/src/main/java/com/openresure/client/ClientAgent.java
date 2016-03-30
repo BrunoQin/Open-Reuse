@@ -38,7 +38,9 @@ public class ClientAgent {
     }
 
     /** Blocks more than 5 sec means failure **/
-    public static boolean registerValidate(String username, String password){
+    public static boolean registerValidate(String ipAddr, String username, String password){
+        ConfigManager.getInstance().setUsrFrom(username);
+        boolean connSuccess = ConnectionMgmtService.getInstance().doConnect(ipAddr);
         Message message = MessageBuilder.messageBuilder()
                 .setBody(username + "\n" + password)
                 .setType(MessageType.REGISTER_MESSAGE)
@@ -59,6 +61,7 @@ public class ClientAgent {
     /** Blocking more than 5 sec means failure **/
     public static boolean loginValidate(String ipAddr, String username, String password){
         /** Actually building connection **/
+
         ConfigManager.getInstance().setUsrFrom(username);
         boolean connSuccess = ConnectionMgmtService.getInstance().doConnect(ipAddr);
 
@@ -69,15 +72,18 @@ public class ClientAgent {
                 .setTo(ConfigManager.getInstance().getCurrentServerAddr())
                 .build();
         /** Sending Validate Request **/
+        ConfigManager.getInstance().unsetLogined(username);
+        System.out.println("unset");
         MessageSendingService.getInstance().provideMessage(message);
         /** Wait for response **/
-        ConfigManager.getInstance().unsetLogined(username);
         long now = System.currentTimeMillis();
          while(System.currentTimeMillis() < now + 5*1000){
             if(ConfigManager.getInstance().isLogined(username)){
+                System.out.println("success");
                 return true;
             }
         }
+        System.out.print("failure");
         return false;
     }
 

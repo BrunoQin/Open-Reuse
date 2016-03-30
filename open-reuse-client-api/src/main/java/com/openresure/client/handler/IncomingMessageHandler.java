@@ -33,6 +33,7 @@ public class IncomingMessageHandler extends ChannelInboundHandlerAdapter {
         try{
             ByteBuf buf = Unpooled.copiedBuffer((ByteBuf) msg);
             Message message = om.readValue(buf.array(), Message.class);
+            System.out.println(message.getType().getType());
             MessageNotifyService.getInstance().publish(message);
         }catch (Throwable e){
             e.printStackTrace();

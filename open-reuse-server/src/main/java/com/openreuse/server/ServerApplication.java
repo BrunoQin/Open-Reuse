@@ -2,6 +2,8 @@ package com.openreuse.server;
 
 import com.openreuse.server.handler.RawJsonHandler;
 import com.openreuse.server.misc.Constants;
+import com.openreuse.server.request.json.ParseJsonService;
+import com.openreuse.server.response.ResponseService;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -21,6 +23,9 @@ public class ServerApplication {
         /** Setting up NETTY server **/
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
+
+        ParseJsonService.getInstance();
+        ResponseService.getInstance();
 
 
         ServerBootstrap bootstrap = new ServerBootstrap();

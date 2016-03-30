@@ -43,7 +43,9 @@ public class MessageNotifyService {
             Iterator<MessageListener> iter = listeners.iterator();
             while(iter.hasNext()){
                 MessageListener listener = iter.next();
-                if(listener.isValid()) listener.onMessageArrive(message.getBody());
+                if(listener.isValid()){
+                    listener.onMessageArrive(message.getBody());
+                }
             }
         }
     }

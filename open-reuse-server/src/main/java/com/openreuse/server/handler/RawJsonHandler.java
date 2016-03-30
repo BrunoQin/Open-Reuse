@@ -1,6 +1,7 @@
 package com.openreuse.server.handler;
 
 import com.openreuse.common.message.Message;
+import com.openreuse.common.message.MessageType;
 import com.openreuse.server.request.json.ParseJsonService;
 import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
@@ -34,6 +35,21 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
             ObjectMapper om = new ObjectMapper();
             Message message = om.readValue(rawBytes, Message.class);
             String from = message.getFrom();
+            if(message.getType() == MessageType.REGISTER_MESSAGE){
+                ParseJsonService.getInstance().provideRawBytes(rawBytes);
+                Long uid = SessionManager.getInstance().getUsrId(from);
+                while(uid == null){
+                    /** Waiting for register complete **/
+                    try{
+                        Thread.currentThread().sleep(500);
+                    }catch (InterruptedException ie){
+                        ie.printStackTrace();
+                    }
+                    uid = SessionManager.getInstance().getUsrId(from);
+                }
+                SessionManager.getInstance().registerSession(uid, ctx.channel());
+                return;
+            }
             Long uid = SessionManager.getInstance().getUsrId(from);
             if(null == uid) return; /** Just ignore the msg **/
             SessionManager.getInstance().registerSession(uid, ctx.channel());
