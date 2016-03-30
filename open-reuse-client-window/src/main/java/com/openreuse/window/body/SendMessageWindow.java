@@ -11,6 +11,8 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class SendMessageWindow{
 
@@ -118,7 +120,9 @@ public class SendMessageWindow{
         // 写消息的文本框中按回车键时事件
         textField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-//                send();
+               SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//Set Format
+                String message = username+"\t"+df.format(new Date())+"\n"+textField.getText()+"\n";
+                ClientAgent.sendTextMessage(username, message);
                 textField.setText("");
             }
         });
@@ -126,7 +130,10 @@ public class SendMessageWindow{
         // 单击发送按钮时事件
         btn_send.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                ClientAgent.sendTextMessage(username, textField.getText());
+                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//Set Format
+                String message = username+"\t"+df.format(new Date())+"\n"+textField.getText()+"\n";
+                ClientAgent.sendTextMessage(username, message);
+                textField.setText("");
             }
         });
 

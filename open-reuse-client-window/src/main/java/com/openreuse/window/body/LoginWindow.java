@@ -80,7 +80,7 @@ public class LoginWindow extends JFrame implements ActionListener {
 
 
     public void loginSuccessDialog(){
-        JOptionPane.showMessageDialog(this,"Login Successfully","Login Successfully",JOptionPane.OK_OPTION);
+        JOptionPane.showMessageDialog(this,"Login Successfully","Login Successfully",JOptionPane.INFORMATION_MESSAGE);
         this.setVisible(false);
         new SendMessageWindow(userNameField.getText(),serverField.getText());
     }
