@@ -42,6 +42,7 @@ public class RawBytesWorker implements Worker {
                 if(message.getType() == MessageType.REGISTER_MESSAGE){
                     ThrottleStatsManager.getInstance().incReceivedMsgCount();
                     RouteDispatcher.getInstance().dispatch(message);
+                    return;
                 }
                 /** Do message verification here **/
                 String from = message.getFrom();
