@@ -4,6 +4,7 @@ package com.openreuse.window.body;
  * Created by Jasmine on 16/3/28.
  */
 import com.openresure.client.ClientAgent;
+import com.openresure.client.config.ConfigManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -104,7 +105,8 @@ public class RegisterWindow extends JFrame implements ActionListener {
 
         if(isEqual){
 //            this.registerListener(new ValidateRegisterListener());
-            boolean success = ClientAgent.registerValidate(userName, new String(password));
+            boolean success = ClientAgent.registerValidate(ConfigManager.getInstance().getCurrentServerAddr(),
+                    userName, new String(password));
             if(success){
                 JOptionPane.showMessageDialog(this, "Register Successfully","Register", JOptionPane.OK_OPTION);
                 jFrame.dispose();

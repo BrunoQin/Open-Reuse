@@ -39,7 +39,7 @@ public class ConfigManager {
     private Lock channelLock = new ReentrantLock();
     private String usrFrom = "NO FROM";
     private ChannelFuture future = null;
-    private Map<String, AtomicBoolean> loginStatusMap = new ConcurrentHashMap<String, AtomicBoolean>();
+    private Map<String, Boolean> loginStatusMap = new ConcurrentHashMap<String, Boolean>();
 
     private Timer dumpTimer = new Timer();
 
@@ -111,16 +111,16 @@ public class ConfigManager {
 
     public boolean isLogined(String username){
         if(loginStatusMap.containsKey(username)){
-            return loginStatusMap.get(username).get();
+            return loginStatusMap.get(username);
         }else return false;
     }
 
     public void setLogined(String username){
-        loginStatusMap.put(username, new AtomicBoolean(true));
+        loginStatusMap.put(username, true);
     }
 
     public void unsetLogined(String username){
-        loginStatusMap.put(username, new AtomicBoolean(false));
+        loginStatusMap.put(username, false);
     }
 
     public void setChannelFuture(ChannelFuture future){

@@ -43,8 +43,11 @@ public class TestAPI {
     }
 
     public static void main(String[] args){
-//        ClientAgent.loginValidate("127.0.0.1", "Bruno", "qinbo");
-        ClientAgent.registerValidate("127.0.0.1", "jinmin", "jinmin");
+        boolean b = ClientAgent.loginValidate("127.0.0.1", "Bruno", "qinbo");
+//        ClientAgent.registerValidate("127.0.0.1", "jinmin", "jinmin");
+        if(b){
+            ClientAgent.sendTextMessage("Bruno", "hello world");
+        }
     }
 
 }

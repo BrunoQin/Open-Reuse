@@ -21,6 +21,6 @@ public class LogoutListener implements MessageListener {
     }
 
     public boolean isValid(){
-        return null == this.window;
+        return null != this.window;
     }
 }

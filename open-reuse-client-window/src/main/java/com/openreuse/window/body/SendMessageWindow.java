@@ -5,6 +5,12 @@ package com.openreuse.window.body;
  */
 
 import com.openresure.client.ClientAgent;
+import com.openresure.client.service.MessageNotifyService;
+import com.openreuse.common.message.MessageType;
+import com.openreuse.window.listener.LoginListener;
+import com.openreuse.window.listener.LogoutListener;
+import com.openreuse.window.listener.PrintToWindowListener;
+import com.openreuse.window.listener.RedoLoginListener;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -62,8 +68,16 @@ public class SendMessageWindow{
     // 构造方法
     public SendMessageWindow(final String username, String serverAddress) {
 
-        this.username = username;
+        MessageNotifyService.getInstance().registerListener(MessageType.TEXT_MESSAGE,
+                new PrintToWindowListener(this));
+        MessageNotifyService.getInstance().registerListener(MessageType.REDO_LOGIN_MESSAGE,
+                new RedoLoginListener(this));
+        MessageNotifyService.getInstance().registerListener(MessageType.LOGIN_MESSAGE,
+                new LoginListener(this));
+        MessageNotifyService.getInstance().registerListener(MessageType.LOGOUT_MESSAGE,
+                new LogoutListener(this));
 
+        this.username = username;
 
         textArea = new JTextArea();
         textArea.setEditable(false);
