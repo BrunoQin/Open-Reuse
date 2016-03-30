@@ -47,7 +47,6 @@ public class ConfigManager {
     public static AtomicInteger loginFailureCount = new AtomicInteger(0);
     public static AtomicInteger receivedCount = new AtomicInteger(0);
     public static AtomicInteger sendCount = new AtomicInteger(0);
-
     public static Map<String, Integer> statsMap = new ConcurrentHashMap<String, Integer>();
     static{
         statsMap.put("loginSuccessCount", loginSuccessCount.get());
@@ -64,7 +63,7 @@ public class ConfigManager {
         LocalPersistHelper.persistMapToLocal(statsMap, new File("clientStats.json"));
     }
 
-    public boolean registerSuccess = false;
+    public AtomicBoolean registerSuccess = new AtomicBoolean(false);
     public String registername = "";
 
     public String getCurrentServerAddr(){

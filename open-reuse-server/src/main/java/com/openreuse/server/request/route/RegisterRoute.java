@@ -40,7 +40,12 @@ public class RegisterRoute implements Route {
                             .setFrom("SERVER")
                             .setTo(message.getFrom())
                             .build();
-//                    Channel channel = SessionManager.getInstance().getSession(uid);
+                    Long regUid = SessionManager.getInstance().getUsrId(username);
+                    while(regUid == null){
+                        regUid = SessionManager.getInstance().getUsrId(username);
+                    }
+                    SessionManager.getInstance().registerSession(regUid,
+                            SessionManager.getInstance().getChannelForUsr(username));
                     ResponseService.getInstance().sendMessage(resp, message.getFrom());
                 }else{
 //                    ByteBuf buf = Unpooled.copiedBuffer(ResponseHelper.BYTE_ERROR_RESP_MESSAGE);

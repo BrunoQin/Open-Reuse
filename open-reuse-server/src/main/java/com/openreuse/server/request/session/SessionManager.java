@@ -10,13 +10,14 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by kimmin on 3/25/16.
  */
 public class SessionManager {
 
-    UserInfoDao userInfoDao = new UserInfoDao();
+    private UserInfoDao userInfoDao = new UserInfoDao();
 
     private SessionManager(){
         initTimer();
@@ -31,6 +32,20 @@ public class SessionManager {
     /** Session Map & IdCacheMap **/
     private Map<Long, Channel> sessionMap = new ConcurrentHashMap<Long, Channel>(128);
     private Map<String, Long> usrIdMap = new ConcurrentHashMap<String, Long>(128);
+    private Map<String, Channel> regMap =
+            new ConcurrentHashMap<String, Channel>(128);
+
+    public void saveChannelForUsr(String from, Channel channel){
+        regMap.put(from, channel);
+    }
+
+    public void removeChannelForUsr(String from){
+        regMap.remove(from);
+    }
+
+    public Channel getChannelForUsr(String from){
+        return regMap.get(from);
+    }
 
     public Channel getSession(long clientId){
         return sessionMap.get(clientId);
