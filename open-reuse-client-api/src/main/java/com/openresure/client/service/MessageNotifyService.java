@@ -13,6 +13,11 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class MessageNotifyService {
     private MessageNotifyService(){}
+
+    public Map<MessageType, List<MessageListener>> getMap() {
+        return map;
+    }
+
     private static class Singleton{
         private static MessageNotifyService instance = new MessageNotifyService();
     }
