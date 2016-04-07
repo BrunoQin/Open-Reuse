@@ -1,6 +1,19 @@
 # Open-Reuse
 
 ----------
+
+### Contributors
+
+1352958 [金敏](https://github.com/yue9944882)
+
+1352911 [曹琦](https://github.com/Jasminekiki)
+
+1354366 潘舜达
+
+1352961 [秦博](https://github.com/BrunoQin)
+
+1352839 [饶伊文](https://github.com/wenwen195)
+
 ### Yet a message C/S application
 ![](https://github.com/BrunoQin/Open-Reuse/blob/master/img/Architecture.png)
 
@@ -37,3 +50,8 @@
 
 ##### 4. Server Design & Deployment
 
+### Dev_1st_week
+
+#####[程序文档](https://github.com/BrunoQin/Open-Reuse/wiki/%E7%A8%8B%E5%BA%8F%E6%96%87%E6%A1%A3)
+
+#####[管理文档](https://github.com/BrunoQin/Open-Reuse/wiki/%E7%AE%A1%E7%90%86%E6%96%87%E6%A1%A3)
