@@ -74,6 +74,10 @@ public class ConfigManager {
         this.serverAddr = ipAddr;
     }
 
+    public boolean getLoginStatus(String username){
+        return loginStatusMap.get(username);
+    }
+
     public Channel getChannel() {
         return channel;
     }

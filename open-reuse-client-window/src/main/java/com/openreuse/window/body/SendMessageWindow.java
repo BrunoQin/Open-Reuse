@@ -35,7 +35,7 @@ public class SendMessageWindow{
     private JScrollPane rightScroll;
     private JScrollPane leftScroll;
     private JSplitPane centerSplit;
-    private DefaultListModel listModel;
+    public DefaultListModel listModel;
 
 
     public String getUsername() {
@@ -44,6 +44,23 @@ public class SendMessageWindow{
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public void setListModel(String string){
+        listModel.addElement(string);
+    }
+
+    public String getClient(int index){
+        return listModel.getElementAt(index).toString();
+    }
+
+    public String getAllOnlineClients()
+    {
+        String result = "";
+        for(int i = 0;i<listModel.getSize();i++){
+            result = result+listModel.getElementAt(i).toString()+"\n";
+        }
+        return  result;
     }
 
     /**  **/
