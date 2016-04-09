@@ -20,9 +20,11 @@ public class ListenerTest {
 
 
         ValidateRegisterListener validateRegisterListener = new ValidateRegisterListener();
-        validateRegisterListener.onMessageArrive("Jasmine");
+        validateRegisterListener.onMessageArrive("LALALA");
         System.out.print(ConfigManager.getInstance().registerSuccess+"\n");
-        ConfigManager.getInstance().registername = "Jasmine";
+
+        ConfigManager.getInstance().registername = "LALALA";
+        validateRegisterListener.onMessageArrive("LALALA");
         System.out.print(ConfigManager.getInstance().registerSuccess);
 
     }

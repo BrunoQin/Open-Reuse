@@ -24,6 +24,14 @@ public class RegistryManager {
     /** Maybe there should be a upper-bound limitation here? **/
     private Map<Long, Integer> loginCountMap = new ConcurrentHashMap<Long, Integer>();
 
+    public Integer getLoginCountByID(long clientID){
+        if (loginCountMap.containsKey(clientID)){
+            return loginCountMap.get(clientID);
+        }else
+            return -1;
+
+    }
+
     /** Too many login request may cause OOM here **/
     public void registerLogin(long clientID){
         assert Validators.validateClientID(clientID);

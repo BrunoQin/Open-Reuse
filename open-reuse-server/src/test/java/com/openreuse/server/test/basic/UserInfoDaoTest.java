@@ -1,4 +1,4 @@
-package com.openreuse.server.test.validate;
+package com.openreuse.server.test.basic;
 
 import com.openreuse.server.registry.validateRegistry.UserInfoDao;
 import org.junit.Test;
