@@ -53,6 +53,10 @@ public class ThrottleStatsManager {
 
     private Timer dumpTimer;
 
+    public int getMsgCount(long uid){
+        Integer cnt = messageCntMap.get(uid);
+        return cnt;
+    }
     public void incMsgCount(long uid){
         Integer cnt = messageCntMap.get(uid);
         if(null == cnt){
@@ -81,6 +85,10 @@ public class ThrottleStatsManager {
         forwardedMsgCount.getAndIncrement();
     }
 
+    public long getForwardedMsgCount(){
+        return forwardedMsgCount.get();
+    }
+
     public void clrForwardedMsgCount(){
         boolean success = forwardedMsgCount.compareAndSet(forwardedMsgCount.get(), 0L);
         while(!success) success = forwardedMsgCount.compareAndSet(forwardedMsgCount.get(), 0L);
@@ -88,6 +96,10 @@ public class ThrottleStatsManager {
 
     public void incValidLoginCount(){
         validLoginCount.getAndIncrement();
+    }
+
+    public long getValidLoginCount(){
+       return validLoginCount.get();
     }
 
     public void clrValidLoginCount(){
@@ -99,6 +111,10 @@ public class ThrottleStatsManager {
         invalidLoginCount.getAndIncrement();
     }
 
+    public long getInvalidLoginCount(){
+        return invalidLoginCount.get();
+    }
+
     public void clrInvalidLoginCount(){
         boolean success = invalidLoginCount.compareAndSet(invalidLoginCount.get(), 0L);
         while(!success) success = invalidLoginCount.compareAndSet(invalidLoginCount.get(), 0L);
@@ -108,6 +124,10 @@ public class ThrottleStatsManager {
         receivedMsgCount.getAndIncrement();
     }
 
+    public long getReceivedMsgCount(){
+        return receivedMsgCount.get();
+    }
+
     public void clrReceivedMsgCount(){
         boolean success = receivedMsgCount.compareAndSet(receivedMsgCount.get(), 0L);
         while(!success) success = receivedMsgCount.compareAndSet(receivedMsgCount.get(), 0L);
@@ -115,6 +135,10 @@ public class ThrottleStatsManager {
 
     public void incIgnoredMsgCount(){
         ignoredMsgCount.getAndIncrement();
+    }
+
+    public long getIgnoredMsgCount(){
+       return ignoredMsgCount.get();
     }
 
     public void clrIgnoredMsgCount(){

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4411f6f-7fd5-4487-925b-885870498518" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/RegisterManagerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/TestSessionManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/UserInfoDaoTest.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/UserInfoDaoTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/ValidatorsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/ListenerTest.java" afterPath="$PROJECT_DIR$/open-reuse-client-api/src/test/java/ListenerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" afterPath="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" />
     </list>
     <ignored path="Open-Reuse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,105 +120,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ListenerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/test/java/com/openreuse/window/listener/ListenerTest.java">
+      <file leaf-file-name="ThrottleTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/ThrottleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="361">
+              <caret line="101" column="64" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendMessageWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
+      <file leaf-file-name="ThrottleStatsManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+            <state relative-caret-position="271">
+              <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
               <folding>
-                <element signature="e#1438#1439#0" expanded="true" />
-                <element signature="e#1501#1502#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistryManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DelayedNotify.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/pojo/notify/DelayedNotify.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Validators.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/validate/Validators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestValidators.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/TestValidators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleValidateTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/RouteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/request/session/SessionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-              <folding>
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#2766#2767#0" expanded="true" />
+                <element signature="e#2812#2813#0" expanded="true" />
+                <element signature="e#3170#3171#0" expanded="true" />
+                <element signature="e#3213#3214#0" expanded="true" />
+                <element signature="e#3567#3568#0" expanded="true" />
+                <element signature="e#3613#3614#0" expanded="true" />
+                <element signature="e#3974#3975#0" expanded="true" />
+                <element signature="e#4019#4020#0" expanded="true" />
+                <element signature="e#4372#4373#0" expanded="true" />
+                <element signature="e#4415#4416#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1046,6 +974,8 @@
         <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/TestSessionManager.java" />
         <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/UserInfoDaoTest.java" />
         <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/TestValidators.java" />
+        <option value="$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java" />
+        <option value="$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/ThrottleTest.java" />
       </list>
     </option>
   </component>
@@ -1297,79 +1227,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="request" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="request" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="session" />
+              <option name="myItemId" value="throttle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1400,8 +1258,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestValidators.testValidateClientID">
-    <configuration default="false" name="TestSessionManager.testGetUsrId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ThrottleTest.testIgnoredMsgCount">
+    <configuration default="false" name="ThrottleTest.testClrMsgCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.openreuse.server.test.basic.*" />
@@ -1412,8 +1270,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.openreuse.server.test.basic" />
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.TestSessionManager" />
-      <option name="METHOD_NAME" value="testGetUsrId" />
+      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.ThrottleTest" />
+      <option name="METHOD_NAME" value="testClrMsgCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1427,7 +1285,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestSessionManager.testRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ThrottleTest.testIncForwardedMsgCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.openreuse.server.test.basic.*" />
@@ -1438,8 +1296,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.openreuse.server.test.basic" />
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.TestSessionManager" />
-      <option name="METHOD_NAME" value="testRegisterUser" />
+      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.ThrottleTest" />
+      <option name="METHOD_NAME" value="testIncForwardedMsgCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1453,7 +1311,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestSessionManager.testValidUsrAndPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ThrottleTest.testClrForwardedMsgCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.openreuse.server.test.basic.*" />
@@ -1464,8 +1322,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.openreuse.server.test.basic" />
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.TestSessionManager" />
-      <option name="METHOD_NAME" value="testValidUsrAndPass" />
+      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.ThrottleTest" />
+      <option name="METHOD_NAME" value="testClrForwardedMsgCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1479,7 +1337,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestValidators.testValidateNotify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ThrottleTest.testInvalidLoginCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.openreuse.server.test.basic.*" />
@@ -1490,8 +1348,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.openreuse.server.test.basic" />
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.TestValidators" />
-      <option name="METHOD_NAME" value="testValidateNotify" />
+      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.ThrottleTest" />
+      <option name="METHOD_NAME" value="testInvalidLoginCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1505,7 +1363,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestValidators.testValidateClientID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ThrottleTest.testIgnoredMsgCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.openreuse.server.test.basic.*" />
@@ -1516,8 +1374,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.openreuse.server.test.basic" />
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.TestValidators" />
-      <option name="METHOD_NAME" value="testValidateClientID" />
+      <option name="MAIN_CLASS_NAME" value="com.openreuse.server.test.basic.ThrottleTest" />
+      <option name="METHOD_NAME" value="testIgnoredMsgCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1933,19 +1791,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestSessionManager.testGetUsrId" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestSessionManager.testRegisterUser" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestSessionManager.testValidUsrAndPass" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestValidators.testValidateNotify" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestValidators.testValidateClientID" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testClrMsgCount" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testIncForwardedMsgCount" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testClrForwardedMsgCount" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testInvalidLoginCount" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testIgnoredMsgCount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestValidators.testValidateClientID" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestValidators.testValidateNotify" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestSessionManager.testValidUsrAndPass" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestSessionManager.testRegisterUser" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestSessionManager.testGetUsrId" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testIgnoredMsgCount" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testInvalidLoginCount" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testClrForwardedMsgCount" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testIncForwardedMsgCount" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ThrottleTest.testClrMsgCount" />
       </list>
     </recent_temporary>
   </component>
@@ -1962,44 +1820,44 @@
       <workItem from="1460032167216" duration="229000" />
       <workItem from="1460039783516" duration="94000" />
       <workItem from="1460039950989" duration="8660000" />
-      <workItem from="1460124905429" duration="6954000" />
+      <workItem from="1460124905429" duration="9130000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSessionManager_testGetUsrId - 2016.04.09 at 15h 58m 03s.xml">
-      <configuration name="TestSessionManager.testGetUsrId" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testCheckMsgCount - 2016.04.09 at 16h 38m 44s.xml">
+      <configuration name="ThrottleTest.testCheckMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSessionManager_testRegisterUser - 2016.04.09 at 16h 02m 42s.xml">
-      <configuration name="TestSessionManager.testRegisterUser" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testCheckMsgCount - 2016.04.09 at 16h 39m 54s.xml">
+      <configuration name="ThrottleTest.testCheckMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSessionManager_testRegisterUser - 2016.04.09 at 16h 05m 36s.xml">
-      <configuration name="TestSessionManager.testRegisterUser" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testCheckMsgCount - 2016.04.09 at 16h 40m 21s.xml">
+      <configuration name="ThrottleTest.testCheckMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSessionManager_testRegisterUser - 2016.04.09 at 16h 07m 08s.xml">
-      <configuration name="TestSessionManager.testRegisterUser" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testCheckMsgCount - 2016.04.09 at 16h 41m 03s.xml">
+      <configuration name="ThrottleTest.testCheckMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSessionManager_testValidUsrAndPass - 2016.04.09 at 16h 04m 32s.xml">
-      <configuration name="TestSessionManager.testValidUsrAndPass" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testClrForwardedMsgCount - 2016.04.09 at 16h 50m 28s.xml">
+      <configuration name="ThrottleTest.testClrForwardedMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSessionManager_testValidUsrAndPass - 2016.04.09 at 16h 08m 01s.xml">
-      <configuration name="TestSessionManager.testValidUsrAndPass" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testClrMsgCount - 2016.04.09 at 16h 44m 10s.xml">
+      <configuration name="ThrottleTest.testClrMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSessionManager_testValidUsrAndPass - 2016.04.09 at 16h 09m 42s.xml">
-      <configuration name="TestSessionManager.testValidUsrAndPass" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testIgnoredMsgCount - 2016.04.09 at 16h 59m 37s.xml">
+      <configuration name="ThrottleTest.testIgnoredMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestValidators_testValidateClientID - 2016.04.09 at 16h 20m 16s.xml">
-      <configuration name="TestValidators.testValidateClientID" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testIncForwardedMsgCount - 2016.04.09 at 16h 49m 00s.xml">
+      <configuration name="ThrottleTest.testIncForwardedMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestValidators_testValidateNotify - 2016.04.09 at 16h 17m 44s.xml">
-      <configuration name="TestValidators.testValidateNotify" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testIncForwardedMsgCount - 2016.04.09 at 16h 49m 20s.xml">
+      <configuration name="ThrottleTest.testIncForwardedMsgCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestValidators_testValidateNotify - 2016.04.09 at 16h 18m 43s.xml">
-      <configuration name="TestValidators.testValidateNotify" configurationId="JUnit" />
+    <history-entry file="ThrottleTest_testInvalidLoginCount - 2016.04.09 at 16h 57m 17s.xml">
+      <configuration name="ThrottleTest.testInvalidLoginCount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15937000" />
+    <option name="totallyTimeSpent" value="18113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -2013,7 +1871,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2070,7 +1928,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2373,18 +2231,7 @@
         <state relative-caret-position="390">
           <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2431,30 +2278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/pojo/notify/DelayedNotify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/validate/SimpleValidateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2486,8 +2309,20 @@
         <state relative-caret-position="273">
           <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/ValidatorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2500,14 +2335,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/TestValidators.java">
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/pojo/notify/DelayedNotify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="121">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/registry/RegistryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/SendMessageWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+          <folding>
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+          <folding>
+            <element signature="e#4575#4576#0" expanded="true" />
+            <element signature="e#4641#4642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/misc/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/throttle/ThrottleStatsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
+          <folding>
+            <element signature="e#2766#2767#0" expanded="true" />
+            <element signature="e#2812#2813#0" expanded="true" />
+            <element signature="e#3170#3171#0" expanded="true" />
+            <element signature="e#3213#3214#0" expanded="true" />
+            <element signature="e#3567#3568#0" expanded="true" />
+            <element signature="e#3613#3614#0" expanded="true" />
+            <element signature="e#3974#3975#0" expanded="true" />
+            <element signature="e#4019#4020#0" expanded="true" />
+            <element signature="e#4372#4373#0" expanded="true" />
+            <element signature="e#4415#4416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/test/basic/ThrottleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="101" column="64" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
           </folding>
         </state>
       </provider>
