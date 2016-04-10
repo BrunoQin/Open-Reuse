@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4411f6f-7fd5-4487-925b-885870498518" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java" afterPath="$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-client-window/src/test/java/FunctionTest.java" afterPath="$PROJECT_DIR$/open-reuse-client-window/src/test/java/FunctionTest.java" />
     </list>
     <ignored path="Open-Reuse.iws" />
@@ -55,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/test/java/FunctionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,7 +193,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,7 +205,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#350#351#0" expanded="false" />
+                <element signature="e#386#387#0" expanded="false" />
+                <element signature="e#569#570#0" expanded="false" />
+                <element signature="e#611#612#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,7 +221,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -226,8 +234,21 @@
             <state relative-caret-position="1050">
               <caret line="92" column="25" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="25" />
               <folding>
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1185#1186#0" expanded="false" />
+                <element signature="e#1216#1217#0" expanded="false" />
+                <element signature="e#1264#1265#0" expanded="false" />
+                <element signature="e#1304#1305#0" expanded="false" />
+                <element signature="e#1350#1351#0" expanded="false" />
+                <element signature="e#1394#1395#0" expanded="false" />
+                <element signature="e#6569#6570#0" expanded="false" />
+                <element signature="e#6609#6610#0" expanded="false" />
+                <element signature="e#6654#6655#0" expanded="false" />
+                <element signature="e#6714#6715#0" expanded="false" />
+                <element signature="e#6763#6764#0" expanded="false" />
+                <element signature="e#6809#6810#0" expanded="false" />
+                <element signature="e#6859#6860#0" expanded="false" />
+                <element signature="e#6908#6909#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1655,7 +1676,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionTest.testSendMessage">
+  <component name="RunManager" selected="JUnit.FunctionTest.testMultiClients">
     <configuration default="false" name="ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1697,14 +1718,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="FunctionTest.testDisconnect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FunctionTest.testOneClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="open-reuse-client-window_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionTest" />
-      <option name="METHOD_NAME" value="testDisconnect" />
+      <option name="METHOD_NAME" value="testOneClient" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1718,34 +1739,35 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LoginWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.openreuse.window.body.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.openreuse.window.body.LoginWindow" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="open-reuse-client-window_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="FunctionTest.testOneClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FunctionTest.testMultiClients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="open-reuse-client-window_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionTest" />
-      <option name="METHOD_NAME" value="testOneClient" />
+      <option name="METHOD_NAME" value="testMultiClients" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/open-reuse-client-window" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FunctionTest.testDisconnect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="open-reuse-client-window_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FunctionTest" />
+      <option name="METHOD_NAME" value="testDisconnect" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -2163,17 +2185,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ServerApplication" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.FunctionTest.testSendMessage" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FunctionTest.testDisconnect" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LoginWindow" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionTest.testOneClient" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FunctionTest.testOneClient" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FunctionTest.testMultiClients" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionTest.testDisconnect" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FunctionTest.testSendMessage" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ServerApplication" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FunctionTest.testOneClient" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LoginWindow" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionTest.testDisconnect" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FunctionTest.testMultiClients" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FunctionTest.testDisconnect" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ServerApplication" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FunctionTest.testSendMessage" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionTest.testOneClient" />
       </list>
     </recent_temporary>
   </component>
@@ -2191,44 +2213,44 @@
       <workItem from="1460039783516" duration="94000" />
       <workItem from="1460039950989" duration="8660000" />
       <workItem from="1460124905429" duration="14064000" />
-      <workItem from="1460257078065" duration="527000" />
+      <workItem from="1460257078065" duration="1585000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FunctionTest_testOneClient - 2016.04.10 at 11h 02m 43s.xml">
-      <configuration name="FunctionTest.testOneClient" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testDisconnect - 2016.04.10 at 15h 14m 34s.xml">
+      <configuration name="FunctionTest.testDisconnect" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 01m 03s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 13m 12s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 01m 19s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 13m 31s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 01m 42s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 13m 41s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 02m 55s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 13m 54s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 04m 57s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 14m 14s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 05m 21s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 14m 53s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 05m 45s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 15m 40s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 06m 04s.xml">
-      <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
+    <history-entry file="FunctionTest_testMultiClients - 2016.04.10 at 15h 16m 17s.xml">
+      <configuration name="FunctionTest.testMultiClients" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 06m 30s.xml">
+    <history-entry file="FunctionTest_testSendMessage - 2016.04.10 at 11h 07m 04s.xml">
       <configuration name="FunctionTest.testSendMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23574000" />
+    <option name="totallyTimeSpent" value="24632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -2306,8 +2328,14 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/open-reuse-client-window/src/test/java/FunctionTest.java</url>
+          <line>51</line>
+          <properties class="FunctionTest" method="testMultiClients" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2328,11 +2356,11 @@
         <state relative-caret-position="675">
           <caret line="62" column="83" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="83" />
           <folding>
-            <element signature="e#1329#1346#0" expanded="true" />
-            <element signature="e#3763#3764#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
+            <element signature="e#1329#1346#0" expanded="false" />
+            <element signature="e#3763#3764#0" expanded="false" />
+            <element signature="e#3813#3814#0" expanded="false" />
+            <element signature="e#3861#3862#0" expanded="false" />
+            <element signature="e#3912#3913#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2586,11 +2614,11 @@
         <state relative-caret-position="1260">
           <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
           <folding>
-            <element signature="e#1329#1346#0" expanded="true" />
-            <element signature="e#3763#3764#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
+            <element signature="e#1329#1346#0" expanded="false" />
+            <element signature="e#3763#3764#0" expanded="false" />
+            <element signature="e#3813#3814#0" expanded="false" />
+            <element signature="e#3861#3862#0" expanded="false" />
+            <element signature="e#3912#3913#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2607,8 +2635,21 @@
         <state relative-caret-position="1050">
           <caret line="92" column="25" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="25" />
           <folding>
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1264#1265#0" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1350#1351#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#6569#6570#0" expanded="false" />
+            <element signature="e#6609#6610#0" expanded="false" />
+            <element signature="e#6654#6655#0" expanded="false" />
+            <element signature="e#6714#6715#0" expanded="false" />
+            <element signature="e#6763#6764#0" expanded="false" />
+            <element signature="e#6809#6810#0" expanded="false" />
+            <element signature="e#6859#6860#0" expanded="false" />
+            <element signature="e#6908#6909#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2617,7 +2658,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#350#351#0" expanded="false" />
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#611#612#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2625,7 +2672,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2732,7 +2781,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2748,14 +2799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/ServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/main/java/com/openreuse/window/body/LoginWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2764,10 +2807,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/src/main/java/com/openreuse/server/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-client-window/src/test/java/FunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

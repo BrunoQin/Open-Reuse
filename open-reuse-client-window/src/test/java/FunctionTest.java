@@ -48,4 +48,27 @@ public class FunctionTest {
         System.out.print(configManager.getLoginStatus("Bruno"));
     }
 
+//    @Test
+//    public void testMultiClients(){
+//
+//        LoginWindow loginWindow2 = new LoginWindow();
+//        loginWindow2.userNameField.setText("Bruno");
+//        loginWindow2.passwordField.setText("qinbo");
+//        loginWindow2.serverField.setText("127.0.0.1");
+//        loginWindow2.loginButton.doClick();
+//
+//        LoginWindow loginWindow = new LoginWindow();
+//        loginWindow.userNameField.setText("Jasmine");
+//        loginWindow.passwordField.setText("1234");
+//        loginWindow.serverField.setText("127.0.0.1");
+//        loginWindow.loginButton.doClick();
+//
+//        for(int i=0;i<105;i++){
+//            loginWindow.sendMessageWindow.textField.setText("the "+i+" times send");
+//            loginWindow.sendMessageWindow.btn_send.doClick();
+//
+//        }
+//
+//    }
+
 }
