@@ -55,3 +55,7 @@
 #####[程序文档](https://github.com/BrunoQin/Open-Reuse/wiki/%E7%A8%8B%E5%BA%8F%E6%96%87%E6%A1%A3)
 
 #####[管理文档](https://github.com/BrunoQin/Open-Reuse/wiki/%E7%AE%A1%E7%90%86%E6%96%87%E6%A1%A3)
+
+### Dev_2nd_week
+
+#####[讨论课文档](https://github.com/BrunoQin/Open-Reuse/tree/dev_2nd_week/%E8%AE%A8%E8%AE%BA%E8%AF%BE%E5%86%85%E5%AE%B9)
