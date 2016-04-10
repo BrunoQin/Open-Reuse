@@ -25,11 +25,11 @@ public class SendMessageWindow{
     public JFrame frame;
     private JList userList;
     private JTextArea textArea;
-    private JTextField textField;
+    public JTextField textField;
     private JTextField txt_hostIp;
     private JTextField txt_name;
-    private JButton btn_stop;
-    private JButton btn_send;
+    public JButton btn_stop;
+    public JButton btn_send;
     private JPanel northPanel;
     private JPanel southPanel;
     private JScrollPane rightScroll;
@@ -147,6 +147,8 @@ public class SendMessageWindow{
         frame.setLocation((screen_width - frame.getWidth()) / 2+50,
                 (screen_height - frame.getHeight()) / 2);
         frame.setVisible(true);
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         // 写消息的文本框中按回车键时事件
         textField.addActionListener(new ActionListener() {

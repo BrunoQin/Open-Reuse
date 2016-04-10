@@ -16,12 +16,12 @@ import java.util.regex.Pattern;
  */
 
 public class LoginWindow extends JFrame implements ActionListener {
-    JLabel userNameLabel, passwordLabel, serverLabel;
-    JTextField userNameField, serverField;
-    JPasswordField passwordField;
-    JFrame jFrame;
-    JPanel jPanel;
-    JButton loginButton, registerButton;
+    public JLabel userNameLabel, passwordLabel, serverLabel;
+    public JTextField userNameField, serverField;
+    public JPasswordField passwordField;
+    public JFrame jFrame;
+    public JPanel jPanel;
+    public JButton loginButton, registerButton;
     MessageListener messageListener;
 
     public LoginWindow(){

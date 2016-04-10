@@ -36,4 +36,12 @@ public class ListenerTest {
         System.out.print(sendMessageWindow.listModel.getSize());
     }
 
+    @Test
+    public void RedoLoginListenerTest(){
+
+        RedoLoginListener redoLoginListener = new RedoLoginListener(sendMessageWindow);
+        redoLoginListener.onMessageArrive("redo_login");
+
+    }
+
 }
