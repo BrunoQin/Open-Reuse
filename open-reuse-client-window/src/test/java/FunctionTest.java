@@ -28,10 +28,9 @@ public class FunctionTest {
         loginWindow.passwordField.setText("qinbo");
         loginWindow.serverField.setText("127.0.0.1");
         loginWindow.loginButton.doClick();
-        SendMessageWindow sendMessageWindow = new SendMessageWindow("Bruno","127.0.0.1");
         for(int i=0;i<105;i++){
-            sendMessageWindow.textField.setText("the "+i+" times send");
-            sendMessageWindow.btn_send.doClick();
+            loginWindow.sendMessageWindow.textField.setText("the "+i+" times send");
+            loginWindow.sendMessageWindow.btn_send.doClick();
 
         }
     }

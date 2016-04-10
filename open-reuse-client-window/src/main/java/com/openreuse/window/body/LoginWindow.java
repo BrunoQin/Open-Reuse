@@ -22,6 +22,7 @@ public class LoginWindow extends JFrame implements ActionListener {
     public JFrame jFrame;
     public JPanel jPanel;
     public JButton loginButton, registerButton;
+    public SendMessageWindow sendMessageWindow;
     MessageListener messageListener;
 
     public LoginWindow(){
@@ -85,7 +86,7 @@ public class LoginWindow extends JFrame implements ActionListener {
     public void loginSuccessDialog(){
         JOptionPane.showMessageDialog(this,"Login Successfully");
         this.setVisible(false);
-        new SendMessageWindow(userNameField.getText(),serverField.getText());
+        sendMessageWindow = new SendMessageWindow(userNameField.getText(),serverField.getText());
     }
 
     public void loginFailedDialog(){
