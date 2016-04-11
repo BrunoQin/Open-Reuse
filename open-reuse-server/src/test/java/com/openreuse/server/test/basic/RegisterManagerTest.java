@@ -56,7 +56,6 @@ public class RegisterManagerTest {
         registryManager.countDownLogin(clinetID);
         System.out.print(registryManager.getLoginCountByID(clinetID));
 
-
     }
 
 
