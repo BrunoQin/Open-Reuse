@@ -8,7 +8,7 @@
 
 1352911 [曹琦](https://github.com/Jasminekiki)
 
-1354366 潘舜达
+1354366 [潘舜达](https://github.com/YZLemon)
 
 1352961 [秦博](https://github.com/BrunoQin)
 
