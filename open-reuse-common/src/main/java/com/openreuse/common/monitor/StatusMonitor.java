@@ -12,4 +12,15 @@ public class StatusMonitor {
         return Singleton.instance;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    private Status status;
+
+
 }
