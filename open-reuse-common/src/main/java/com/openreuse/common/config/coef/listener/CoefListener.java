@@ -1,6 +1,6 @@
-package com.openreuse.common.monitor.coef.listener;
+package com.openreuse.common.config.coef.listener;
 
-import com.openreuse.common.monitor.coef.AbstractCoef;
+import com.openreuse.common.config.coef.AbstractCoef;
 
 /**
  * Created by kimmin on 4/12/16.

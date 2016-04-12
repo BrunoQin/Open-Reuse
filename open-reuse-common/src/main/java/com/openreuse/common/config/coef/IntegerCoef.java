@@ -1,6 +1,6 @@
-package com.openreuse.common.monitor.coef;
+package com.openreuse.common.config.coef;
 
-import com.openreuse.common.monitor.coef.type.CoefType;
+import com.openreuse.common.config.coef.type.CoefType;
 
 /**
  * Created by kimmin on 4/12/16.

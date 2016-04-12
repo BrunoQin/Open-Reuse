@@ -1,6 +1,4 @@
-package com.openreuse.common.monitor.coef.type;
-
-import java.io.Serializable;
+package com.openreuse.common.config.coef.type;
 
 /**
  * Created by kimmin on 4/11/16.

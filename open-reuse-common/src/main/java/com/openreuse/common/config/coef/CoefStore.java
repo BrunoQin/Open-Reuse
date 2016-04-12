@@ -1,10 +1,9 @@
-package com.openreuse.common.monitor.coef;
+package com.openreuse.common.config.coef;
 
-import com.openreuse.common.monitor.coef.listener.CoefListener;
+import com.openreuse.common.config.coef.listener.CoefListener;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by kimmin on 4/11/16.
