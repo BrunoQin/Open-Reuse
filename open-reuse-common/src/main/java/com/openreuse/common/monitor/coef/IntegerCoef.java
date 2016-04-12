@@ -7,11 +7,8 @@ import com.openreuse.common.monitor.coef.type.CoefType;
  */
 public class IntegerCoef extends AbstractCoef<Integer> {
     public IntegerCoef(int iVal){
-        super(iVal);
-        this.type = CoefType.INTEGER;
+        super(iVal, CoefType.INTEGER);
     }
-
-    private CoefType type;
 
     public void setValue(int iVal){
         super.setValue(iVal);
