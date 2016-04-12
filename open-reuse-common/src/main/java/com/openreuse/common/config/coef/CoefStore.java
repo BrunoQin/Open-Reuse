@@ -15,12 +15,7 @@ public class CoefStore {
     private static Map<String, List<CoefListener>> listenerMap
             = new ConcurrentHashMap<String, List<CoefListener>>();
 
-    public static void resetBasicCoef(){
-        setCoef("max.msg_per_login", 100);
-        setCoef("max_json_size", 1024);
-        setCoef("server_port", 30000);
-        setCoef("dump_stats_interval_millis", 1000 * 60);
-    }
+
 
     public static void setCoef(String name, String coef){
         coefMap.put(name, new StringCoef(coef));
@@ -47,4 +42,20 @@ public class CoefStore {
     public static AbstractCoef getCoef(String name){
         return coefMap.get(name);
     }
+
+    public static void registerListener(String name, CoefListener listener){
+        if(listenerMap.containsKey(name)){
+            List<CoefListener> list = listenerMap.get(name);
+            list.add(listener);
+        }else{
+            List<CoefListener> list = new LinkedList<>();
+            list.add(listener);
+            listenerMap.put(name, list);
+        }
+    }
+
+    public static void removeAllListener(String name){
+        listenerMap.remove(name);
+    }
+
 }
