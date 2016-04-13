@@ -4,7 +4,6 @@ import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;
 import java.util.Map;
-
 /**
  * Created by kimmin on 3/23/16.
  */
@@ -19,6 +18,7 @@ public class LocalPersistHelper {
     public synchronized static String persistMapToLocal(Map map, File file){
         try{
             String json = objectMapper.writeValueAsString(map);
+
             return json;
         }catch (Throwable e){
             e.printStackTrace();

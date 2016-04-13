@@ -2,12 +2,15 @@ package com.openreuse.server.throttle;
 
 import com.openreuse.common.persist.LocalPersistHelper;
 import com.openreuse.server.misc.Constants;
+import wheellllll.performance.LogUtils;
+import wheellllll.performance.PerformanceManager;
 
 import java.io.File;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
@@ -15,7 +18,27 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 
 public class ThrottleStatsManager {
+
+    PerformanceManager performanceManager;
+
+    private void initPM(){
+        performanceManager = new PerformanceManager();
+        LogUtils.setLogPrefix("Test");
+        LogUtils.setLogPath("./log");
+        performanceManager.setPeriod(60);
+        performanceManager.setTimeUnit(TimeUnit.SECONDS);
+        performanceManager.setInitialDelay(1);
+        performanceManager.addIndex("LoginSuccess");
+        performanceManager.addIndex("LoginFailed");
+        performanceManager.addIndex("Message");
+        performanceManager.addIndex("ForwardedMessage");
+        performanceManager.addIndex("ReceivedMessage");
+        performanceManager.addIndex("IgnoredMessage");
+        performanceManager.start();
+    }
+
     private ThrottleStatsManager(){
+        initPM();
         dumpTimer = new Timer();
         dumpTimer.schedule(new TimerTask() {
             @Override
@@ -57,6 +80,7 @@ public class ThrottleStatsManager {
         Integer cnt = messageCntMap.get(uid);
         return cnt;
     }
+
     public void incMsgCount(long uid){
         Integer cnt = messageCntMap.get(uid);
         if(null == cnt){
@@ -65,6 +89,8 @@ public class ThrottleStatsManager {
             cnt ++;
         }
         messageCntMap.put(uid, cnt);
+        //!!!Bug 会有空指针
+        //performanceManager.updateIndex("Message",cnt.intValue());
     }
 
     public boolean checkMsgCount(long uid){
@@ -79,10 +105,12 @@ public class ThrottleStatsManager {
 
     public void clrMsgCount(long uid){
         messageCntMap.put(uid, 0);
+        performanceManager.removeIndex("Message");
     }
 
     public void incForwardedMsgCount(){
         forwardedMsgCount.getAndIncrement();
+        performanceManager.updateIndex("ForwardedMessage",1);
     }
 
     public long getForwardedMsgCount(){
@@ -92,10 +120,12 @@ public class ThrottleStatsManager {
     public void clrForwardedMsgCount(){
         boolean success = forwardedMsgCount.compareAndSet(forwardedMsgCount.get(), 0L);
         while(!success) success = forwardedMsgCount.compareAndSet(forwardedMsgCount.get(), 0L);
+        performanceManager.removeIndex("ForwardedMessage");
     }
 
     public void incValidLoginCount(){
         validLoginCount.getAndIncrement();
+        performanceManager.updateIndex("LoginSuccess",1);
     }
 
     public long getValidLoginCount(){
@@ -105,10 +135,12 @@ public class ThrottleStatsManager {
     public void clrValidLoginCount(){
         boolean success = validLoginCount.compareAndSet(validLoginCount.get(), 0L);
         while(!success) success = validLoginCount.compareAndSet(validLoginCount.get(), 0L);
+        performanceManager.removeIndex("LoginSuccess");
     }
 
     public void incInvalidLoginCount(){
         invalidLoginCount.getAndIncrement();
+        performanceManager.updateIndex("LoginFailed",1);
     }
 
     public long getInvalidLoginCount(){
@@ -118,10 +150,12 @@ public class ThrottleStatsManager {
     public void clrInvalidLoginCount(){
         boolean success = invalidLoginCount.compareAndSet(invalidLoginCount.get(), 0L);
         while(!success) success = invalidLoginCount.compareAndSet(invalidLoginCount.get(), 0L);
+        performanceManager.removeIndex("LoginFailed");
     }
 
     public void incReceivedMsgCount(){
         receivedMsgCount.getAndIncrement();
+        performanceManager.updateIndex("ReceivedMessage",1);
     }
 
     public long getReceivedMsgCount(){
@@ -131,10 +165,12 @@ public class ThrottleStatsManager {
     public void clrReceivedMsgCount(){
         boolean success = receivedMsgCount.compareAndSet(receivedMsgCount.get(), 0L);
         while(!success) success = receivedMsgCount.compareAndSet(receivedMsgCount.get(), 0L);
+        performanceManager.removeIndex("ReceivedMessage");
     }
 
     public void incIgnoredMsgCount(){
         ignoredMsgCount.getAndIncrement();
+        performanceManager.updateIndex("IgnoredMessage",1);
     }
 
     public long getIgnoredMsgCount(){
@@ -144,6 +180,7 @@ public class ThrottleStatsManager {
     public void clrIgnoredMsgCount(){
         boolean success = ignoredMsgCount.compareAndSet(ignoredMsgCount.get(), 0L);
         while(!success) success = ignoredMsgCount.compareAndSet(ignoredMsgCount.get(), 0L);
+        performanceManager.removeIndex("IgnoredMessage");
     }
 
 }
