@@ -16,3 +16,64 @@ dependencies {
     compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+
+task clearMonitorJar(type: Delete) {
+    delete 'libs/open-reuse-monitor.jar'
+}
+task makeMonitorJar(type:org.gradle.api.tasks.bundling.Jar) {
+    //指定生成的jar名
+    baseName 'open-reuse-monitor'
+    //从哪里打包class文件
+    from('build/classes/main/com/openreuse/common/monitor/')
+    //打包到jar后的目录结构
+    into('com.openreuse/common/monitor')
+    //去掉不需要打包的目录和文件
+    exclude('test/', 'BuildConfig.class', 'R.class')
+    //去掉R$开头的文件
+    exclude{ it.name.startsWith('R$');}
+}
+makeMonitorJar.dependsOn(clearMonitorJar, build)
+
+
+
+
+task clearConfigJar(type: Delete) {
+    delete 'libs/open-reuse-monitor.jar'
+}
+task makeConfigJar(type:org.gradle.api.tasks.bundling.Jar) {
+    //指定生成的jar名
+    baseName 'open-reuse-config'
+    //从哪里打包class文件
+    from('build/classes/main/com/openreuse/common/config/')
+    //打包到jar后的目录结构
+    into('com.openreuse/common/config')
+    //去掉不需要打包的目录和文件
+    exclude('test/', 'BuildConfig.class', 'R.class')
+    //去掉R$开头的文件
+    exclude{ it.name.startsWith('R$');}
+}
+makeConfigJar.dependsOn(clearConfigJar, build)
+
+
+
+task clearLicenseJar(type: Delete) {
+    delete 'libs/open-reuse-monitor.jar'
+}
+task makeLicenseJar(type:org.gradle.api.tasks.bundling.Jar) {
+    //指定生成的jar名
+    baseName 'open-reuse-license'
+    //从哪里打包class文件
+    from('build/classes/main/com/openreuse/common/license/')
+    //打包到jar后的目录结构
+    into('com.openreuse/common/license')
+    //去掉不需要打包的目录和文件
+    exclude('test/', 'BuildConfig.class', 'R.class')
+    //去掉R$开头的文件
+    exclude{ it.name.startsWith('R$');}
+}
+makeLicenseJar.dependsOn(clearLicenseJar, build)
+
+
+
+
+

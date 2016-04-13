@@ -42,4 +42,12 @@ public class StatusMonitor {
         this.queue = newQueue;
     }
 
+    public void addHook(StatusHook hook){
+        queue.offer(hook);
+    }
+
+    public void cleanHooks(){
+        queue.clear();
+    }
+
 }
