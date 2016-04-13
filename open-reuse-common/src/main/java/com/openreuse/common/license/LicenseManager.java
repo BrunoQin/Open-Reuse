@@ -1,5 +1,9 @@
 package com.openreuse.common.license;
 
+import com.openreuse.common.license.auth.AuthManager;
+import com.openreuse.common.license.auth.Processable;
+import com.openreuse.common.license.auth.Processed;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -15,32 +19,22 @@ public class LicenseManager {
         return Singleton.instance;
     }
 
-    private Generator generator = new Generator();
 
-    public void setLicenseCapacity(){
-        ;
-    }
-
-    public CallerMessage requestLicense(){
+    public Processed decorateWithLicense(Processable processable, License license){
+        LicenseStatus status = AuthManager.getInstance().checkLicenseStatus(license);
+        if(LicenseStatus.ALLOWED == status){
+            /** Too sleepy.. continue tomorrow **/
+        }
         return null;
     }
 
-    public int getRemainingCapacity(){
-        return 1;
+    private boolean bWork = true;
 
-    }
-
-    private class Generator {
-        public CallerMessage generate(String org){
-            try{
-                MessageDigest mdInst = MessageDigest.getInstance("MD5");
-                mdInst.update(org.getBytes());
-                byte[] newBytes = mdInst.digest();
-                return new CallerMessage(newBytes);
-            }catch (NoSuchAlgorithmException ne){
-                ne.printStackTrace();
-                return null;
-            }
+    public void setEnableWork(boolean work){
+        if(work){
+            /** Enable license distribution **/
+        }else{
+            /** Disable license distribution **/
         }
     }
 

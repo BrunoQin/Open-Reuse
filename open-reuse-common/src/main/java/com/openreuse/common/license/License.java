@@ -4,18 +4,19 @@ package com.openreuse.common.license;
  * Created by kimmin on 4/13/16.
  */
 public class License {
+    public License(){}
     public License(byte[] bytes){
-        this.bytes = bytes;
+        this.key = bytes;
     }
 
-    public byte[] getBytes() {
-        return bytes;
+    private byte[] key;
+
+    public byte[] getKey() {
+        return key;
     }
 
-    public void setBytes(byte[] bytes) {
-        this.bytes = bytes;
+    public void setKey(byte[] key) {
+        this.key = key;
     }
-
-    private byte[] bytes;
 
 }
