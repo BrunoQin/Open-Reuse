@@ -58,4 +58,12 @@
 
 ### Dev_2nd_week
 
-#####[讨论课文档](https://github.com/BrunoQin/Open-Reuse/tree/dev_2nd_week/%E8%AE%A8%E8%AE%BA%E8%AF%BE%E5%86%85%E5%AE%B9)
+####[讨论课文档](https://github.com/BrunoQin/Open-Reuse/tree/master/%E8%AE%A8%E8%AE%BA%E8%AF%BE%E5%86%85%E5%AE%B9)
+
+####[复用构件](https://github.com/BrunoQin/Open-Reuse/tree/master/%E5%A4%8D%E7%94%A8%E6%9E%84%E4%BB%B6)
+
+1. [CM](https://github.com/BrunoQin/Open-Reuse/tree/master/%E5%A4%8D%E7%94%A8%E6%9E%84%E4%BB%B6/CM)
+
+2. [License](https://github.com/BrunoQin/Open-Reuse/tree/master/%E5%A4%8D%E7%94%A8%E6%9E%84%E4%BB%B6/License)
+
+3. [PM](https://github.com/BrunoQin/Open-Reuse/tree/master/%E5%A4%8D%E7%94%A8%E6%9E%84%E4%BB%B6/PM)
