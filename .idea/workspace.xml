@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4411f6f-7fd5-4487-925b-885870498518" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.13-rc-1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-common/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/monitor/StatusMonitor.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/monitor/StatusMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-server/build.gradle" afterPath="$PROJECT_DIR$/open-reuse-server/build.gradle" />
     </list>
     <ignored path="Open-Reuse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,13 +80,15 @@
       <file leaf-file-name="CoefStore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/config/coef/CoefStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="705">
               <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#423#451#0" expanded="true" />
-                <element signature="e#1781#1782#0" expanded="true" />
-                <element signature="e#1821#1822#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="false" />
+                <element signature="e#569#570#0" expanded="false" />
+                <element signature="e#629#630#0" expanded="false" />
+                <element signature="e#685#686#0" expanded="false" />
+                <element signature="e#1309#1310#0" expanded="false" />
+                <element signature="e#1349#1350#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,8 +97,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="185">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-server/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -111,16 +127,9 @@
       <file leaf-file-name="License.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/License.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="225">
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#135#136#0" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,7 +139,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#374#375#0" expanded="false" />
+                <element signature="e#408#409#0" expanded="false" />
+                <element signature="e#434#435#0" expanded="false" />
+                <element signature="e#467#468#0" expanded="false" />
+                <element signature="e#499#500#0" expanded="false" />
+                <element signature="e#531#532#0" expanded="false" />
+                <element signature="e#572#573#0" expanded="false" />
+                <element signature="e#604#605#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,22 +156,14 @@
       <file leaf-file-name="IntegerCoef.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/config/coef/IntegerCoef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="225">
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="false" />
+                <element signature="e#347#348#0" expanded="false" />
+                <element signature="e#379#380#0" expanded="false" />
+                <element signature="e#418#419#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoStatusHook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/monitor/hook/InfoStatusHook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,11 +171,13 @@
       <file leaf-file-name="CallerMessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/CallerMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="150">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#145#146#0" expanded="false" />
+                <element signature="e#177#178#0" expanded="false" />
+                <element signature="e#209#210#0" expanded="false" />
+                <element signature="e#237#238#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -174,9 +186,17 @@
       <file leaf-file-name="LicenseManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/LicenseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="510">
               <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#385#386#0" expanded="false" />
+                <element signature="e#426#427#0" expanded="false" />
+                <element signature="e#517#518#0" expanded="false" />
+                <element signature="e#533#534#0" expanded="false" />
+                <element signature="e#577#578#0" expanded="false" />
+                <element signature="e#604#605#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -281,6 +301,10 @@
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clearResponseJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="wrapper" />
@@ -298,6 +322,10 @@
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="makeResponseJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
@@ -843,6 +871,10 @@
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/open-reuse-server" />
+                <option name="name" value="clearResponseJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/open-reuse-server" />
                 <option name="name" value="testClasses" />
@@ -851,6 +883,10 @@
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/open-reuse-server" />
                 <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/open-reuse-server" />
+                <option name="name" value="makeResponseJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
@@ -944,7 +980,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="8761714511000" />
+        <entry key="$PROJECT_DIR$" value="8762323828000" />
         <entry key="$PROJECT_DIR$/../OpenReuse/Open-Reuse" value="8753274331000" />
       </map>
     </option>
@@ -1122,6 +1158,7 @@
         <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/monitor/hook/HookComparator.java" />
         <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/monitor/StatusMonitor.java" />
         <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/License.java" />
+        <option value="$PROJECT_DIR$/open-reuse-server/build.gradle" />
         <option value="$PROJECT_DIR$/open-reuse-common/build.gradle" />
       </list>
     </option>
@@ -1168,8 +1205,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1216,6 +1253,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Open-Reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open-reuse-common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1239,108 +1294,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openreuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Open-Reuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="open-reuse-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openreuse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1951,6 +1904,7 @@
       <workItem from="1460462889122" duration="1689000" />
       <workItem from="1460464708575" duration="12537000" />
       <workItem from="1460481323722" duration="1861000" />
+      <workItem from="1460508250893" duration="810000" />
     </task>
     <servers />
   </component>
@@ -1987,7 +1941,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40368000" />
+    <option name="totallyTimeSpent" value="41178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -2076,13 +2030,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/open-reuse-client-api/src/main/java/com/openresure/client/listener/ValidateRegisterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-server/src/test/java/com/openreuse/server/registry/RegistryManagerTest.groovy" />
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/test/java/com/openreuse/common/persist/testLocalPersistHelper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2252,14 +2199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#164#165#0" expanded="false" />
-            <element signature="e#202#203#0" expanded="false" />
-            <element signature="e#236#237#0" expanded="false" />
-            <element signature="e#266#267#0" expanded="false" />
-            <element signature="e#313#314#0" expanded="false" />
-            <element signature="e#351#352#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2274,7 +2213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2282,7 +2220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2290,7 +2227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2298,7 +2234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2314,7 +2249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2322,9 +2256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2332,7 +2263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2340,7 +2270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2348,14 +2277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#583#595#0" expanded="false" />
-            <element signature="e#1138#1139#0" expanded="false" />
-            <element signature="e#1171#1172#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-            <element signature="e#1231#1232#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2363,7 +2284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2377,13 +2297,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/config/coef/CoefStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="705">
           <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#451#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+            <element signature="e#1309#1310#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2406,35 +2328,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/License.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="225">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/CallerMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="150">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="false" />
+            <element signature="e#177#178#0" expanded="false" />
+            <element signature="e#209#210#0" expanded="false" />
+            <element signature="e#237#238#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/LicenseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="510">
           <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#517#518#0" expanded="false" />
+            <element signature="e#533#534#0" expanded="false" />
+            <element signature="e#577#578#0" expanded="false" />
+            <element signature="e#604#605#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2442,25 +2367,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#467#468#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
+            <element signature="e#531#532#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#604#605#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/config/coef/IntegerCoef.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="225">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+            <element signature="e#418#419#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-server/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="185">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
