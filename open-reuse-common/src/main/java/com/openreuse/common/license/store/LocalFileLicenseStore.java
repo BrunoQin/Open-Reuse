@@ -26,7 +26,7 @@ public class LocalFileLicenseStore implements LicenseStore {
             Iterator<License> iterator = set.iterator();
             if(iterator.hasNext()){
                 License license = iterator.next();
-                iterator.remove();
+                set.remove(license);
                 return license;
             }
         }
