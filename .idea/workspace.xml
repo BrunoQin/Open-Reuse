@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4411f6f-7fd5-4487-925b-885870498518" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/LicenseManager.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/LicenseManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processable.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processed.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/notify/NotifyService.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/notify/NotifyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java" afterPath="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java" />
     </list>
     <ignored path="Open-Reuse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,20 +64,8 @@
       <file leaf-file-name="LocalFileLicenseStore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotifyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/notify/NotifyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            <state relative-caret-position="215">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,6 +121,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Processable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Authenticated.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Authenticated.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -152,8 +144,8 @@
       <file leaf-file-name="AuthManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="81">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,8 +166,8 @@
       <file leaf-file-name="Auth.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+            <state relative-caret-position="185">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#612#613#0" expanded="true" />
@@ -1138,8 +1130,8 @@
         <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java" />
         <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/notify/NotifyService.java" />
         <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java" />
-        <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java" />
         <option value="$PROJECT_DIR$/open-reuse-common/src/test/java/com/openreuse/common/persist/LicenseTest.java" />
+        <option value="$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java" />
       </list>
     </option>
   </component>
@@ -2339,17 +2331,11 @@
       <workItem from="1460464708575" duration="12537000" />
       <workItem from="1460481323722" duration="1861000" />
       <workItem from="1460508250893" duration="1030000" />
-      <workItem from="1460556774342" duration="14118000" />
+      <workItem from="1460556774342" duration="14289000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LicenseTest_applyForLicenseTest - 2016.04.14 at 10h 13m 12s.xml">
-      <configuration name="LicenseTest.applyForLicenseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LicenseTest_applyForLicenseTest - 2016.04.14 at 10h 16m 21s.xml">
-      <configuration name="LicenseTest.applyForLicenseTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LicenseTest_applyForLicenseTest - 2016.04.14 at 10h 17m 36s.xml">
       <configuration name="LicenseTest.applyForLicenseTest" configurationId="JUnit" />
     </history-entry>
@@ -2374,9 +2360,15 @@
     <history-entry file="LicenseTest_applyForLicenseTest - 2016.04.14 at 10h 26m 47s.xml">
       <configuration name="LicenseTest.applyForLicenseTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LicenseTest_applyForLicenseTest - 2016.04.14 at 10h 27m 42s.xml">
+      <configuration name="LicenseTest.applyForLicenseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LicenseTest_applyForLicenseTest - 2016.04.14 at 10h 30m 03s.xml">
+      <configuration name="LicenseTest.applyForLicenseTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55516000" />
+    <option name="totallyTimeSpent" value="55687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -2397,7 +2389,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23671874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14296874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.165625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2458,12 +2450,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java</url>
           <line>52</line>
           <properties />
@@ -2471,12 +2457,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java</url>
-          <line>26</line>
+          <line>25</line>
           <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2800,14 +2786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Denied.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2826,38 +2804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/notify/NotifyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/exception/InvalidLicenseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2912,10 +2862,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/store/LocalFileLicenseStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/exception/InvalidLicenseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Processable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/AuthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/open-reuse-common/src/main/java/com/openreuse/common/license/auth/Auth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+        <state relative-caret-position="185">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#612#613#0" expanded="true" />

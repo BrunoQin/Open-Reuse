@@ -23,7 +23,7 @@ public class Auth implements Processed {
     }
 
     public void process() throws InvalidLicenseException{
-        if(!bLive && AuthManager.getInstance().checkLicenseStatus(license) != LicenseStatus.ALLOWED){
+        if(!bLive || AuthManager.getInstance().checkLicenseStatus(license) != LicenseStatus.ALLOWED){
             throw new InvalidLicenseException(license);
         }else{
             this.processable.process();
