@@ -19,7 +19,7 @@ MANIFEST.MF
 *.ipr
 *.iml
 *.iws
-.idea
+.idea/
 xtend-gen
 yang-gen-code
 yang-gen-config
