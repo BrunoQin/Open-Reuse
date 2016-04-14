@@ -43,3 +43,5 @@ eclimd.log
 *.xmi
 build/
 *.class
+*.log
+log/
