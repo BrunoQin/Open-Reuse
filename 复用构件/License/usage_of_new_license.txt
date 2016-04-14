@@ -1,0 +1,44 @@
+
+The process object has to implement Processable Interface..
+If the license expired process method will throw exception.
+
+Demo of process invocation :
+
+public class LicenseTest {
+    @Test
+    public void applyForLicenseTest(){
+        LicenseManager.getInstance().setEnableWork(true);
+        License license = AuthManager.getInstance().applyForLicense(1000, TimeUnit.MILLISECONDS);
+        SimpleProcess simpleProcess = new SimpleProcess(license);
+        Processed processed = LicenseManager.getInstance().decorateWithLicense(simpleProcess);
+        for(int i = 0; i < 5; i++){
+            try{
+                processed.process();
+                Thread.currentThread().sleep(1000);
+            }catch (InvalidLicenseException ie){
+                ie.printStackTrace();
+            }catch (InterruptedException iie){
+                iie.printStackTrace();
+            }
+        }
+    }
+}
+
+
+Demo of process object :
+
+public class SimpleProcess implements Processable {
+    public SimpleProcess(License license){
+        this.license = license;
+    }
+    private License license = null;
+    public void process(){
+        System.out.println("PROCESS SUCCESS!");
+    }
+    public License retrieveLicense(){
+        return this.license;
+    }
+    public void bindLicense(License license){
+        this.license = license;
+    }
+}
