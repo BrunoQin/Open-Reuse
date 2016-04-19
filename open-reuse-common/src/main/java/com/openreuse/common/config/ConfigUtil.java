@@ -1,6 +1,10 @@
 package com.openreuse.common.config;
 
+import com.openreuse.common.config.coef.AbstractCoef;
 import com.openreuse.common.config.coef.CoefStore;
+import com.openreuse.common.config.coef.type.CoefType;
+
+import java.io.File;
 
 /**
  * Created by kimmin on 4/11/16.
@@ -15,8 +19,13 @@ public class ConfigUtil {
         CoefStore.setCoef("dump_stats_interval_millis", 1000 * 60);
     }
 
-    public static void dumpBasicCoef(){
+    public static void dumpBasicCoef(File jsonFile){
         /** Do dumps here **/
+        CoefStore.dumpConfigToFile(jsonFile);
+    }
+
+    public static void loadBasicCoef(File jsonFile){
+        CoefStore.loadConfigToFile(jsonFile);
     }
 
     public static void cleanBasicCoef(){
@@ -30,5 +39,20 @@ public class ConfigUtil {
     public static void unlockBasicCoef(){
         /** Do unlocks here **/
     }
+
+    public static void setBasicCoef(String key, Integer iV){
+        CoefStore.setCoef(key, iV);
+    }
+
+    public static void setBasicCoef(String key, String sV){
+        CoefStore.setCoef(key, sV);
+    }
+
+    public static AbstractCoef getBasicCoef(String key){
+        return CoefStore.getCoef(key);
+    }
+
+
+
 
 }

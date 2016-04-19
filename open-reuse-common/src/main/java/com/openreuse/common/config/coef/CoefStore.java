@@ -1,7 +1,11 @@
 package com.openreuse.common.config.coef;
 
 import com.openreuse.common.config.coef.listener.CoefListener;
+import com.openreuse.common.config.coef.type.CoefType;
+import org.codehaus.jackson.map.ObjectMapper;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -16,6 +20,7 @@ public class CoefStore {
             = new ConcurrentHashMap<String, List<CoefListener>>();
 
 
+    private static ObjectMapper om = new ObjectMapper();
 
     public static void setCoef(String name, String coef){
         coefMap.put(name, new StringCoef(coef));
@@ -58,4 +63,46 @@ public class CoefStore {
         listenerMap.remove(name);
     }
 
+    public static void dumpConfigToFile(File jsonFile){
+        Map map = new HashMap();
+        for(String key: coefMap.keySet()){
+            AbstractCoef ac = coefMap.get(key);
+            if(ac.getType().equals(CoefType.INTEGER)){
+                Map vmap = new HashMap();
+                vmap.put("value", (Integer) ac.getValue());
+                vmap.put("type", CoefType.INTEGER);
+                map.put(key, vmap);
+            }else if(ac.getType().equals(CoefType.VARCHAR)){
+                Map vmap = new HashMap();
+                vmap.put("value", (String) ac.getValue());
+                vmap.put("type", CoefType.VARCHAR);
+                map.put(key, vmap);
+            }else{
+                /** Temp do nothing .. **/
+            }
+        }
+        try{
+            om.writeValue(jsonFile, map);
+        }catch (IOException ioe){
+            ioe.printStackTrace();
+        }
+    }
+
+    public static void loadConfigToFile(File jsonFile){
+        coefMap.clear();
+        try{
+            Map map = om.readValue(jsonFile, Map.class);
+            for(Object key: map.keySet()){
+                Map vmap = (Map) map.get(key);
+                CoefType type =  CoefType.getTypeViaString((String) vmap.get("type"));
+                if(type.equals(CoefType.INTEGER)){
+                    setCoef((String) key, (Integer) vmap.get("value"));
+                }else if(type.equals(CoefType.VARCHAR)){
+                    setCoef((String) key, (String) vmap.get("value"));
+                }else{}
+            }
+        }catch (IOException ioe){
+            ioe.printStackTrace();
+        }
+    }
 }
