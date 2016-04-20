@@ -40,6 +40,7 @@ public class ServerApplication {
                     }
                 });
         try {
+            Constants.update();
             ChannelFuture future = bootstrap.bind(Constants.SERVER_PORT).sync();
             future.channel().closeFuture().sync();
         }catch (Throwable e){

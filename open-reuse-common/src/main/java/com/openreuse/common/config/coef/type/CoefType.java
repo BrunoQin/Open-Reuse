@@ -5,27 +5,31 @@ package com.openreuse.common.config.coef.type;
  */
 public enum CoefType {
 
-    VARCHAR("varchar", 0),
-    INTEGER("integer", 1),
-    LONG("long", 2),
-    BYTE("byte", 3);
+    VARCHAR("varchar"),
+    INTEGER("integer"),
+    LONG("long"),
+    BYTE("byte");
 
 
-    CoefType(String name, Integer index){
-        this.index = index;
+    CoefType(String name){
         this.name = name;
     }
 
     private String name;
-    private Integer index;
 
-    public static String getName(int index){
-        for(CoefType type: CoefType.values()){
-            if(type.index == index){
-                return type.name;
-            }
-        }
+    public static CoefType getTypeViaString(String typeStr){
+        if(typeStr.equals("VARCHAR")) return CoefType.VARCHAR;
+        if(typeStr.equals("INTEGER")) return CoefType.INTEGER;
         return null;
     }
+
+//    public static String getName(int index){
+//        for(CoefType type: CoefType.values()){
+//            if(type.index == index){
+//                return type.name;
+//            }
+//        }
+//        return null;
+//    }
 
 }

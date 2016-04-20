@@ -1,5 +1,7 @@
 package com.openreuse.server.throttle;
 
+
+import com.HaroldLIU.LicenseManager;
 import com.openreuse.common.persist.LocalPersistHelper;
 import com.openreuse.server.misc.Constants;
 import wheellllll.performance.LogUtils;
@@ -13,13 +15,17 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
+;
+
 /**
  * Created by kimmin on 3/26/16.
  */
 
 public class ThrottleStatsManager {
 
-    PerformanceManager performanceManager;
+    private PerformanceManager performanceManager;
+    private LicenseManager licenseManager;
+
 
     private void initPM(){
         performanceManager = new PerformanceManager();
@@ -35,6 +41,11 @@ public class ThrottleStatsManager {
         performanceManager.addIndex("ReceivedMessage");
         performanceManager.addIndex("IgnoredMessage");
         performanceManager.start();
+    }
+
+    private void initLicense(){
+        licenseManager = new LicenseManager();
+        licenseManager.CapacityInit(100, 0);
     }
 
     private ThrottleStatsManager(){
@@ -96,7 +107,7 @@ public class ThrottleStatsManager {
     public boolean checkMsgCount(long uid){
         Integer cnt = messageCntMap.get(uid);
         if(null != cnt){
-            if(cnt >= Constants.MAX_MSG_CNT_PER_LOGIN){
+            if(!licenseManager.CapacityCheck()){
                 return false;
             }
         }
