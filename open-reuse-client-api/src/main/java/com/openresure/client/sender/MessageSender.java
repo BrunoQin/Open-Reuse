@@ -2,6 +2,7 @@ package com.openresure.client.sender;
 
 
 import com.openresure.client.config.ConfigManager;
+import com.openresure.client.queue.MessageQueue;
 import com.openresure.client.service.ConnectionMgmtService;
 import com.openresure.client.service.MessageSendingService;
 import com.openreuse.common.message.Message;
@@ -43,6 +44,7 @@ public class MessageSender implements Runnable{
                 continue;
             }
             try{
+                MessageQueue.dumpMessageToQueue(message);
                 byte[] bytes = om.writeValueAsBytes(message);
                 ByteBuf buf = Unpooled.copiedBuffer(bytes);
                 ConfigManager.getInstance().getChannel().writeAndFlush(buf);

@@ -1,7 +1,10 @@
 package com.openreuse.server.request.dispatcher;
 
+import com.openreuse.common.log.queue.IMessageQueue;
+import com.openreuse.common.log.queue.MessageQueueImpl;
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
+import com.openreuse.server.misc.Constants;
 import com.openreuse.server.request.route.*;
 import com.openreuse.server.request.session.SessionManager;
 import io.netty.channel.Channel;
@@ -13,6 +16,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by kimmin on 3/25/16.
  */
 public class RouteDispatcher implements Dispatcher {
+
+    private static IMessageQueue mq = new MessageQueueImpl(Constants.DUMP_MQ_CAPACITY);
 
     private RouteDispatcher(){
         /** Init route map for dispatcher **/
@@ -30,7 +35,13 @@ public class RouteDispatcher implements Dispatcher {
 
     private Map<MessageType, Route> routeMap = new ConcurrentHashMap<MessageType, Route>();
 
+    public static Message undumpMessageFromQueue(){
+        return mq.getMessage();
+    }
+
     public void dispatch(Message message){
+        /** Dump the message into MQ **/
+        mq.pushMessage(message);
         /** Check if the user has already login **/
         if(message.getType() == MessageType.REGISTER_MESSAGE){
             routeMap.get(message.getType()).route(message);

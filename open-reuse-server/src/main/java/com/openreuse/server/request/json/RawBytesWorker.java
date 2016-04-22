@@ -38,6 +38,7 @@ public class RawBytesWorker implements Worker {
             try{
                 if(rawBytes == null) return;
                 Message message = om.readValue(rawBytes, Message.class);
+
                 /** If register message dispatch it anyway **/
                 if(message.getType() == MessageType.REGISTER_MESSAGE){
                     ThrottleStatsManager.getInstance().incReceivedMsgCount();

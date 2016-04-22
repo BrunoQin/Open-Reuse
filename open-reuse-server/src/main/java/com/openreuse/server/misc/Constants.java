@@ -34,6 +34,8 @@ public class Constants {
     public static long MILLIS_PER_DAY = MILLIS_PER_HOUR * 24;
     public static long NANOS_PER_MILLI = 1000 * 1000;
 
+    public static int DUMP_MQ_CAPACITY = 1024;
+
     public static void update(){
         try{
             config.readFile("config.json");
