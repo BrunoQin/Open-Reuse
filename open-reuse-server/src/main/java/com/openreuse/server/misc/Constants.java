@@ -27,6 +27,9 @@ public class Constants {
     public static long REDUMP_STATS_INTERVAL_MILLIS = 1000 * 60;
     public static String LOGIN_SUCCESS_INFO = "LOGIN SUCCESS";
 
+    /** File Path **/
+    public static String FILE_PATH = "";
+
     /** Time Def Constants **/
     public static long MILLIS_PER_SECOND = 1000;
     public static long MILLIS_PER_MINUTE = MILLIS_PER_SECOND * 60;
