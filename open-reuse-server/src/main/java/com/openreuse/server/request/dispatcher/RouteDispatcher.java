@@ -1,7 +1,7 @@
 package com.openreuse.server.request.dispatcher;
 
-import com.openreuse.common.log.queue.IMessageQueue;
-import com.openreuse.common.log.queue.MessageQueueImpl;
+import com.openreuse.common.logging.queue.IMessageQueue;
+import com.openreuse.common.logging.queue.MessageQueueImpl;
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
 import com.openreuse.server.misc.Constants;
