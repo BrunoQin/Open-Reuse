@@ -31,7 +31,7 @@ public class ZipFile {
 
         createDir("Messagezip");
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd");
-        String zipFileName = "./Messagezip/"+dateFormat.format(today)+".zip"; // ´ò°üºóÎÄ¼þÃû×Ö
+        String zipFileName = "./Messagezip/"+dateFormat.format(today)+".zip"; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
         System.out.print(zipFileName);
         zip(zipFileName, new File(inputFileName));
 
@@ -75,8 +75,6 @@ public class ZipFile {
 
             int b;
 
-//System.out.println(base);
-
             while ((b = in.read()) != -1) {
 
                 out.write(b);
@@ -98,7 +96,7 @@ public class ZipFile {
         if (!destDirName.endsWith(File.separator)) {
             destDirName = destDirName + File.separator;
         }
-        //´´½¨Ä¿Â¼
+
         if (dir.mkdirs()) {
             System.out.println("successful");
             return true;

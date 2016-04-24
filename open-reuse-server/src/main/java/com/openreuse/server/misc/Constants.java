@@ -23,12 +23,10 @@ public class Constants {
     public static int MAX_MSG_CNT_PER_LOGIN = 100;
     public static int PARSE_WORKER_NUMBER =
             Runtime.getRuntime().availableProcessors() * 2;
+    public static int FILE_WORKER_NUMBER = 1;
     public static long REFRESH_ID_CACHE_INTERVAL_MILLIS = 1000 * 5;
     public static long REDUMP_STATS_INTERVAL_MILLIS = 1000 * 60;
     public static String LOGIN_SUCCESS_INFO = "LOGIN SUCCESS";
-
-    /** File Path **/
-    public static String FILE_PATH = "";
 
     /** Time Def Constants **/
     public static long MILLIS_PER_SECOND = 1000;

@@ -2,6 +2,7 @@ package com.openreuse.server.handler;
 
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
+import com.openreuse.server.request.file.PersistFileService;
 import com.openreuse.server.request.json.ParseJsonService;
 import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
@@ -11,8 +12,6 @@ import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.codehaus.jackson.map.ObjectMapper;
-
-import java.util.concurrent.Future;
 
 /**
  * Created by kimmin on 3/25/16.
@@ -40,6 +39,7 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
             if(message.getType() == MessageType.REGISTER_MESSAGE){
                 SessionManager.getInstance().saveChannelForUsr(from, ctx.channel());
                 ParseJsonService.getInstance().provideRawBytes(rawBytes);
+                PersistFileService.getInstance();
                 return;
             }
             Long uid = SessionManager.getInstance().getUsrId(from);
@@ -47,6 +47,7 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
             SessionManager.getInstance().registerSession(uid, ctx.channel());
         }
         ParseJsonService.getInstance().provideRawBytes(rawBytes);
+        PersistFileService.getInstance();
     }
 
     @Override
