@@ -2,6 +2,7 @@ package com.openresure.client.handler;
 
 import com.openresure.client.config.ConfigManager;
 import com.openresure.client.service.MessageNotifyService;
+import com.openresure.client.service.PersistFileService;
 import com.openreuse.common.message.Message;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -35,6 +36,7 @@ public class IncomingMessageHandler extends ChannelInboundHandlerAdapter {
             Message message = om.readValue(buf.array(), Message.class);
             System.out.println(message.getType().getType());
             MessageNotifyService.getInstance().publish(message);
+            PersistFileService.getInstance().writeFile(message);
         }catch (Throwable e){
             e.printStackTrace();
         }
