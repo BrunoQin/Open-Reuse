@@ -1,6 +1,7 @@
 package com.openresure.client.service;
 
 import com.openreuse.common.FileOperator.FileUtil;
+import com.openreuse.common.FileOperator.ZipFile;
 import com.openreuse.common.message.Message;
 
 import java.text.SimpleDateFormat;
@@ -29,6 +30,14 @@ public class PersistFileService {
 
     public void writeFile(Message message){
         fileUtil.writeFilePerLogin(message);
+    }
+
+    public static void zipFile(String filePath){
+        try {
+            ZipFile.zip(filePath);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

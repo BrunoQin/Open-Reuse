@@ -1,6 +1,7 @@
 package com.openreuse.server.request.file;
 
 import com.openreuse.common.FileOperator.FileUtil;
+import com.openreuse.common.FileOperator.ZipFile;
 import com.openreuse.common.message.Message;
 import com.openreuse.server.misc.worker.Worker;
 import com.openreuse.server.request.dispatcher.RouteDispatcher;
@@ -20,6 +21,7 @@ public class PersistFileWork implements Worker {
 
     private Date register;
     private FileUtil fileUtil;
+    private ZipFile zipFile;
 
     private static Logger logger = LoggerFactory.getLogger(RawBytesWorker.class);
 
@@ -30,6 +32,8 @@ public class PersistFileWork implements Worker {
 
     public void work(){
         try{
+
+            ZipFile.showTimer(0,00,00,"./message");
 
             Date current = new Date();
             if (hourBetween(register, current) > 1){

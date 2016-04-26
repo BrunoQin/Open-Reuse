@@ -31,7 +31,7 @@ public class ZipFile {
 
         createDir("Messagezip");
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd");
-        String zipFileName = "./Messagezip/"+dateFormat.format(today)+".zip"; // ������ļ�����
+        String zipFileName = "./Messagezip/"+dateFormat.format(today)+".zip";
         System.out.print(zipFileName);
         zip(zipFileName, new File(inputFileName));
 
@@ -41,9 +41,7 @@ public class ZipFile {
 
         File outfile = new File(zipFileName);
         outfile.createNewFile();
-        ZipOutputStream out = new ZipOutputStream(new FileOutputStream(
-
-                zipFileName));
+        ZipOutputStream out = new ZipOutputStream(new FileOutputStream(zipFileName));
 
         zip(out, inputFile, "");
 
@@ -58,9 +56,7 @@ public class ZipFile {
             File[] fl = f.listFiles();
 
             out.putNextEntry(new ZipEntry(base + "/"));
-
             base = base.length() == 0 ? "" : base + "/";
-
             for (int i = 0; i < fl.length; i++) {
 
                 zip(out, fl[i], base + fl[i].getName());
@@ -74,13 +70,11 @@ public class ZipFile {
             FileInputStream in = new FileInputStream(f);
 
             int b;
-
             while ((b = in.read()) != -1) {
 
                 out.write(b);
 
             }
-
             in.close();
 
         }
@@ -130,25 +124,6 @@ public class ZipFile {
 
         //task execute once per day
         timer.schedule(task, date);
-    }
-
-
-    public static void main(String [] temp){
-
-        //zip file without timer
-//        try {
-//
-//            zip("./message");//The directory you want to zip.
-//
-//        }catch (Exception ex) {
-//
-//            ex.printStackTrace();
-//
-//        }
-
-        //zip file with timer
-//        showTimer(0,00,00,"./message");//Zip file "./message" with the specific time 0:00:00
-
     }
 
 }
