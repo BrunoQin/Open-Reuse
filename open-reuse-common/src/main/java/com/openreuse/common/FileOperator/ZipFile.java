@@ -14,8 +14,6 @@ import java.util.TimerTask;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-//=====================Zip Dictionary=========================
-
 public class ZipFile {
 
 /*
@@ -71,9 +69,7 @@ public class ZipFile {
 
             int b;
             while ((b = in.read()) != -1) {
-
                 out.write(b);
-
             }
             in.close();
 

@@ -42,7 +42,6 @@ public class IncomingMessageHandler extends ChannelInboundHandlerAdapter {
         }
     }
 
-
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable e){
         ctx.close();
