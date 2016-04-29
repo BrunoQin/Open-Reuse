@@ -25,6 +25,7 @@ public class RouteDispatcher implements Dispatcher {
         routeMap.put(MessageType.LOGOUT_MESSAGE, new LogoutRoute());
         routeMap.put(MessageType.REGISTER_MESSAGE, new RegisterRoute());
         routeMap.put(MessageType.TEXT_MESSAGE, new TextRoute());
+        routeMap.put(MessageType.TEXT_MESSAGE_GROUP, new GroupRoute());
     }
     private static class Singleton {
         private static RouteDispatcher instance = new RouteDispatcher();

@@ -12,5 +12,5 @@ public class Group {
         this.groupId = gid;
     }
     public long groupId = -1;
-    public List<Long> userList = new LinkedList<>();
+    public List<String> userList = new LinkedList<>();
 }
