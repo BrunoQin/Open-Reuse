@@ -1,6 +1,7 @@
 package com.openresure.client;
 
 import com.openresure.client.config.ConfigManager;
+import com.openresure.client.group.ClientGroupManager;
 import com.openresure.client.listener.MessageListener;
 import com.openresure.client.listener.ValidateLoginListener;
 import com.openresure.client.listener.ValidateRegisterListener;
@@ -9,7 +10,9 @@ import com.openresure.client.service.MessageNotifyService;
 import com.openresure.client.service.MessageSendingService;
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
+import com.openreuse.common.message.Reserved;
 import com.openreuse.common.message.builder.MessageBuilder;
+import com.sun.org.apache.xml.internal.utils.ThreadControllerWrapper;
 
 /**
  * Created by min.jin on 2016/3/28.
@@ -110,4 +113,48 @@ public class ClientAgent {
                 .build();
         MessageSendingService.getInstance().provideMessage(message);
     }
+
+    public static void sendGroupMessage(String username, String content, String groupName){
+        long gid = ClientGroupManager.getInstance().getGroupId(groupName);
+        if(gid == -1) return;
+        Message message = MessageBuilder.messageBuilder()
+                .setBody(content)
+                .setFrom(username)
+                .setTo(ConfigManager.getInstance().getCurrentServerAddr())
+                .setType(MessageType.TEXT_MESSAGE_GROUP)
+                .setReserved(new Reserved(new Long(gid).toString()))
+                .build();
+        MessageSendingService.getInstance().provideMessage(message);
+    }
+
+    public static long registerGroup(String username, String groupName, String[] memberNames){
+        /** Return -1 if register failed **/
+        StringBuilder sb = new StringBuilder();
+        for(String memberName: memberNames){
+            sb.append(memberName + "\n");
+        }
+        Message message = MessageBuilder.messageBuilder()
+                .setType(MessageType.REGISTER_GROUP_MESSAGE)
+                .setBody(sb.toString())
+                .setFrom(username)
+                .setReserved(new Reserved(groupName))
+                .setTo(ConfigManager.getInstance().getCurrentServerAddr())
+                .build();
+        MessageSendingService.getInstance().provideMessage(message);
+        long now = System.currentTimeMillis();
+        /** Wait at most 3 seconds for Server's response **/
+        while(System.currentTimeMillis() <= now + 3 * 1000){
+            long gid = ClientGroupManager.getInstance().getGroupId(groupName);
+            if(gid != -1) return gid;
+            try{
+                Thread.currentThread().sleep(500);
+            }catch (InterruptedException ie){
+                ie.printStackTrace();
+            }
+        }
+        /** Failed **/
+        return -1;
+    }
+
+
 }

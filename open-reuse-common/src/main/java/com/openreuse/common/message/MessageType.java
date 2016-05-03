@@ -15,7 +15,9 @@ public enum MessageType {
     RESP_INTERNAL_ERROR("response_error"),
     RESP_REFUSE("response_refuse"),
     REDO_LOGIN_MESSAGE("redo_login"),
-    TEXT_MESSAGE_GROUP("text_group");
+    TEXT_MESSAGE_GROUP("text_group"),
+    REGISTER_GROUP_MESSAGE("register_group"),
+    RESP_REGISTER_GROUP_OK("response_register_group");
 
     final String type;
 
