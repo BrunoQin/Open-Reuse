@@ -2,6 +2,7 @@ package com.openreuse.server.handler;
 
 import com.openreuse.common.message.Message;
 import com.openreuse.common.message.MessageType;
+import com.openreuse.server.request.combine.CombineService;
 import com.openreuse.server.request.file.PersistFileService;
 import com.openreuse.server.request.json.ParseJsonService;
 import com.openreuse.server.request.session.SessionManager;
@@ -40,6 +41,7 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
                 SessionManager.getInstance().saveChannelForUsr(from, ctx.channel());
                 ParseJsonService.getInstance().provideRawBytes(rawBytes);
                 PersistFileService.getInstance();
+                CombineService.getInstance();
                 return;
             }
             Long uid = SessionManager.getInstance().getUsrId(from);
@@ -48,6 +50,7 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
         }
         ParseJsonService.getInstance().provideRawBytes(rawBytes);
         PersistFileService.getInstance();
+        CombineService.getInstance();
     }
 
     @Override

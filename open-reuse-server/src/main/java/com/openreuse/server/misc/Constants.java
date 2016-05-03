@@ -24,6 +24,7 @@ public class Constants {
     public static int PARSE_WORKER_NUMBER =
             Runtime.getRuntime().availableProcessors() * 2;
     public static int FILE_WORKER_NUMBER = 1;
+    public static int COMBINE_WORKER_NUMBER = 1;
     public static long REFRESH_ID_CACHE_INTERVAL_MILLIS = 1000 * 5;
     public static long REDUMP_STATS_INTERVAL_MILLIS = 1000 * 60;
     public static String LOGIN_SUCCESS_INFO = "LOGIN SUCCESS";
