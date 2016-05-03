@@ -56,12 +56,4 @@ public class UnzipFile {
         System.out.println("******************Unzip Completed********************");
     }
 
-//    @Test
-//    public void testUnzipFiles() throws IOException {
-//        //unZipFiles
-//        String zipPath = "./Messagezip/2016_04_27.zip";
-//        String path = "../UnzipFiles/";
-//        unZipFiles(zipPath, path);
-//    }
-
 }
