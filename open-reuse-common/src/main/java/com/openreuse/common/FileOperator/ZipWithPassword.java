@@ -3,7 +3,7 @@ package com.openreuse.common.FileOperator;
 import net.lingala.zip4j.core.ZipFile;
 import net.lingala.zip4j.model.ZipParameters;
 import net.lingala.zip4j.util.Zip4jConstants;
-import org.junit.Test;
+
 
 import java.io.File;
 
@@ -57,7 +57,7 @@ public class ZipWithPassword {
      */
     public static String zipwithPw(String src, String dest,  String passwd) {
         File srcFile = new File(src);
-        com.openreuse.common.FileOperator.ZipFile.createDir(dest);
+        dest = buildDestinationZipFilePath(srcFile,dest);
         ZipParameters parameters = new ZipParameters();
         parameters.setCompressionMethod(Zip4jConstants.COMP_DEFLATE);           // 压缩方式
         parameters.setCompressionLevel(Zip4jConstants.DEFLATE_LEVEL_NORMAL);    // 压缩级别
@@ -122,14 +122,5 @@ public class ZipWithPassword {
         }
     }
 
-    @Test
-    public void testZipWithPassword(){
-        zipwithPw("/Users/caopeng/Desktop/test","/Users/caopeng/Desktop","1234");
-    }
 
-    @Test
-    public void testUnzipWithPassword() throws ZipException, net.lingala.zip4j.exception.ZipException {
-        zipwithPw("/Users/caopeng/Desktop/test","/Users/caopeng/Desktop","1234");
-        unzipwithPw("/Users/caopeng/Desktop/test.zip","/Users/caopeng/Desktop/test","1234");
-    }
 }
