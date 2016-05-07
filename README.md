@@ -68,4 +68,4 @@
 
 3. [PM](https://github.com/BrunoQin/Open-Reuse/tree/master/%E5%A4%8D%E7%94%A8%E6%9E%84%E4%BB%B6/PM)
 
-####[讨论课02文档］(https://github.com/BrunoQin/Open-Reuse/tree/dev_6th_week/%E8%AE%A8%E8%AE%BA%E8%AF%BE%E5%86%85%E5%AE%B9/%E8%AE%A8%E8%AE%BA%E8%AF%BE02)
+####[讨论课02文档](https://github.com/BrunoQin/Open-Reuse/tree/dev_6th_week/%E8%AE%A8%E8%AE%BA%E8%AF%BE%E5%86%85%E5%AE%B9/%E8%AE%A8%E8%AE%BA%E8%AF%BE02)
