@@ -11,21 +11,31 @@ import java.io.IOException;
 public class FileUtil {
 
     private FileWriter fileWriter = null;
+    private int part = 1;
+    private int currentCap = 0;
+    private String filePath;
 
     public FileUtil(String filePath){
 
         try{
-            fileWriter = new FileWriter(filePath);
+            fileWriter = new FileWriter(filePath + "_" + part + ".txt");
+            this.filePath = filePath;
+            part++;
         } catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public boolean writeFilePerLogin(Message message){
+    public boolean writeFilePerLogin(Message message, int limitation){
 
         try{
-
-            fileWriter.append(message.toString());
+            if (writeFileWithLimit(limitation)) {
+                fileWriter.append(message.toString());
+            } else {
+                fileWriter = new FileWriter(filePath + "_" + part + ".txt");
+                part++;
+                fileWriter.append(message.toString());
+            }
             return true;
 
         } catch (IOException e){
@@ -33,6 +43,15 @@ public class FileUtil {
             return false;
         }
 
+    }
+
+    public boolean writeFileWithLimit(int limitation){
+        if (currentCap <= limitation){
+            currentCap++;
+            return true;
+        }
+        currentCap = 0;
+        return false;
     }
 
 }
