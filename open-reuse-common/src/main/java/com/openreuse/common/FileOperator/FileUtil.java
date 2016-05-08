@@ -18,7 +18,7 @@ public class FileUtil {
     public FileUtil(String filePath){
 
         try{
-            fileWriter = new FileWriter(filePath + "_" + part + ".txt");
+            fileWriter = new FileWriter(filePath + "_" + part);
             this.filePath = filePath;
             part++;
         } catch (Exception e){
@@ -32,7 +32,7 @@ public class FileUtil {
             if (writeFileWithLimit(limitation)) {
                 fileWriter.append(message.toString());
             } else {
-                fileWriter = new FileWriter(filePath + "_" + part + ".txt");
+                fileWriter = new FileWriter(filePath + "_" + part);
                 part++;
                 fileWriter.append(message.toString());
             }
