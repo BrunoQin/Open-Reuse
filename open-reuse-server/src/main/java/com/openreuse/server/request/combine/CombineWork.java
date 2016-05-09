@@ -48,15 +48,15 @@ public class CombineWork implements Worker {
                 File[] fs = showAllFiles(new File("../UnzipFiles/"));
                 int num = Constants.COMBINE_FILE_OUTPUT_LIMIT / Constants.FILE_OUTPUT_LIMIT;
                 int count = 0;
+                File combine = new File("../UnzipFiles/combine_" + count);
                 for (int i = 1; i < fs.length + 1; i++){
-                    File combine = new File("../UnzipFiles/combine_" + count);
                     if (i % num != 0){
                         combine = new File(fs[i], "../UnzipFiles/combine_" + count);
                     } else {
                         try{
                             ZipWithPassword.zipwithPw("../UnzipFiles/combine_" + count, "../UnzipFiles/", Constants.COMBINE_PSW);
                             count++;
-                            File conbine = new File("../UnzipFiles/combine_" + count);
+                            combine = new File("../UnzipFiles/combine_" + count);
                         } catch (Exception e){
                             e.printStackTrace();
                         }
@@ -106,7 +106,6 @@ public class CombineWork implements Worker {
 
         return dayBefore;
     }
-
 
     /**
      * 获取当前文件夹下所有的文件
