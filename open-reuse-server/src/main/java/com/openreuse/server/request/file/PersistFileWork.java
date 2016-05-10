@@ -3,6 +3,7 @@ package com.openreuse.server.request.file;
 import com.openreuse.common.FileOperator.FileUtil;
 import com.openreuse.common.FileOperator.ZipFile;
 import com.openreuse.common.message.Message;
+import com.openreuse.server.misc.Constants;
 import com.openreuse.server.misc.worker.Worker;
 import com.openreuse.server.request.dispatcher.RouteDispatcher;
 import com.openreuse.server.request.json.RawBytesWorker;
@@ -36,15 +37,15 @@ public class PersistFileWork implements Worker {
             ZipFile.showTimer(0,00,00,"./message");
 
             Date current = new Date();
-            if (hourBetween(register, current) > 1){
+            if (hourBetween(register, current) > Constants.FILE_OUTPUT_INTERVAL){
 
-                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-                Date date=new Date();
-                String filePath=sdf.format(date);
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+                Date date = new Date();
+                String filePath = sdf.format(date);
                 fileUtil = new FileUtil(filePath + ".txt");
                 Message message = RouteDispatcher.undumpMessageFromQueue();
                 while(message != null){
-                    fileUtil.writeFilePerLogin(message);
+                    fileUtil.writeFilePerLogin(message, Constants.FILE_OUTPUT_LIMIT);
                     message = RouteDispatcher.undumpMessageFromQueue();
                 }
 

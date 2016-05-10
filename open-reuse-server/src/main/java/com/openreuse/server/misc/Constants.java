@@ -29,6 +29,11 @@ public class Constants {
     public static long REDUMP_STATS_INTERVAL_MILLIS = 1000 * 60;
     public static String LOGIN_SUCCESS_INFO = "LOGIN SUCCESS";
 
+    public static int FILE_OUTPUT_INTERVAL = 2;
+    public static int FILE_OUTPUT_LIMIT = 32;
+    public static int COMBINE_FILE_OUTPUT_LIMIT = 512;
+    public static String COMBINE_PSW = "OpenReuse";
+
     /** Time Def Constants **/
     public static long MILLIS_PER_SECOND = 1000;
     public static long MILLIS_PER_MINUTE = MILLIS_PER_SECOND * 60;

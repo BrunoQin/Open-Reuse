@@ -29,7 +29,7 @@ public class PersistFileService {
     }
 
     public void writeFile(Message message){
-        fileUtil.writeFilePerLogin(message);
+        fileUtil.writeFilePerLogin(message, 512);
     }
 
     public static void zipFile(String filePath){
