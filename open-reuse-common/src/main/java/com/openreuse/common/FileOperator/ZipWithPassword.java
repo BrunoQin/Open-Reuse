@@ -59,11 +59,11 @@ public class ZipWithPassword {
         File srcFile = new File(src);
         dest = buildDestinationZipFilePath(srcFile,dest);
         ZipParameters parameters = new ZipParameters();
-        parameters.setCompressionMethod(Zip4jConstants.COMP_DEFLATE);           // Ñ¹Ëõ·½Ê½
-        parameters.setCompressionLevel(Zip4jConstants.DEFLATE_LEVEL_NORMAL);    // Ñ¹Ëõ¼¶±ð
+        parameters.setCompressionMethod(Zip4jConstants.COMP_DEFLATE);
+        parameters.setCompressionLevel(Zip4jConstants.DEFLATE_LEVEL_NORMAL);
         if(!passwd.equals("")) {
             parameters.setEncryptFiles(true);
-            parameters.setEncryptionMethod(Zip4jConstants.ENC_METHOD_STANDARD); // ¼ÓÃÜ·½Ê½
+            parameters.setEncryptionMethod(Zip4jConstants.ENC_METHOD_STANDARD);
             parameters.setPassword(passwd.toCharArray());
         }
         try {
@@ -96,7 +96,7 @@ public class ZipWithPassword {
                 destParam = srcFile.getParent() + File.separator + fileName + ".zip";
             }
         } else {
-            createDestDirectoryIfNecessary(destParam);  // ÔÚÖ¸¶¨Â·¾¶²»´æÔÚµÄÇé¿öÏÂ½«Æä´´½¨³öÀ´
+            createDestDirectoryIfNecessary(destParam);  // ï¿½ï¿½Ö¸ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ä´´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if (destParam.endsWith(File.separator)) {
                 String fileName = "";
                 if (srcFile.isDirectory()) {
