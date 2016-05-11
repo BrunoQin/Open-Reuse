@@ -35,8 +35,12 @@ public class UnicastResponseTask extends ResponseTask{
             try{
                 byte[] bytes = super.om.writeValueAsBytes(super.getMessage());
                 Channel channel = entry.getValue();
-                ByteBuf buf = Unpooled.copiedBuffer(bytes);
-                channel.writeAndFlush(buf);
+                if(channel == null){
+
+                }else {
+                    ByteBuf buf = Unpooled.copiedBuffer(bytes);
+                    channel.writeAndFlush(buf);
+                }
             }catch (IOException ioe){
                 ioe.printStackTrace();
             }
