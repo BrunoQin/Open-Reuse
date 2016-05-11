@@ -17,7 +17,8 @@ public enum MessageType {
     REDO_LOGIN_MESSAGE("redo_login"),
     TEXT_MESSAGE_GROUP("text_group"),
     REGISTER_GROUP_MESSAGE("register_group"),
-    RESP_REGISTER_GROUP_OK("response_register_group");
+    RESP_REGISTER_GROUP_OK("response_register_group"),
+    RESP_NOTIFY_ONLINE_GROUP_MEMBER("online_group_member");
 
     final String type;
 

@@ -1,9 +1,11 @@
 package com.openreuse.common.message;
 
+import java.io.Serializable;
+
 /**
  * Created by kimmin on 3/23/16.
  */
-public class Message {
+public class Message implements Serializable{
 
     public Message(){}
 

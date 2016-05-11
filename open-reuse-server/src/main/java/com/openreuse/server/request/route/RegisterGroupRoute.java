@@ -20,7 +20,9 @@ public class RegisterGroupRoute implements Route {
         for(String member: members){
             group.userList.add(member);
         }
+        String username = message.getFrom();
         GroupManager.getInstance().enableGroup(newGid, group);
+        GroupManager.getInstance().addUserGroupMapping(username, group);
         StringBuilder sb = new StringBuilder();
         sb.append(groupName);
         sb.append("\n");

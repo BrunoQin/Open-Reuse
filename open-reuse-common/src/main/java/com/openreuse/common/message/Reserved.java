@@ -1,9 +1,11 @@
 package com.openreuse.common.message;
 
+import java.io.Serializable;
+
 /**
  * Created by kimmin on 3/23/16.
  */
-public class Reserved {
+public class Reserved implements Serializable{
 
     public Reserved(){}
 
