@@ -28,6 +28,7 @@ public class ServerApplication {
         ResponseService.getInstance();
 
 
+
         ServerBootstrap bootstrap = new ServerBootstrap();
         bootstrap.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class)
