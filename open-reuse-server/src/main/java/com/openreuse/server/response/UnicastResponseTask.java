@@ -36,7 +36,7 @@ public class UnicastResponseTask extends ResponseTask{
                 byte[] bytes = super.om.writeValueAsBytes(super.getMessage());
                 Channel channel = entry.getValue();
                 if(channel == null){
-
+                    ResendMsgService.getInstance().addFailedMsg(getMessage());
                 }else {
                     ByteBuf buf = Unpooled.copiedBuffer(bytes);
                     channel.writeAndFlush(buf);

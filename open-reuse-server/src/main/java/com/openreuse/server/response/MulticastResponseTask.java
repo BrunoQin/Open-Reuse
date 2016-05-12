@@ -25,8 +25,12 @@ public class MulticastResponseTask extends ResponseTask {
             try{
                 byte[] bytes = super.om.writeValueAsBytes(super.getMessage());
                 Channel channel = iter.next().getValue();
-                ByteBuf buf = Unpooled.copiedBuffer(bytes);
-                channel.writeAndFlush(buf);
+                if(channel == null){
+                    ResendMsgService.getInstance().addFailedMsg(getMessage());
+                }else {
+                    ByteBuf buf = Unpooled.copiedBuffer(bytes);
+                    channel.writeAndFlush(buf);
+                }
             }catch (IOException ioe){
                 ioe.printStackTrace();
             }
