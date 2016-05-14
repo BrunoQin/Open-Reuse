@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class ThrottleStatsManager {
 
-    private PerformanceManager performanceManager;
+    public PerformanceManager performanceManager;
     private LicenseManager licenseManager;
 
 
