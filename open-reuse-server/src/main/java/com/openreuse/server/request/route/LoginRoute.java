@@ -69,6 +69,7 @@ public class LoginRoute implements Route{
 
             /** Response to notify if the group members is online **/
             List<Group> groupList = GroupManager.getInstance().getUserGroupMapping(message.getFrom());
+            if(groupList == null) return false;
             for(Group group : groupList){
                 Message onlineMsg = MessageBuilder.messageBuilder()
                     .setType(MessageType.RESP_NOTIFY_ONLINE_GROUP_MEMBER)

@@ -10,6 +10,7 @@ public class ValidateRegisterGroupListener implements MessageListener {
         /** Response message body contains long-type group Id **/
         String[] nameNid = body.trim().split("\n");
         String groupName = nameNid[0];
+
         long gid = Long.parseLong(nameNid[1]);
         if(gid != -1){
             ClientGroupManager.getInstance().putGroupId(groupName, gid);
