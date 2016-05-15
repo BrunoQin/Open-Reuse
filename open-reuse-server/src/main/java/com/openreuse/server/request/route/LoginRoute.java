@@ -83,6 +83,7 @@ public class LoginRoute implements Route{
                 }
                 onlineMsg.setBody(sb.toString());
                 ResponseService.getInstance().sendMessage(onlineMsg, message.getFrom());
+                //System.out.print(onlineMsg.getBody()+"\t"+onlineMsg.getTo()+"\n");
             }
 
             return true;
