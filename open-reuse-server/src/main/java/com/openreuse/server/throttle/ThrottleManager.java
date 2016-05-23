@@ -21,7 +21,7 @@ public class ThrottleManager {
         return Singleton.instance;
     }
 
-    /** Scheduled pool for managing incoming log-in frequency **/
+    /** Scheduled pool for managing incoming logging-in frequency **/
     private DelayQueue<DelayedNotify> delayQueue = new DelayQueue();
     private Thread[] workerThreads = new Thread[Constants.THROTTLE_WORKER_NUMBER];
     private AtomicBoolean runFlag = new AtomicBoolean(true);

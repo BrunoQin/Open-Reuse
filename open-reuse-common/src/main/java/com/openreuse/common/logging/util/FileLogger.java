@@ -16,7 +16,7 @@ public class FileLogger extends Logger{
 
     public FileLogger(){
         try{
-            writer = new PrintWriter(new FileOutputStream(new File("tmp.log")));
+            writer = new PrintWriter(new FileOutputStream(new File("tmp.logging")));
         }catch (Throwable e){
             e.printStackTrace();
         }

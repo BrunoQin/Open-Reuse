@@ -30,7 +30,7 @@ public class ThrottleStatsManager {
     private void initPM(){
         performanceManager = new PerformanceManager();
         LogUtils.setLogPrefix("Test");
-        LogUtils.setLogPath("./log");
+        LogUtils.setLogPath("./logging");
         performanceManager.setPeriod(60);
         performanceManager.setTimeUnit(TimeUnit.SECONDS);
         performanceManager.setInitialDelay(1);
