@@ -34,6 +34,8 @@ public class Constants {
     public static int COMBINE_FILE_OUTPUT_LIMIT = 512;
     public static String COMBINE_PSW = "OpenReuse";
 
+    public static String LOG_TYPE = "DEBUG";
+
     /** Time Def Constants **/
     public static long MILLIS_PER_SECOND = 1000;
     public static long MILLIS_PER_MINUTE = MILLIS_PER_SECOND * 60;
