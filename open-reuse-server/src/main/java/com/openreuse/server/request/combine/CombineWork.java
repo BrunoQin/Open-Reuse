@@ -5,7 +5,6 @@ import com.openreuse.common.FileOperator.ZipWithPassword;
 import com.openreuse.server.misc.Constants;
 import com.openreuse.server.misc.worker.Worker;
 import com.openreuse.server.request.file.PersistFileWork;
-import com.openreuse.server.request.json.RawBytesWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,7 +22,7 @@ public class CombineWork implements Worker {
     private Date register;
     private Date current;
 
-    private static Logger logger = LoggerFactory.getLogger(RawBytesWorker.class);
+    private static Logger logger = LoggerFactory.getLogger(CombineWork.class);
 
     public CombineWork(Date date){
         this.register = date;

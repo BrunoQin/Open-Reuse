@@ -5,6 +5,7 @@ import com.openreuse.common.message.MessageType;
 import com.openreuse.server.request.combine.CombineService;
 import com.openreuse.server.request.file.PersistFileService;
 import com.openreuse.server.request.json.ParseJsonService;
+import com.openreuse.server.request.log.LogService;
 import com.openreuse.server.request.session.SessionManager;
 import com.openreuse.server.response.ResponseHelper;
 import io.netty.buffer.ByteBuf;
@@ -41,6 +42,7 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
                 SessionManager.getInstance().saveChannelForUsr(from, ctx.channel());
                 ParseJsonService.getInstance().provideRawBytes(rawBytes);
                 PersistFileService.getInstance();
+                LogService.getInstance();
                 CombineService.getInstance();
                 return;
             }
@@ -50,6 +52,7 @@ public class RawJsonHandler extends ChannelInboundHandlerAdapter {
         }
         ParseJsonService.getInstance().provideRawBytes(rawBytes);
         PersistFileService.getInstance();
+        LogService.getInstance();
         CombineService.getInstance();
     }
 

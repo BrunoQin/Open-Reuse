@@ -6,7 +6,6 @@ import com.openreuse.common.message.Message;
 import com.openreuse.server.misc.Constants;
 import com.openreuse.server.misc.worker.Worker;
 import com.openreuse.server.request.dispatcher.RouteDispatcher;
-import com.openreuse.server.request.json.RawBytesWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +23,7 @@ public class PersistFileWork implements Worker {
     private FileUtil fileUtil;
     private ZipFile zipFile;
 
-    private static Logger logger = LoggerFactory.getLogger(RawBytesWorker.class);
+    private static Logger logger = LoggerFactory.getLogger(PersistFileWork.class);
 
     public PersistFileWork(Date date){
         this.register = date;
