@@ -3,4 +3,8 @@ include 'open-reuse-client-api'
 include 'open-reuse-client-window'
 include 'open-reuse-server'
 include 'open-reuse-common'
+include 'open-reuse-server-authentication'
+include 'open-server-reuse-receive'
+include 'open-reuse-server-store'
+include 'open-reuse-server-forward'
 
